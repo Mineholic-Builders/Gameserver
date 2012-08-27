@@ -1,28 +1,72 @@
 crafting-recipes:
-  shapelessexample:
-    type: shapeless
-    ingredients: #mc only supports amount of 1 currently as ingredients.
-      # light wooden plank
-      'wood:2': 1
-      # light wooden plank
-      'wood:2': 1
-      # brown wool
-      '35:12': 1
-      # brown wool
-      '35:12': 1
+  ice_block:
+    type: shaped3x3
+    ingredients: #some snowballs
+      '332': 'a'
+    shape:
+      - 'aaa'
+      - 'aaa'
+      - 'aaa'
     results:
-      #64 Endstone.
-      121: 64
-  shapeexample:
+      79: 2
+  clay_ball:
     type: shaped2x2
-    ingredients: #mc only supports amount of 1 currently as ingredients.
-      # light wooden plank
-      'wood:2': 'a'
-      # brown wool
-      '35:12': 'b'
-    shape: #two of a on top, 2 of b on bottom.
-      - 'aa'
-      - 'bb'
+    ingredients: #some dirt and 2 waterbuckets (gives buckets back)
+      '3': 'a'
+      '326': 'b'
+    shape:
+      - 'ab'
+      - 'ba'
     results:
-      #64 Endstone.
-      121: 64
+      337: 4
+  sponge: #'useless' item but can now be obtained while survival mode
+    type: shaped3x3
+    ingredients: #any leafes and any wool
+      '18' : 'b'
+      '35' : 'a'
+    shape:
+      - 'bbb'
+      - 'bab'
+      - 'bbb'
+    results:
+      19: 4
+  leather:
+    type: shapeless
+    ingredients: #rottenflesh and awkward potion
+      '367' : 1
+      '367' : 1
+      '367' : 1
+      '373:16' : 1
+    results:
+      334: 2
+  redstoneore: #1 drops 4-5 without luck enchantment - mainly for storage purpose
+    type: shaped3x3
+    ingredients: #5 redstonedust and 4 cobblestone
+      '331' : 'a'
+      '4' : 'b'
+    shape:
+      - 'bab'
+      - 'aaa'
+      - 'bab'
+    results:
+      73: 1
+  loherute:
+    type: shaped3x3
+    ingredients: #2 bones, 1 glowstonedust, 4 orange dye, and 2 redstonedust
+      '352' : 'a'
+      '348' : 'b'
+      '351:14' : 'c'
+      '331' : 'd'
+    shape:
+      - 'cdc'
+      - 'aba'
+      - 'cdc'
+    results:
+      369: 2
+  slimeball:
+    type: shapeless
+    ingredients: #thick potion and cactusdye
+      '373:32' : 1
+      '351:2' : 1
+    results:
+      341: 2
