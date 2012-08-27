@@ -8,8 +8,8 @@ worlds:
         y: 74.0
         z: 788.0
     sendposition: true
-    sendhealth: true
-    bigworld: false
+    sendhealth: false
+    bigworld: true
     extrazoomout: 0
     visibilitylimits: []
     hiddenlimits: []
@@ -18,43 +18,46 @@ worlds:
     maps:
     -   class: org.dynmap.hdmap.HDMap
         name: flat
-        title: Flat
+        title: 2D-Karte
         icon: images/block_flat.png
         prefix: flat
         perspective: iso_S_90_lowres
-        shader: stdtexture
+        shader: sk89q
         lighting: shadows
+        colorscheme: sk89q
         image-format: default
         mapzoomin: 1
         append_to_world: ''
         protected: false
     -   class: org.dynmap.hdmap.HDMap
         name: surface
-        title: Surface - Day
+        title: Detailansicht - Tag
         icon: images/block_surface.png
         prefix: surface
-        perspective: iso_SE_30_hires
-        shader: stdtexture
+        perspective: iso_SE_30_lowres
+        shader: sk89q
         lighting: shadows
+        colorscheme: sk89q
         image-format: default
         mapzoomin: 3
         append_to_world: ''
         protected: false
     -   class: org.dynmap.hdmap.HDMap
         name: surfacenight
-        title: Surface - Night
+        title: Detailansicht - Nacht
         icon: images/block_surface_night.png
         prefix: surfacenight
-        perspective: iso_SE_30_hires
-        shader: stdtexture
+        perspective: iso_SE_30_lowres
+        shader: sk89q
         lighting: night
+        colorscheme: sk89q
         image-format: default
         mapzoomin: 1
         append_to_world: ''
         protected: false
     -   class: org.dynmap.hdmap.HDMap
         name: topo
-        title: Topo
+        title: Topografische Karte
         icon: images/block_flat_topo.png
         prefix: topo
         perspective: iso_S_90_lowres
@@ -78,7 +81,7 @@ worlds:
         protected: false
 -   name: world2_nether
     title: Minecraft - Nether
-    enabled: true
+    enabled: false
     extrazoomout: 3
     maps:
     -   class: org.dynmap.hdmap.HDMap
@@ -108,7 +111,7 @@ worlds:
     bigworld: false
 -   name: world2_the_end
     title: Minecraft - The End
-    enabled: true
+    enabled: false
     extrazoomout: 3
     maps:
     -   class: org.dynmap.hdmap.HDMap
