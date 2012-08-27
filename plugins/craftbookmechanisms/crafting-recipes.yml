@@ -50,7 +50,7 @@ crafting-recipes:
       - 'bab'
     results:
       73: 1
-  loherute:
+  blazerod:
     type: shaped3x3
     ingredients: #2 bones, 1 glowstonedust, 4 orange dye, and 2 redstonedust
       '352' : 'a'
@@ -70,3 +70,93 @@ crafting-recipes:
       '351:2' : 1
     results:
       341: 2
+  lapis:
+    type: shaped3x3
+    ingredients: #awkward potion and 8 bluewool
+      '373:16' : 'a'
+      '35:11' : 'b'
+    shape:
+      - 'bbb'
+      - 'bab'
+      - 'bbb'
+    results:
+      '351:4' : 2
+  applepie:
+    type: shaped3x3
+    ingredients: #2 apple replacing milkbuckets for yummy applepie
+      'apple' : 'a'
+      'egg' : 'b'
+      '335' : 'c'
+      'wheat' : 'd'
+      'sugar' : 'e'
+    shape:
+      - 'aca'
+      - 'ebe'
+      - 'ddd'
+    results:
+      cake : 1
+  nether_bricks:
+    type: shaped3x3
+    ingredients: #2 apple replacing milkbuckets for yummy applepie
+      '98:0' : 'a'
+      'obsidian' : 'b'
+    shape:
+      - 'aaa'
+      - 'bbb'
+      - 'aaa'
+    results:
+      112 : 6
+  glasspanetoblock:
+    type: shaped3x3
+    ingredients: #6glasspane -> glasblock 
+      '102' : 'a'
+    shape:
+      - 'bbb'
+      - 'aaa'
+      - 'aaa'
+    results:
+      20 : 1
+  chainplate:
+    type: shaped3x3
+    ingredients: #6ironbars, 2ironingot
+      '101' : 'a'
+      '265' : 'b'
+    shape:
+      - 'bcb'
+      - 'aaa'
+      - 'aaa'
+    results:
+      303 : 1
+  chainhelmet:
+    type: shaped3x3
+    ingredients: #3ironbars, 2ironingot
+      '101' : 'a'
+      '265' : 'b'
+    shape:
+      - 'bab'
+      - 'aca'
+      - 'ccc'
+    results:
+      302 : 1
+  chainleggings:
+    type: shaped3x3
+    ingredients: #6ironbars, 2ironingot
+      '101' : 'a'
+      '265' : 'b'
+    shape:
+      - 'bab'
+      - 'aca'
+      - 'aca'
+    results:
+      304 : 1
+  chainboots:
+    type: shaped3x3
+    ingredients: #6ironbars, 2ironingot
+      '101' : 'a'
+      '265' : 'b'
+    shape:
+      - 'aca'
+      - 'bcb'
+      - 'ccc'
+    results:
+      305 : 1
