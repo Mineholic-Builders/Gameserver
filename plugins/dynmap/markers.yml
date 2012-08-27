@@ -1,0 +1,79 @@
+icons: {
+    }
+sets:
+    markers:
+        circles: {
+            }
+        hide: false
+        markers:
+            marker_1:
+                icon: house
+                markup: false
+                label: Markezzz
+                z: 482.0
+                world: world2
+                y: 64.0
+                x: -1360.0
+            marker_2:
+                icon: house
+                markup: false
+                label: Nichtdu24
+                z: 1396.0
+                world: world2
+                y: 83.0
+                x: -76.0
+            marker_3:
+                icon: house
+                markup: false
+                label: Dahark
+                z: 1112.0
+                world: world2
+                y: 66.0
+                x: 1101.0
+            marker_4:
+                icon: house
+                markup: false
+                label: Xciting88
+                z: 1373.0
+                world: world2
+                y: 67.0
+                x: 1068.0
+            marker_6:
+                icon: house
+                markup: false
+                label: Bluedevileyed
+                z: 1318.0
+                world: world2
+                y: 70.0
+                x: 1406.0
+            marker_5:
+                icon: house
+                markup: false
+                label: Reddragon86
+                z: -261.0
+                world: world2
+                y: 64.0
+                x: -378.0
+            marker_8:
+                icon: house
+                markup: false
+                label: Juntaix+Browmie
+                z: 196.0
+                world: world2
+                y: 80.0
+                x: 389.0
+            marker_7:
+                icon: house
+                markup: false
+                label: Noukky
+                z: 762.0
+                world: world2
+                y: 72.0
+                x: -1632.0
+        layerprio: 0
+        areas: {
+            }
+        lines: {
+            }
+        label: Markers
+        minzoom: 0

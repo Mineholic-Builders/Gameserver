@@ -1,0 +1,86 @@
+main:
+  auto-disable: true
+  check-for-updates: true
+  download-library: true
+  reload-on-join: false
+mysql:
+  enabled: false
+  host: localhost
+  port: 3306
+  user: user
+  password: password
+  database: xauth
+  tables:
+    account: accounts
+    location: locations
+    lockout: lockouts
+    playerdata: playerdata
+    session: sessions
+permissions:
+  backend: bukkit
+authurl:
+  enabled: false
+  url: http://localhost
+  registration: false
+  status: false
+  groups: false
+  broadcast-login: false
+single-session:
+  reverse: true
+  guests:
+    reverse: false
+    immunity-length: 5
+registration:
+  enabled: true
+  forced: true
+  require-email: false
+  validate-email: false
+  account-limit: 0
+  activation: false
+  require-login: true
+password:
+  min-length: 6
+  allow-change: true
+  complexity:
+    lowercase: false
+    uppercase: false
+    number: false
+    symbol: false
+guest:
+  timeout: 300
+  notify-cooldown: 5
+  hide-inventory: true
+  protect-location: true
+  allowed-commands:
+  - register
+  - login
+  - l
+  restrict:
+    player:
+      chat: true
+      interact: true
+      move: true
+      pickup: true
+    block:
+      place: true
+      break: true
+    entity:
+      damage: true
+      target: true
+session:
+  length: 3600
+  verifyip: true
+  godmode-length: 5
+strikes:
+  amount: 5
+  lockout-length: 3600
+account:
+  track-last-login: false
+filter:
+  min-length: 3
+  allowed: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890_
+  disallowed: ''
+  blank-name: true
+groups:
+  guest: ''
+  authenticated: ''

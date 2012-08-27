@@ -1,0 +1,138 @@
+worlds:
+-   name: world2
+    title: Minecraft - World
+    enabled: true
+    protected: false
+    center:
+        x: 72.0
+        y: 74.0
+        z: 788.0
+    sendposition: true
+    sendhealth: true
+    bigworld: false
+    extrazoomout: 0
+    visibilitylimits: []
+    hiddenlimits: []
+    autogenerate-to-visibilitylimits: none
+    hidestyle: air
+    maps:
+    -   class: org.dynmap.hdmap.HDMap
+        name: flat
+        title: Flat
+        icon: images/block_flat.png
+        prefix: flat
+        perspective: iso_S_90_lowres
+        shader: stdtexture
+        lighting: shadows
+        image-format: default
+        mapzoomin: 1
+        append_to_world: ''
+        protected: false
+    -   class: org.dynmap.hdmap.HDMap
+        name: surface
+        title: Surface - Day
+        icon: images/block_surface.png
+        prefix: surface
+        perspective: iso_SE_30_hires
+        shader: stdtexture
+        lighting: shadows
+        image-format: default
+        mapzoomin: 3
+        append_to_world: ''
+        protected: false
+    -   class: org.dynmap.hdmap.HDMap
+        name: surfacenight
+        title: Surface - Night
+        icon: images/block_surface_night.png
+        prefix: surfacenight
+        perspective: iso_SE_30_hires
+        shader: stdtexture
+        lighting: night
+        image-format: default
+        mapzoomin: 1
+        append_to_world: ''
+        protected: false
+    -   class: org.dynmap.hdmap.HDMap
+        name: topo
+        title: Topo
+        icon: images/block_flat_topo.png
+        prefix: topo
+        perspective: iso_S_90_lowres
+        shader: topo
+        lighting: default
+        image-format: default
+        mapzoomin: 1
+        append_to_world: ''
+        protected: false
+    -   class: org.dynmap.hdmap.HDMap
+        name: biome
+        title: Biome
+        icon: images/block_biome.png
+        prefix: biome
+        perspective: iso_S_90_lowres
+        shader: biome
+        lighting: default
+        image-format: default
+        mapzoomin: 1
+        append_to_world: ''
+        protected: false
+-   name: world2_nether
+    title: Minecraft - Nether
+    enabled: true
+    extrazoomout: 3
+    maps:
+    -   class: org.dynmap.hdmap.HDMap
+        name: flatnether
+        title: Flat
+        prefix: flatnether
+        icon: images/block_flat_nether.png
+        perspective: iso_S_90_lowres
+        shader: stdtexture
+        lighting: nethershadows
+        colorscheme: sk89q
+        mapzoomin: 1
+    -   class: org.dynmap.hdmap.HDMap
+        name: surfacenether
+        title: Surface
+        prefix: surfacenether
+        icon: images/block_nether.png
+        perspective: iso_SE_30_hires
+        shader: stdtexture
+        lighting: nethershadows
+        colorscheme: sk89q
+        mapzoomin: 1
+    template: nether-hires
+    sendposition: true
+    sendhealth: true
+    hidestyle: air
+    bigworld: false
+-   name: world2_the_end
+    title: Minecraft - The End
+    enabled: true
+    extrazoomout: 3
+    maps:
+    -   class: org.dynmap.hdmap.HDMap
+        name: flattheend
+        title: Flat
+        prefix: flattheend
+        icon: images/block_flat_the_end.png
+        perspective: iso_S_90_lowres
+        shader: stdtexture
+        lighting: shadows
+        colorscheme: sk89q
+        mapzoomin: 1
+    -   class: org.dynmap.hdmap.HDMap
+        name: surfacetheend
+        title: Surface
+        prefix: surfacetheend
+        icon: images/block_the_end.png
+        perspective: iso_SE_30_hires
+        shader: stdtexture
+        lighting: shadows
+        colorscheme: sk89q
+        mapzoomin: 1
+    template: the_end-hires
+    sendposition: true
+    sendhealth: true
+    hidestyle: stone
+    bigworld: false
