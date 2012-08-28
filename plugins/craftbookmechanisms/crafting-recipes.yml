@@ -31,12 +31,13 @@ crafting-recipes:
     results:
       19: 4
   leather:
-    type: shapeless
+    type: shaped2x2
     ingredients: #rottenflesh and awkward potion
-      '367' : 1
-      '367' : 1
-      '367' : 1
-      '373:16' : 1
+      '367' : 'a'
+      '373:16' : 'b'
+    shape:
+      - 'aa'
+      - 'ab'
     results:
       334: 2
   redstoneore: #1 drops 4-5 without luck enchantment - mainly for storage purpose
@@ -69,7 +70,7 @@ crafting-recipes:
       '373:32' : 1
       '351:2' : 1
     results:
-      341: 2
+      341: 1
   lapis:
     type: shaped3x3
     ingredients: #awkward potion and 8 bluewool
@@ -105,7 +106,7 @@ crafting-recipes:
       - 'bbb'
       - 'aaa'
     results:
-      112 : 6
+      112 : 8
   glasspanetoblock:
     type: shaped3x3
     ingredients: #6glasspane -> glasblock 
