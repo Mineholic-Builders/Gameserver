@@ -161,3 +161,15 @@ crafting-recipes:
       - 'ccc'
     results:
       '305' : 1
+  mycelium:
+    type: shaped2x2
+    ingredients: #1dirt, 1redshroom, 1brownshroom, 1bonemeal
+      '3' : 'a'
+      '39' : 'b'
+      '40' : 'c'
+      '351:15' : 'd'
+    shape:
+      - 'ab'
+      - 'cd'
+    results:
+      '110' : 2
