@@ -8,7 +8,7 @@ crafting-recipes:
       - 'aaa'
       - 'aaa'
     results:
-      79: 2
+      '79': 2
   clay_ball:
     type: shaped2x2
     ingredients: #some dirt and 2 waterbuckets (gives buckets back)
@@ -18,7 +18,7 @@ crafting-recipes:
       - 'ab'
       - 'ba'
     results:
-      337: 4
+      '337': 4
   sponge: #'useless' item but can now be obtained while survival mode
     type: shaped3x3
     ingredients: #any leafes and any wool
@@ -29,7 +29,7 @@ crafting-recipes:
       - 'bab'
       - 'bbb'
     results:
-      19: 4
+      '19': 4
   leather:
     type: shaped2x2
     ingredients: #rottenflesh and awkward potion
@@ -39,7 +39,7 @@ crafting-recipes:
       - 'aa'
       - 'ab'
     results:
-      334: 2
+      '334': 2
   redstoneore: #1 drops 4-5 without luck enchantment - mainly for storage purpose
     type: shaped3x3
     ingredients: #5 redstonedust and 4 cobblestone
@@ -50,7 +50,7 @@ crafting-recipes:
       - 'aaa'
       - 'bab'
     results:
-      73: 1
+      '73': 1
   blazerod:
     type: shaped3x3
     ingredients: #2 bones, 1 glowstonedust, 4 orange dye, and 2 redstonedust
@@ -63,14 +63,14 @@ crafting-recipes:
       - 'aba'
       - 'cdc'
     results:
-      369: 2
+      '369': 2
   slimeball:
     type: shapeless
     ingredients: #thick potion and cactusdye
       '373:32' : 1
       '351:2' : 1
     results:
-      341: 1
+      '341': 1
   lapis:
     type: shaped3x3
     ingredients: #awkward potion and 8 bluewool
@@ -95,7 +95,7 @@ crafting-recipes:
       - 'ebe'
       - 'ddd'
     results:
-      cake : 1
+      'cake' : 1
   nether_bricks:
     type: shaped3x3
     ingredients: #2 apple replacing milkbuckets for yummy applepie
@@ -106,7 +106,7 @@ crafting-recipes:
       - 'bbb'
       - 'aaa'
     results:
-      112 : 8
+      '112' : 8
   glasspanetoblock:
     type: shaped3x3
     ingredients: #6glasspane -> glasblock 
@@ -116,7 +116,7 @@ crafting-recipes:
       - 'aaa'
       - 'aaa'
     results:
-      20 : 1
+      '20' : 1
   chainplate:
     type: shaped3x3
     ingredients: #6ironbars, 2ironingot
@@ -127,7 +127,7 @@ crafting-recipes:
       - 'aaa'
       - 'aaa'
     results:
-      303 : 1
+      '303' : 1
   chainhelmet:
     type: shaped3x3
     ingredients: #3ironbars, 2ironingot
@@ -138,7 +138,7 @@ crafting-recipes:
       - 'aca'
       - 'ccc'
     results:
-      302 : 1
+      '302' : 1
   chainleggings:
     type: shaped3x3
     ingredients: #6ironbars, 2ironingot
@@ -149,7 +149,7 @@ crafting-recipes:
       - 'aca'
       - 'aca'
     results:
-      304 : 1
+      '304' : 1
   chainboots:
     type: shaped3x3
     ingredients: #6ironbars, 2ironingot
@@ -160,4 +160,4 @@ crafting-recipes:
       - 'bcb'
       - 'ccc'
     results:
-      305 : 1
+      '305' : 1
