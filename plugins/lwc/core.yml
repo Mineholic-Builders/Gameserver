@@ -166,9 +166,6 @@ protections:
             enabled: true
         fence:
             enabled: true
-        '84':
-            enabled: true
-            autoRegister: private
         '22':
             enabled: true
         '57':
@@ -198,10 +195,6 @@ protections:
         '77':
             enabled: true
         '113':
-            enabled: true
-        '133':
-            enabled: true
-        '117':
             enabled: true
 
 

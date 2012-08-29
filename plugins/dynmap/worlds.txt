@@ -10,11 +10,11 @@ worlds:
     sendposition: true
     sendhealth: false
     bigworld: true
-    extrazoomout: 2
+    extrazoomout: 0
     visibilitylimits: []
     hiddenlimits: []
     autogenerate-to-visibilitylimits: none
-    hidestyle: stone
+    hidestyle: air
     maps:
     -   class: org.dynmap.hdmap.HDMap
         name: flat
@@ -26,7 +26,7 @@ worlds:
         lighting: shadows
         colorscheme: sk89q
         image-format: default
-        mapzoomin: 2
+        mapzoomin: 1
         append_to_world: ''
         protected: false
     -   class: org.dynmap.hdmap.HDMap
@@ -39,46 +39,46 @@ worlds:
         lighting: shadows
         colorscheme: sk89q
         image-format: default
-        mapzoomin: 2
+        mapzoomin: 3
         append_to_world: ''
         protected: false
-#    -   class: org.dynmap.hdmap.HDMap
-#        name: surfacenight
-#        title: Detailansicht - Nacht
-#        icon: images/block_surface_night.png
-#        prefix: surfacenight
-#        perspective: iso_SE_30_lowres
-#        shader: sk89q
-#        lighting: night
-#        colorscheme: sk89q
-#        image-format: default
-#        mapzoomin: 1
-#        append_to_world: ''
-#        protected: false
-#    -   class: org.dynmap.hdmap.HDMap
-#        name: topo
-#        title: Topografische Karte
-#        icon: images/block_flat_topo.png
-#        prefix: topo
-#        perspective: iso_S_90_lowres
-#        shader: topo
-#        lighting: default
-#        image-format: default
-#        mapzoomin: 1
-#        append_to_world: ''
-#        protected: false
-#    -   class: org.dynmap.hdmap.HDMap
-#        name: biome
-#        title: Biome
-#        icon: images/block_biome.png
-#        prefix: biome
-#        perspective: iso_S_90_lowres
-#        shader: biome
-#        lighting: default
-#        image-format: default
-#        mapzoomin: 1
-#        append_to_world: ''
-#        protected: false
+    -   class: org.dynmap.hdmap.HDMap
+        name: surfacenight
+        title: Detailansicht - Nacht
+        icon: images/block_surface_night.png
+        prefix: surfacenight
+        perspective: iso_SE_30_lowres
+        shader: sk89q
+        lighting: night
+        colorscheme: sk89q
+        image-format: default
+        mapzoomin: 1
+        append_to_world: ''
+        protected: false
+    -   class: org.dynmap.hdmap.HDMap
+        name: topo
+        title: Topografische Karte
+        icon: images/block_flat_topo.png
+        prefix: topo
+        perspective: iso_S_90_lowres
+        shader: topo
+        lighting: default
+        image-format: default
+        mapzoomin: 1
+        append_to_world: ''
+        protected: false
+    -   class: org.dynmap.hdmap.HDMap
+        name: biome
+        title: Biome
+        icon: images/block_biome.png
+        prefix: biome
+        perspective: iso_S_90_lowres
+        shader: biome
+        lighting: default
+        image-format: default
+        mapzoomin: 1
+        append_to_world: ''
+        protected: false
 -   name: world2_nether
     title: Minecraft - Nether
     enabled: false

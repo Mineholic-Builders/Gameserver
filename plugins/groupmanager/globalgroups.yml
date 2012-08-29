@@ -45,20 +45,13 @@ groups:
     permissions:
     - cenotaph.cmd.*
     - cenotaph.use
-    - cenotaph.freechest
     - cenotaph.large
-    - cenotaph.lwc
-    - cenotaph.freesign
     - cenotaph.sign
     - cenotaph.quickloot
 
   g:cenotaph_admin:
     permissions:
     - cenotaph.admin
-    - cenotaph.admin.list
-    - cenotaph.admin.find
-    - cenotaph.admin.time
-    - cenotaph.admin.remove
 
 # Permission nodes for Craftbook
 # http://wiki.sk89q.com/wiki/CraftBook/

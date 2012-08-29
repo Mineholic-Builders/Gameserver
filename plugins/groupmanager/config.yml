@@ -27,10 +27,13 @@ settings:
         # the same user/groups files as the parent.
         # Each child world can be configured to mirror the 'groups', 'users' or both files from it's parent.
         world:
-        #  world2:      (World2 would have it's own set of user and groups files)
-        #    world3:
-        #    - users    (World3 would use the users.yml from world2, but it's own groups.yml)
-        #    world4:
-        #    - groups   (World4 would use the groups.yml from world2, but it's own users.yml)
-        #  world5:
-        #    - world6   (this would cause world6 to mirror both files from world5)
+          world2:
+          world2_nether:
+          world2_the_end:
+    #  world2:      (World2 would have it's own set of user and groups files)
+    #    world3:
+    #    - users    (World3 would use the users.yml from world2, but it's own groups.yml)
+    #    world4:
+    #    - groups   (World4 would use the groups.yml from world2, but it's own users.yml)
+    #  world5:
+    #    - world6   (this would cause world6 to mirror both files from world5)
