@@ -6,3 +6,5 @@
 #For example, to make creepers drop 10 to 20 tnt:
 
 #creeper->46x10-20
+
+Iron Golem->265x3-5, 37x1-3, 38x1-3
