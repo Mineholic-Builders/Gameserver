@@ -279,7 +279,8 @@ advanced:
   payment_mod: vault
   pay_scale: normal
   log_mod: none
+  xp_modifier: 1
   pay_spawners: false
   spawn_distance: 6
   nopitch: false
-  version: 2800
+  version: 3000
