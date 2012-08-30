@@ -50,7 +50,7 @@ guest:
   timeout: 300
   notify-cooldown: 5
   hide-inventory: true
-  protect-location: true
+  protect-location: false
   allowed-commands:
   - register
   - login
