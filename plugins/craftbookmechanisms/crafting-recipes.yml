@@ -18,7 +18,7 @@ crafting-recipes:
       - 'ab'
       - 'ba'
     results:
-      '337': 4
+      '337:0': 4
   sponge: #'useless' item but can now be obtained while survival mode
     type: shaped3x3
     ingredients: #any leafes and any wool
@@ -39,7 +39,7 @@ crafting-recipes:
       - 'aa'
       - 'ab'
     results:
-      '334': 2
+      '334:0': 2
   redstoneore: #1 drops 4-5 without luck enchantment - mainly for storage purpose
     type: shaped3x3
     ingredients: #5 redstonedust and 4 cobblestone
@@ -63,14 +63,14 @@ crafting-recipes:
       - 'aba'
       - 'cdc'
     results:
-      '369': 2
+      '369:0': 1
   slimeball:
     type: shapeless
     ingredients: #thick potion and cactusdye
       '373:32' : 1
       '351:2' : 1
     results:
-      '341': 1
+      '341:0': 1
   lapis:
     type: shaped3x3
     ingredients: #awkward potion and 8 bluewool
