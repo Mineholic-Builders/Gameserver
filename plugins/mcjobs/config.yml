@@ -4,98 +4,77 @@ show_pay: true
 time_interval: 300
 rejoin_interval: 360
 max_jobs:
-  default: 4
-  Builder: 4
-  Admin: 4
+  default: 3
+  Members: 3
+  Admins: 3
 jobs:
-  digger:
-    description: The digger earns money by breaking blocks with the shovel.
-    basepay: 0.07
+  mienenarbeiter:
+    description: Verdiene Geld indem du Bloecke abbaust.
+    basepay: 1.0
+    #exp: slow
     break:
       pays: true
       hide: false
-      tier1: dirt sand grass
-      tier2: gravel clay
-      tier4: soul_sand mycel
-  miner:
-    description: The miner earns money by breaking blocks with the pick axe.
-    basepay: 0.07
-    break:
-      pays: true
-      hide: false
-      tier1: stone coal_ore netherrack
-      tier2: iron_ore glowing_redstone_ore
-      tier3: gold_ore lapis_ore glowstone
-      tier4: diamond_ore
-      tier5: obsidian
-  builder:
-    description: The builder earns money by placing construction blocks.
-    basepay: 0.04
-    default: true
+      tier1: stone coal_ore netherrack dirt sand grass gravel
+      tier2: iron_ore glowing_redstone_ore clay soul_sand
+      tier3: gold_ore lapis_ore glowstone mycel
+      tier5: obsidian emerald_ore diamond_ore
+  architekt:
+    description: Verdiene Geld durch das Bauen von Objekten.
+    basepay: 1.0
+    #exp: slow
     place:
       pays: true
       hide: false
       tier1: wood wood_stairs sign_post wooden_door wall_sign furnace workbench trap_door chest fence bed_block ladder
-      tier2: cobblestone_stairs step stone_plate glass thin_glass fence_gate stone 
-      tier3: brick brick_stairs sandstone smooth_brick smooth_stairs nether_brick nether_fence nether_brick_stairs 
-      tier4: iron_door_block dispenser bookshelf iron_fence
-      tier5: brewing_stand enchantment_table jukebox
+      tier2: cobblestone_stairs step stone_plate glass thin_glass fence_gate stone
+      tier3: brick brick_stairs sandstone smooth_brick smooth_stairs nether_brick nether_fence nether_brick_stairs
+      tier4: iron_door_block dispenser bookshelf iron_fence brewing_stand enchantment_table
     craft:
       pays: true
-      hide: false
-      tier1: redstone_torch_on 
-      tier2: rails detector_rail stone_button lever stone_plate wood_plate diode_block_off piston_base piston_sticky_base redstone_lamp_off note_block
-      tier3: powered_rail
-  soldier:
-    description: A soldier earns cash by clearing the wilderness of monsters.
-    basepay: 0.22
+      tier1: redstone_torch_on rails detector_rail stone_plate wood_plate stone_button lever
+      tier2: diode_block_off redstone_lamp_off note_block
+      tier3: piston_base piston_sticky_base jukebox powered_rail
+  kopfgeldjaeger:
+    description: Verdiene Geld durc das Toeten von Monstern.
+    basepay: 3.0
+    #exp: slow
     show_every_time: true
     defeat:
       pays: true
       hide: false
       tier1: zombie skeleton slime
       tier2: creeper cave_spider spider
-      tier3: pig_zombie wolf enderman
+      tier3: pig_zombie enderman wolf
       tier4: blaze magma_cube ghast
       tier5: silverfish ender_dragon
-  #tinkerer:
-    #description: Earns money by laying and crafting electrical components.
-    #basepay: 5.0
-    #place:
-      #pays: true
-      #hide: false
-      #tier1: redstone_wire 
-      #tier2: stone_button lever stone_plate wood_plate diode_block_off
-      #tier3: piston_base piston_sticky_base redstone_lamp_off note_block
-      #tier4: jukebox
-    #craft:
-      #pays: true
-      #hide: false
-      #tier1: rails detector_rail
-      #tier2: powered_rail
-  woodsman:
+  holzfaeller:
     description: Earns money by chopping trees and crafting wood items.
-    basepay: 0.10
+    basepay: 0.25
+    #exp: slow
     break:
       pays: true
       hide: false
       tier1: leaves
-      tier3: log
+      tier4: log
     place:
       pays: true
       hide: false
-      tier1: sapling
+      tier2: sapling
     craft:
       pays: true
       hide: false
-      tier1: wood_axe wood_spade wood_hoe wood_pickaxe fishing_rod bowl wood_stairs sign_post wooden_door workbench trap_door chest fence ladder
+      tier1: bowl fence fence_gate wood_spade wood_hoe wood_step
+      tier2: boat wood_axe wood_pickaxe wood_stairs chest workbench
   farmer:
-    description: Slaughtering animals and cultivating crops pays this job.
-    basepay: 0.15
+    description: Verdiene durch Tiere schlachten und Felder anlegen.
+    basepay: 0.5
+    #exp: slow
     break:
       pays: true
       hide: false
-      tier1: yellow_flower red_rose brown_mushroom red_mushroom crops cactus sugar_cane_block pumpkin melon_block nether_warts cocoa
+      tier1: yellow_flower red_rose brown_mushroom red_mushroom crops cactus sugar_cane_block pumpkin melon_block
+      tier2: nether_warts
     place:
       pays: true
       hide: false
@@ -104,15 +83,16 @@ jobs:
       pays: true
       hide: false
       tier2: cow chicken pig sheep
-  toolmaker:
-    description: Earns money by making stone tools and higher.
-    basepay: 0.20
+  werkzeugschmied:
+    description: Verdiene durch das Herstellen von Werkzeug.
+    basepay: 5.0
+    #exp: slow
     craft:
       pays: true
       hide: false
       tier1: stone_axe stone_spade stone_hoe stone_pickaxe
-      tier2: gold_axe gold_spade gold_hoe gold_pickaxe watch
-      tier3: iron_axe iron_spade iron_hoe iron_pickaxe compass
+      tier2: iron_axe iron_spade iron_hoe iron_pickaxe compass
+      tier3: gold_axe gold_spade gold_hoe gold_pickaxe
       tier4: diamond_axe diamond_spade diamond_hoe diamond_pickaxe
     repair:
       pays: true
@@ -120,14 +100,15 @@ jobs:
       tier1: stone_axe stone_spade stone_hoe stone_pickaxe
       tier2: gold_axe iron_axe gold_spade iron_spade gold_hoe iron_hoe gold_pickaxe iron_pickaxe
       tier3: diamond_axe diamond_spade diamond_hoe diamond_pickaxe
-  weaponsmith:
-    description: Earns money by crafting and repairing weaponery.
-    basepay: 1.25
+  waffenschmied:
+    description:  Verdiene durch das Herstellen von Waffen.
+    basepay: 15.0
+    #exp: slow
     craft:
       pays: true
       hide: false
-      tier1: wood_sword bow
-      tier2: stone_sword
+      tier1: wood_sword
+      tier2: stone_sword bow
       tier3: gold_sword
       tier4: iron_sword
       tier5: diamond_sword
@@ -137,45 +118,53 @@ jobs:
       tier1: stone_sword bow
       tier2: gold_sword iron_sword
       tier3: diamond_sword
-  armorer:
-    description: Crafting and repairing armor earns money.
-    basepay: 5.5
+  ruestungsschmied:
+    description:  Verdiene durch das Herstellen von Rustungen.
+    basepay: 30.0
+    #exp: slow
     craft:
       pays: true
       hide: false
-      tier1: leather_helmet leather_boots leather_chestplate leather_leggings
-      tier2: iron_helmet iron_boots iron_chestplate iron_leggings
-      tier3: gold_helmet gold_boots  gold_chestplate gold_leggings
-      tier4: diamond_helmet diamond_boots diamond_chestplate diamond_leggings
+      tier1: leather_helmet leather_boots
+      tier2: leather_chestplate leather_leggings chainmail_boots chainmail_helmet
+      tier3: iron_helmet iron_boots iron_chestplate iron_leggings chainmail_chestplate chainmail_leggings
+      tier4: gold_chestplate gold_leggings gold_helmet gold_boots
+      tier5: diamond_helmet diamond_boots diamond_chestplate diamond_leggings
     repair:
       pays: true
       hide: false
-      tier1: leather_helmet leather_boots leather_chestplate leather_leggings
-      tier2: iron_helmet gold_helmet iron_boots gold_boots iron_chestplate gold_chestplate iron_leggings gold_leggings
+      tier1: leather_helmet leather_boots leather_chestplate leather_leggings chainmail_boots chainmail_helmet
+      tier2: iron_helmet gold_helmet iron_boots gold_boots iron_chestplate gold_chestplate iron_leggings gold_leggings chainmail_chestplate chainmail_leggings
       tier3: diamond_helmet diamond_boots diamond_chestplate diamond_leggings
-  fisherman:
-    description: Earn money for catching fish.
-    basepay: 1.75
+  fischer:
+    description: Verdiene Geld durchs Angeln.
+    basepay: 10.0
+    #exp: slow
     show_every_time: true
+    craft:
+      pays: true
+      tier1: fishing_rod
     fishing:
       pays: true
       hide: false
-      tier1: dropped_item
-  baker:
-    description: Cooking foods and food based potion items pays the baker.
-    basepay: 0.50
+      tier2: dropped_item
+  baecker:
+    description: Verdiene Geld beim Verarbeiten von Nahrung.
+    basepay: 1.5
+    #exp: slow
     show_every_time: true
     craft:
       pays: true
       hide: false
-      tier1: bread sugar cookie
-      tier2: cooked_beef cooked_chicken grilled_pork cooked_fish
+      tier1: cooked_fish bread sugar
+      tier2: cooked_beef cooked_chicken grilled_pork cookie
       tier3: mushroom_soup fermented_spider_eye
-      tier4: speckled_melon
-      tier5: golden_apple cake
+      tier4: cake speckled_melon
+      tier5: golden_apple
   alchemist:
-    description: Crafting defensive potions pays the alchemist.
-    basepay: 0.35
+    description: Verdiene Geld beim Herstellen defensiver Traenke.
+    basepay: 2.0
+    #exp: slow
     show_every_time: true
     potions:
       pays: true
@@ -184,9 +173,12 @@ jobs:
       tier2: regen swift fire_res strength health
       tier3: fire_res_ext fire_res_spl swift_spl swift_ext swift_two health_spl health_two regen_spl regen_ext regen_two strength_spl strength_ext strength_two
       tier4: fire_res_ext_spl swift_ext_spl swift_two_spl health_two_spl regen_ext_spl regen_two_spl strength_two_spl strength_ext_spl
-  brewer:
-    description: Brewing offensive potions pays the brewer.
-    basepay: 0.45
+    craft:
+      tier1: glass_bottle cauldron_item brewing_stand_item
+  braumeister:
+    description: Verdiene Geld beim Herstellen offensiver Traenke.
+    basepay: 2.0
+    #exp: slow
     show_every_time: true
     potions:
       pays: true
@@ -196,90 +188,52 @@ jobs:
       tier3: slow harm poison_spl poison_ext poison_two weak_spl weak_ext
       tier4: slow_ext slow_spl harm_spl harm_two poison_ext_spl poison_two_spl weak_ext_spl
       tier5: slow_ext_spl harm_two_spl
-  enchanter:
-    description: Invoking spells to weapons pays the enchanter.
-    basepay: 10.0
+    craft:
+      tier1: glass_bottle cauldron_item brewing_stand_item
+  verzauberer:
+    description: Verdiene indem du Waffen mit Verzauberungen aufbesserst.
+    basepay: 20.0
+    exp: normal
     show_every_time: true
     enchant:
       pays: true
       hide: false
-      tier1: arrow_dmg_1 arrow_fire arrow_inf arrow_knock_1 sharp_1 boa_1 dmg_undead_1 fire_aspect_1 knockback_1 respiration_1 protection_1 blast_prot_1 feather_fall_1 fire_prot_1 proj_prot_1
-      tier2: arrow_dmg_2 arrow_knock_2 sharp_2 boa_2 dmg_undead_2 fire_aspect_2 knockback_2 looting_1 respiration_2 protection_2 blast_prot_2 feather_fall_2 fire_prot_2 proj_prot_2
-      tier3: arrow_dmg_3 sharp_3 boa_3 dmg_undead_3 looting_2 respiration_3 protection_3 blast_prot_3 feather_fall_3 fire_prot_3 proj_prot_3
-      tier4: arrow_dmg_4 sharp_4 boa_4 dmg_undead_4 looting_3 protection_4 blast_prot_4 feather_fall_4 fire_prot_4 proj_prot_4
-      tier5: arrow_dmg_5 sharp_5 boa_5 dmg_undead_5 aqua_affinity
-  #theurgist:
-    #description: Enchanting armor objects pays the theurgist.
-    #basepay: 10.0
-    #show_every_time: true
-    #enchant:
-      #pays: true
-      #hide: false
-      #tier1: respiration_1 protection_1 blast_prot_1 feather_fall_1 fire_prot_1 proj_prot_1
-      #tier2: respiration_2 protection_2 blast_prot_2 feather_fall_2 fire_prot_2 proj_prot_2
-      #tier3: respiration_3 protection_3 blast_prot_3 feather_fall_3 fire_prot_3 proj_prot_3
-      #tier4: protection_4 blast_prot_4 feather_fall_4 fire_prot_4 proj_prot_4
-      #tier5: aqua_affinity
-  conjurer:
-    description: Applying conjurations to tools pays the conjurer.
-    basepay: 15.0
+      tier1: arrow_dmg_1 arrow_fire arrow_inf arrow_knock_1 sharp_1 boa_1 dmg_undead_1 fire_aspect_1 knockback_1 looting_1
+      tier2: arrow_dmg_2 arrow_knock_2 sharp_2 boa_2 dmg_undead_2 fire_aspect_2 knockback_2 looting_2
+      tier3: arrow_dmg_3 sharp_3 boa_3 dmg_undead_3 looting_3
+      tier4: arrow_dmg_4 sharp_4 boa_4 dmg_undead_4
+      tier5: arrow_dmg_5 sharp_5 boa_5 dmg_undead_5
+  verbesserer:
+    description: Verdiene durch das Verbessern von Werzeugen und Ruestungen.
+    basepay: 20.0
+    exp: normal
     show_every_time: true
     enchant:
       pays: true
       hide: false
-      tier1: efficiency_1 unbreaking_1 
-      tier2: efficiency_2 unbreaking_2 fortune_1
-      tier3: efficiency_3 unbreaking_3 fortune_2
-      tier4: efficiency_4 unbreaking_4 fortune_3
-      tier5: efficiency_5 unbreaking_5 silk_touch
-  #bulldozer:
-    #description: It's expensive to break down the world of minecraft.
-    #basepay: 5.0
-    #show_every_time: true
-    #exp: normal
-    #default: true
-    #break:
-      #pays: false
-      #hide: false
-      #tier1: wood wood_stairs sign_post wooden_door wall_sign furnace workbench trap_door chest fence bed_block ladder cobblestone_stairs step stone_plate glass thin_glass fence_gate
-      #tier2: brick brick_stairs sandstone smooth_brick smooth_stairs nether_brick nether_fence nether_brick_stairs redstone_wire redstone_torch_on redstone_torch_off iron_door_block dispenser bookshelf iron_fence
-      #tier3: stone_button lever stone_plate wood_plate diode_block_off diode_block_on piston_base piston_sticky_base redstone_lamp_off redstone_lamp_on
-      #tier4: note_block jukebox
-      #tier5: brewing_stand enchantment_table
-  #taxes:
-    #description: In this world nothing can be said to be certain, except death and taxes.
-    #basepay: 2.0
-    #show_every_time: true
-    #exp: normal
-    #default: true
-    #break:
-      #pays: false
-      #hide: false
-      #tier1: sapling melon_stem pumpkin_stem
-    #place:
-      #pays: false
-      #hide: false
-      #tier1: coal_ore iron_ore gold_ore yellow_flower red_rose brown_mushroom red_mushroom crops cactus sugar_cane_block pumpkin melon_block
-      #tier4: obsidian lapis_ore diamond_ore
-      #tier5: tnt
+      tier1: efficiency_1 unbreaking_1 fortune_1 respiration_1 protection_1 blast_prot_1 feather_fall_1 fire_prot_1 proj_prot_1
+      tier2: efficiency_2 unbreaking_2 fortune_2 respiration_2 protection_2 blast_prot_2 feather_fall_2 fire_prot_2 proj_prot_2
+      tier3: efficiency_3 unbreaking_3 fortune_3 respiration_3 protection_3 blast_prot_3 feather_fall_3 fire_prot_3 proj_prot_3
+      tier4: efficiency_4 unbreaking_4 protection_4 blast_prot_4 feather_fall_4 fire_prot_4 proj_prot_4
+      tier5: efficiency_5 unbreaking_5 silk_touch aqua_affinity
 ranks:
-  novice: 1
-  beginner: 20
-  adept: 40
-  professional: 75
-  veteran: 150
-  expert: 325
-  master: 700
-  grandmaster: 1500
+  Lehrling: 1
+  Fortgeschritten: 3
+  Profi: 10
+  Veteran: 20
+  Experte: 40
+  Meister: 60
+  Grossmeister: 90
+  Nerd: 100
 advanced:
-  language: custom
-  usePerms: true
+  language: english
+  usePerms: false
   multiWorld: false
   payment_type: money
   payment_mod: vault
-  pay_scale: normal
+  pay_scale: low
   log_mod: none
-  xp_modifier: 1
+  xp_modifier: 15
   pay_spawners: false
   spawn_distance: 6
   nopitch: false
