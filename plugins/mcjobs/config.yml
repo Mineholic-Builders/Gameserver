@@ -5,8 +5,8 @@ time_interval: 30
 rejoin_interval: 360
 max_jobs:
   default: 3
-  Members: 3
-  Admins: 3
+  builder: 3
+  admin: 3
 jobs:
   mienenarbeiter:
     description: Verdiene Geld indem du Bloecke abbaust.
