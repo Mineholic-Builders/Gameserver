@@ -19,7 +19,7 @@ crafting-recipes:
       - 'ba'
     results:
       '337:0': 4
-  sponge: #'useless' item but can now be obtained while survival mode
+  sponge_reloaded: #'useless' item but can now be obtained while survival mode
     type: shaped3x3
     ingredients: #any leafes and any wool
       '18' : 'b'
@@ -30,16 +30,13 @@ crafting-recipes:
       - 'bbb'
     results:
       '19': 4
-  leather:
-    type: shaped2x2
+  zombieleather:
+    type: shapeless
     ingredients: #rottenflesh and awkward potion
-      '367' : 'a'
-      '373:16' : 'b'
-    shape:
-      - 'aa'
-      - 'ab'
+      '367' : 1
+      '373:16' : 1
     results:
-      '334:0': 2
+      '334': 1
   redstoneore: #1 drops 4-5 without luck enchantment - mainly for storage purpose
     type: shaped3x3
     ingredients: #5 redstonedust and 4 cobblestone
@@ -51,7 +48,7 @@ crafting-recipes:
       - 'bab'
     results:
       '73': 1
-  blazerod:
+  blaze_rod:
     type: shaped3x3
     ingredients: #2 bones, 1 glowstonedust, 4 orange dye, and 2 redstonedust
       '352' : 'a'
@@ -63,8 +60,8 @@ crafting-recipes:
       - 'aba'
       - 'cdc'
     results:
-      '369:0': 1
-  slimeball:
+      '369': 1
+  synthetic_slime:
     type: shapeless
     ingredients: #thick potion and cactusdye
       '373:32' : 1
@@ -96,7 +93,7 @@ crafting-recipes:
       - 'ddd'
     results:
       'cake' : 1
-  nether_bricks:
+  my_nether_bricks:
     type: shaped3x3
     ingredients: #2 apple replacing milkbuckets for yummy applepie
       '98:0' : 'a'
@@ -161,7 +158,7 @@ crafting-recipes:
       - 'ccc'
     results:
       '305' : 1
-  mycelium:
+  mycelium_block:
     type: shaped2x2
     ingredients: #1dirt, 1redshroom, 1brownshroom, 1bonemeal
       '3' : 'a'
