@@ -21,7 +21,7 @@ groups:
     - g:dynmap_default
     - g:essentials_default
     - g:lwc_default
-    - g:mcjobs_default
+    - g:mcjobs_default_world
     - g:towny_default
     - g:worldguard_default
     - g:xauth_default

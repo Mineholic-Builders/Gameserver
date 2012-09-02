@@ -349,7 +349,7 @@ groups:
 # Permission nodes for MC Jobs
 # http://dev.bukkit.org/server-mods/mcjobs/#w-permissions
 
-  g:mcjobs_default:
+  g:mcjobs_default_world:
     permissions:
     - mcjobs.jobs.join
     - mcjobs.jobs.leave
@@ -357,6 +357,26 @@ groups:
     - mcjobs.jobs.info
     - mcjobs.jobsavail.mienenarbeiter
     - mcjobs.jobsavail.kopfgeldjaeger
+    - mcjobs.jobsavail.holzfaeller
+    - mcjobs.jobsavail.farmer
+    - mcjobs.jobsavail.werkzeugschmied
+    - mcjobs.jobsavail.waffenschmied
+    - mcjobs.jobsavail.ruestungsschmied
+    - mcjobs.jobsavail.fischer
+    - mcjobs.jobsavail.baecker
+    - mcjobs.jobsavail.alchemist
+    - mcjobs.jobsavail.verzauberer
+    - mcjobs.jobsavail.braumeister
+    - mcjobs.jobsavail.verbesserer
+    - mcjobs.jobsavail.architekt
+
+  g:mcjobs_default_the_end:
+    permissions:
+    - mcjobs.jobs.join
+    - mcjobs.jobs.leave
+    - mcjobs.jobs.list
+    - mcjobs.jobs.info
+    - mcjobs.jobsavail.mienenarbeiter
     - mcjobs.jobsavail.holzfaeller
     - mcjobs.jobsavail.farmer
     - mcjobs.jobsavail.werkzeugschmied
