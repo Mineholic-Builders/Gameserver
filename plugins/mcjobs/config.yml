@@ -45,7 +45,7 @@ jobs:
       hide: false
       tier1: zombie skeleton slime
       tier2: creeper cave_spider spider
-      tier3: pig_zombie enderman wolf
+      tier3: pig_zombie wolf
       tier4: blaze magma_cube ghast
       tier5: silverfish ender_dragon
   holzfaeller:

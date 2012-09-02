@@ -1,0 +1,58 @@
+# Dynmap-WorldGuard configuration
+update:
+  period: 300
+layer:
+  name: Regionen
+  hidebydefault: true
+  layerprio: 0
+  minzoom: 0
+use3dregions: true
+infowindow: <div class=\"infowindow\"><span style=\"font-size:120%;">%regionname% (%parent%) - %priority%</span><br /> Owners <span style="font-weight:bold;">%playerowners%<br/>%groupowners%</span><br/>Members <span style="font-weight:bold;">%playermembers%<br/>%groupmembers%</span><br/>Flags<br /><span style="font-weight:bold;">%flags%</span></div>
+regionstyle:
+  strokeColor: '#FF0000'
+  strokeOpacity: 0.8
+  strokeWeight: 3
+  fillColor: '#FF0000'
+  fillOpacity: 0.35
+  unownedStrokeColor: '#00FF00'
+visibleregions:
+  - town
+  - townhall
+  - townshop
+  - townwarehouse
+  - townchurch
+  - townmarket
+hiddenregions: []
+custstyle:
+  town:
+    strokeColor: '#5987d2'
+    strokeOpacity: 0.8
+    fillColor: '#3065a2'
+    fillOpacity: 0.35
+  townhall:
+    strokeColor: '#762018'
+    strokeOpacity: 0.8
+    fillColor: '#e83f33'
+    fillOpacity: 0.35
+  townwarehouse:
+    strokeColor: '#762018'
+    strokeOpacity: 0.8
+    fillColor: '#e83f33'
+    fillOpacity: 0.35
+  townshop:
+    strokeColor: '#762018'
+    strokeOpacity: 0.8
+    fillColor: '#e83f33'
+    fillOpacity: 0.35
+  townmarket:
+    strokeColor: '#762018'
+    strokeOpacity: 0.8
+    fillColor: '#e83f33'
+    fillOpacity: 0.35
+  townchurch:
+    strokeColor: '#762018'
+    strokeOpacity: 0.8
+    fillColor: '#e83f33'
+    fillOpacity: 0.35
+ownerstyle: []
+maxdepth: 3

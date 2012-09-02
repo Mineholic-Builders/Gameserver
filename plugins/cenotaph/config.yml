@@ -57,28 +57,28 @@ Removal:
 
     #Remove cenotaph after removeTime seconds if true
     cenotaphRemove: true
-    removeTime: 3600
+    removeTime: 5400
 
     #Set cenotaph removal time based on player level, with the above removeTime setting the maximum cap
     levelBasedRemoval: false
     levelBasedTime: 60
 
     #Immediately remove cenotaph once it is empty, overriding all other timeout options
-    removeWhenEmpty: false
+    removeWhenEmpty: true
 
     #Never remove a cenotaph unless it is empty
     keepUntilEmpty: false
 
 Security:
-    LocketteEnable: true
-    lwcEnable: false
+    LocketteEnable: false
+    lwcEnable: true
 
     #Remove security after securityTimeout seconds
-    securityRemove: false
+    securityRemove: true
     securityTimeout: 3600
 
     #Set LWC protection to Public instead of removing it after the timeout
-    lwcPublic: false
+    lwcPublic: true
 
 #Remember, your character limit for the below message plus whatever else is on the line is 15 characters.
 DeathMessages:

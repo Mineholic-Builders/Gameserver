@@ -62,6 +62,14 @@ sets:
                 world: world2
                 y: 80.0
                 x: 389.0
+            marker_11:
+                icon: house
+                markup: false
+                label: Agent_Zero85
+                z: 1024.0
+                world: world2
+                y: 65.0
+                x: 1424.0
             marker_7:
                 icon: house
                 markup: false
@@ -70,6 +78,22 @@ sets:
                 world: world2
                 y: 72.0
                 x: -1632.0
+            marker_10:
+                icon: house
+                markup: false
+                label: Pannekoche
+                z: 510.0
+                world: world2
+                y: 65.0
+                x: -803.0
+            marker_9:
+                icon: building
+                markup: false
+                label: Stadt
+                z: 3780.0
+                world: world2
+                y: 72.0
+                x: -306.0
         layerprio: 0
         areas: {
             }
@@ -77,3 +101,5 @@ sets:
             }
         label: Markers
         minzoom: 0
+playersets: {
+    }
