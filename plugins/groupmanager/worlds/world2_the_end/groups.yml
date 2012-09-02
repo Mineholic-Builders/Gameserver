@@ -68,6 +68,7 @@ groups:
     - g:dynmap_admin
     - g:essentials_admin
     - g:lwc_admin
+    - g:mcjobs_admin
     - g:nolagg_admin
     - g:towny_admin
     - g:vanish_admin

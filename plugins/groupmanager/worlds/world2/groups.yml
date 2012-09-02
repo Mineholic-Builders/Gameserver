@@ -21,6 +21,7 @@ groups:
     - g:dynmap_default
     - g:essentials_default
     - g:lwc_default
+    - g:mcjobs_default
     - g:towny_default
     - g:worldguard_default
     - g:xauth_default
@@ -68,6 +69,7 @@ groups:
     - g:dynmap_admin
     - g:essentials_admin
     - g:lwc_admin
+    - g:mcjobs_admin
     - g:nolagg_admin
     - g:towny_admin
     - g:vanish_admin
