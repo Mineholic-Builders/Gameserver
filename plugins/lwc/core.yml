@@ -107,7 +107,7 @@ protections:
     # will ALLOW redstone to the protection
     # If false, the default behaviour will be to ALLOW redstone to protections, and /credstone on will
     # BLOCK redstone to the protection
-    denyRedstone: true
+    denyRedstone: false
 
     # Settable to private, public, or off. It defines what protections are registered as when you place them on
     # the ground
@@ -156,6 +156,9 @@ protections:
         sign:
             enabled: true
             autoRegister: private
+        '84':
+            enabled: true
+            autoRegister: private
         wooden_door:
             enabled: true
         iron_door:
@@ -166,9 +169,6 @@ protections:
             enabled: true
         fence:
             enabled: true
-        '84':
-            enabled: true
-            autoRegister: private
         '22':
             enabled: true
         '57':

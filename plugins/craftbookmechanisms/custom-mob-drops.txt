@@ -7,4 +7,4 @@
 
 #creeper->46x10-20
 
-iron_golem->265x3-5,37x0-2,38x0-2
+irongolem->265x3-5,37x1-2,38x1-2

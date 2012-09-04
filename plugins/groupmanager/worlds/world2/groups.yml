@@ -21,8 +21,7 @@ groups:
     - g:dynmap_default
     - g:essentials_default
     - g:lwc_default
-    - g:mcjobs_default_world
-    - g:towny_default
+    - g:mcjobs_default
     - g:worldguard_default
     - g:xauth_default
     info:
@@ -36,7 +35,7 @@ groups:
     - default
     - g:craftbook_builder
     - g:essentials_builder
-    - g:towny_builder
+    - g:worldedit_builder
     - g:worldguard_builder
     info:
       prefix: '&2'
@@ -50,8 +49,6 @@ groups:
     - g:groupmanager_moderator
     - g:bukkit_moderator
     - g:essentials_moderator
-    - g:towny_moderator
-    - g:vanish_moderator
     - g:worldguard_moderator
     info:
       prefix: '&5'
@@ -71,8 +68,6 @@ groups:
     - g:lwc_admin
     - g:mcjobs_admin
     - g:nolagg_admin
-    - g:towny_admin
-    - g:vanish_admin
     - g:worldedit_admin
     - g:worldguard_admin
     - g:xauth_admin
@@ -84,7 +79,6 @@ groups:
     default: false
     permissions:
     - '*'
-    - -vanish.*
     inheritance:
     - admin
     info:

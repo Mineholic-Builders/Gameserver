@@ -31,6 +31,7 @@ settings:
           - groups
           - users
           world2_the_end:
+          - groups
           - users
         #  world2:      (World2 would have it's own set of user and groups files)
         #    world3:

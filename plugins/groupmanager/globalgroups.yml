@@ -69,6 +69,7 @@ groups:
     - craftbook.mech.bookshelf.use
     - craftbook.mech.bridge.use
     - craftbook.mech.door.use
+    - craftbook.mech.drops
     - craftbook.mech.elevator.use
     - craftbook.mech.gate.use
     - craftbook.mech.light-switch.use
@@ -152,15 +153,16 @@ groups:
 
   g:dynmap_default:
     permissions:
+    - dynmap.show.self
+    - dynmap.hide.self
+    - dynmap.sendtoweb
     - dynmap.webchat
     - dynmap.webregister
 
   g:dynmap_admin:
     permissions:
     - dynmap.render
-    - dynmap.show.self
     - dynmap.show.others
-    - dynmap.hide.self
     - dynmap.hide.others
     - dynmap.fullrender
     - dynmap.radiusrender
@@ -169,7 +171,6 @@ groups:
     - dynmap.reload
     - dynmap.stats
     - dynmap.resetstats
-    - dynmap.sendtoweb
     - dynmap.purgequeue
     - dynmap.ids-for-ip
     - dynmap.ips-for-id
@@ -233,8 +234,10 @@ groups:
     - essentials.balancetop
     - essentials.chat.color
     - essentials.chat.format
-    - essentials.chat.shout
     - essentials.chat.question
+    - essentials.chat.shout
+    - essentials.chat.url
+    - essentials.clearinventory
     - essentials.compass
     - essentials.delhome
     - essentials.depth
@@ -248,24 +251,28 @@ groups:
     - essentials.msg
     - essentials.msg.color
     - essentials.msg.format
+    - essentials.msg.url
     - essentials.nick
-    - essentials.ping
-    - essentials.powertool
-    - essentials.powertooltoggle
+    - essentials.realname
     - essentials.seen
     - essentials.sethome
     - essentials.sethome.multiple
-    - essentials.signs.use.*
-    - essentials.signs.create.disposal
-    - essentials.signs.create.mail
+    - essentials.signs.color
+    - essentials.signs.format
     - essentials.signs.break.disposal
     - essentials.signs.break.mail
+    - essentials.signs.break.trade
+    - essentials.signs.create.disposal
+    - essentials.signs.create.mail
+    - essentials.signs.create.trade
+    - essentials.signs.use.*
     - essentials.suicide
     - essentials.time
     - essentials.tpa
     - essentials.tpaccept
     - essentials.tpdeny
     - essentials.warp
+    - essentials.whois
     
   g:essentials_moderator:
     permissions:
@@ -275,14 +282,10 @@ groups:
     - essentials.ban.notify
     - essentials.banip
     - essentials.broadcast
-    - essentials.chat.url
-    - essentials.chat.magic
-    - essentials.clearinventory
     - essentials.delwarp
     - essentials.eco.loan
     - essentials.ext
     - essentials.fly
-    - essentials.getpos
     - essentials.getpos.others
     - essentials.helpop.recieve
     - essentials.home.others
@@ -293,35 +296,31 @@ groups:
     - essentials.kick.notify
     - essentials.kill
     - essentials.kit.*
-    - essentials.msg.magic
     - essentials.mute
     - essentials.nick.color
     - essentials.nick.others
-    - essentials.realname
+    - essentials.protect.admin
+    - essentials.protect.alerts
+    - essentials.protect.ownerinfo
+    - essentials.ptime
+    - essentials.ptime.others
     - essentials.seen.banreason
     - essentials.seen.extra
     - essentials.setwarp
     - essentials.thunder
-    - essentials.time
     - essentials.time.set
-    - essentials.protect.alerts
-    - essentials.protect.admin
-    - essentials.protect.ownerinfo
-    - essentials.ptime
-    - essentials.ptime.others
     - essentials.togglejail
     - essentials.top
     - essentials.tp
     - essentials.tp.others
+    - essentials.tpahere
     - essentials.tphere
     - essentials.tppos
     - essentials.tptoggle
-    - essentials.tpahere
     - essentials.unban
     - essentials.unbanip
     - essentials.warp.list
     - essentials.weather
-    - essentials.whois
     - essentials.world
     - essentials.world.*
     
@@ -329,8 +328,8 @@ groups:
     permissions:
     - -essentials.backup
     - -essentials.essentials
-    - -essentials.setspawn
     - -essentials.reloadall
+    - -essentials.setspawn
     - essentials.*
 
 # Permission nodes for LWC
@@ -338,60 +337,55 @@ groups:
 
   g:lwc_default:
     permissions:
-    - lwc.protect
+    - lwc.create.*
+    - lwc.flag.autoclose
+    - lwc.flag.magnet
+    - lwc.flag.redstone
+    - lwc.info
+    - lwc.mode.persist
+    - lwc.modify
+    - lwc.remove
     - lwc.shownotices
+    - lwc.unlock
 
   g:lwc_admin:
     permissions:
-    - lwc.admin
+    - lwc.admin.find
+    - lwc.admin.forceowner
+    - lwc.admin.purge
+    - lwc.admin.remove
+    - lwc.admin.view
     - lwc.mod
 
 # Permission nodes for MC Jobs
 # http://dev.bukkit.org/server-mods/mcjobs/#w-permissions
 
-  g:mcjobs_default_world:
+  g:mcjobs_default:
     permissions:
+    - mcjobs.jobs.info
     - mcjobs.jobs.join
     - mcjobs.jobs.leave
     - mcjobs.jobs.list
-    - mcjobs.jobs.info
-    - mcjobs.jobsavail.mienenarbeiter
+    - mcjobs.jobsavail.alchemist
+    - mcjobs.jobsavail.architekt
+    - mcjobs.jobsavail.baecker
+    - mcjobs.jobsavail.braumeister
+    - mcjobs.jobsavail.farmer
+    - mcjobs.jobsavail.fischer
+    - mcjobs.jobsavail.holzfaeller
     - mcjobs.jobsavail.kopfgeldjaeger
-    - mcjobs.jobsavail.holzfaeller
-    - mcjobs.jobsavail.farmer
-    - mcjobs.jobsavail.werkzeugschmied
-    - mcjobs.jobsavail.waffenschmied
-    - mcjobs.jobsavail.ruestungsschmied
-    - mcjobs.jobsavail.fischer
-    - mcjobs.jobsavail.baecker
-    - mcjobs.jobsavail.alchemist
-    - mcjobs.jobsavail.verzauberer
-    - mcjobs.jobsavail.braumeister
-    - mcjobs.jobsavail.verbesserer
-    - mcjobs.jobsavail.architekt
-
-  g:mcjobs_default_the_end:
-    permissions:
-    - mcjobs.jobs.join
-    - mcjobs.jobs.leave
-    - mcjobs.jobs.list
-    - mcjobs.jobs.info
     - mcjobs.jobsavail.mienenarbeiter
-    - mcjobs.jobsavail.holzfaeller
-    - mcjobs.jobsavail.farmer
-    - mcjobs.jobsavail.werkzeugschmied
-    - mcjobs.jobsavail.waffenschmied
     - mcjobs.jobsavail.ruestungsschmied
-    - mcjobs.jobsavail.fischer
-    - mcjobs.jobsavail.baecker
-    - mcjobs.jobsavail.alchemist
-    - mcjobs.jobsavail.verzauberer
-    - mcjobs.jobsavail.braumeister
     - mcjobs.jobsavail.verbesserer
-    - mcjobs.jobsavail.architekt
+    - mcjobs.jobsavail.verzauberer
+    - mcjobs.jobsavail.waffenschmied
+    - mcjobs.jobsavail.werkzeugschmied
+    - mcjobs.world.all
 
   g:mcjobs_admin:
     permissions:
+    - -mcjobs.admin.defaults
+    - -mcjobs.admin.leavedefault
     - mcjobs.admin
 
 # Permission nodes for NoLagg
@@ -401,87 +395,21 @@ groups:
     permissions:
     - nolagg.*
 
-# Permission nodes for Towny by ElgarL
-# http://dev.bukkit.org/server-mods/towny-advanced/
-
-  g:towny_default:
-    permissions:
-    - towny.chat.general
-    - towny.chat.local
-
-  g:towny_builder:
-    permissions:
-    - towny.town.*
-    - towny.nation.*
-    - towny.chat.town
-    - towny.chat.nation
-    - towny.wild.build.6
-    - towny.wild.destroy.6
-    - towny.wild.destroy.14
-    - towny.wild.destroy.15
-    - towny.wild.destroy.16
-    - towny.wild.build.17
-    - towny.wild.destroy.17
-    - towny.wild.destroy.18
-    - towny.wild.destroy.21
-    - towny.wild.destroy.31
-    - towny.wild.destroy.37
-    - towny.wild.destroy.38
-    - towny.wild.destroy.39
-    - towny.wild.destroy.40
-    - towny.wild.destroy.50
-    - towny.wild.destroy.56
-    - towny.wild.destroy.73
-    - towny.wild.destroy.74
-    - towny.wild.destroy.78
-    - towny.wild.destroy.81
-    - towny.wild.destroy.82
-    - towny.wild.destroy.83
-    - towny.wild.destroy.86
-    - towny.wild.destroy.103
-    - towny.wild.destroy.106
-    - towny.wild.destroy.111
-    - towny.wild.destroy.115
-
-  g:towny_moderator:
-    permissions:
-    - towny.chat.mod
-    - towny.wild.switch.64
-    - towny.wild.build.83
-    - towny.wild.build.86
-    - towny.wild.build.103
-    - towny.wild.build.111
-    - towny.wild.build.115
-
-  g:towny_admin:
-    permissions:
-    - towny.admin
-    - -towny.wild.destroy.119
-    - -towny.wild.destroy.120
-    - towny.chat.admin
-    
-# Permission nodes for VanishNoPacket by mbaxter
-# http://dev.bukkit.org/server-mods/vanish/
-
-  g:vanish_moderator:
-    permissions:
-    - -vanish.*
-    - vanish.vanish
-    - vanish.smokin
-    - vanish.nofollow
-    - vanish.nopickup
-    - vanish.preventincomingdamage
-    - vanish.hooks.dynmap.alwayshidden
-    - vanish.hooks.essentials.hide
-
-  g:vanish_admin:
-    permissions:
-    - vanish.silentjoin
-    - vanish.silentquit
-    - vanish.silentchests
-
 # Permission nodes for Worldedit
 # http://wiki.sk89q.com/wiki/WorldEdit/Permissions
+
+  g:worldedit_builder:
+    permissions:
+    - worldedit.selection.contract
+    - worldedit.selection.expand
+    - worldedit.selection.hpos
+    - worldedit.selection.inset
+    - worldedit.selection.outset
+    - worldedit.selection.pos
+    - worldedit.selection.shift
+    - worldedit.selection.size
+    - worldedit.wand
+    - worldedit.wand.toggle
 
   g:worldedit_admin:
     permissions:

@@ -10,156 +10,65 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    blue_schiff:
+    town:
         type: cuboid
-        min: {x: 1531.0, y: 0.0, z: 851.0}
-        max: {x: 1550.0, y: 255.0, z: 924.0}
+        min: {x: -805.0, y: 0.0, z: 3280.0}
+        max: {x: 195.0, y: 255.0, z: 4280.0}
+        priority: 0
+        flags: {build: allow, mob-spawning: deny}
+        owners:
+            groups: [builders, admins]
+        members: {}
+    townchurch:
+        type: cuboid
+        min: {x: -299.0, y: 40.0, z: 3865.0}
+        max: {x: -175.0, y: 150.0, z: 3989.0}
+        priority: 0
+        flags: {build: allow}
+        owners:
+            players: ['']
+            groups: [builders]
+        members: {}
+        parent: town
+    townhall:
+        type: cuboid
+        min: {x: -299.0, y: 40.0, z: 3786.0}
+        max: {x: -225.0, y: 149.0, z: 3860.0}
         priority: 0
         flags: {build: allow}
         owners:
             groups: [builders]
         members: {}
-    bluedevileyed_bibliothek:
+        parent: town
+    townmarket:
         type: cuboid
-        min: {x: 1358.0, y: 0.0, z: 1343.0}
-        max: {x: 1372.0, y: 255.0, z: 1357.0}
+        min: {x: -360.0, y: 40.0, z: 3786.0}
+        max: {x: -311.0, y: 150.0, z: 3835.0}
+        priority: 0
+        flags: {build: allow}
+        owners:
+            players: ['']
+            groups: [builders]
+        members: {}
+        parent: town
+    townshop:
+        type: cuboid
+        min: {x: -361.0, y: 40.0, z: 3724.0}
+        max: {x: -311.0, y: 150.0, z: 3774.0}
         priority: 0
         flags: {build: allow}
         owners:
             groups: [builders]
         members: {}
-    bluedevileyed_farm:
+        parent: town
+    townwarehouse:
         type: cuboid
-        min: {x: 1329.0, y: 0.0, z: 1249.0}
-        max: {x: 1391.0, y: 255.0, z: 1311.0}
+        min: {x: -299.0, y: 40.0, z: 3723.0}
+        max: {x: -249.0, y: 150.0, z: 3774.0}
         priority: 0
         flags: {build: allow}
         owners:
+            players: ['']
             groups: [builders]
         members: {}
-    bluedevileyed_golemfarm:
-        type: cuboid
-        min: {x: 1340.0, y: 0.0, z: 1110.0}
-        max: {x: 1369.0, y: 255.0, z: 1231.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builders]
-        members: {}
-    bluedevileyed_home:
-        type: cuboid
-        min: {x: 1396.0, y: 0.0, z: 1306.0}
-        max: {x: 1495.0, y: 255.0, z: 1351.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builders]
-        members: {}
-    bluedevileyed_lager:
-        type: cuboid
-        min: {x: 1376.0, y: 0.0, z: 1230.0}
-        max: {x: 1391.0, y: 255.0, z: 1247.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builders]
-        members: {}
-    bluedevileyed_monsterfarm:
-        type: cuboid
-        min: {x: 1272.0, y: 0.0, z: 1248.0}
-        max: {x: 1345.0, y: 255.0, z: 1280.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builders]
-        members: {}
-    dahark:
-        type: cuboid
-        min: {x: 1072.0, y: 0.0, z: 1056.0}
-        max: {x: 1119.0, y: 255.0, z: 1135.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builders]
-        members: {}
-    darkangel93x:
-        type: cuboid
-        min: {x: 1112.0, y: 0.0, z: 1508.0}
-        max: {x: 1145.0, y: 255.0, z: 1547.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builders]
-        members: {}
-    juntaix:
-        type: cuboid
-        min: {x: 304.0, y: 0.0, z: 80.0}
-        max: {x: 415.0, y: 255.0, z: 239.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builders]
-        members: {}
-    markezzz:
-        type: cuboid
-        min: {x: -1384.0, y: 0.0, z: 476.0}
-        max: {x: -1329.0, y: 255.0, z: 535.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builders]
-        members: {}
-    nichtdu24:
-        type: cuboid
-        min: {x: -116.0, y: 0.0, z: 1368.0}
-        max: {x: -9.0, y: 255.0, z: 1506.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builder]
-        members: {}
-    noukky:
-        type: cuboid
-        min: {x: -1664.0, y: 0.0, z: 736.0}
-        max: {x: -1625.0, y: 255.0, z: 767.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builders]
-        members: {}
-    pannekoche:
-        type: cuboid
-        min: {x: -144.0, y: 0.0, z: 1520.0}
-        max: {x: -41.0, y: 255.0, z: 1572.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builder]
-        members: {}
-    reddragon86:
-        type: cuboid
-        min: {x: -403.0, y: 0.0, z: -324.0}
-        max: {x: -334.0, y: 255.0, z: -227.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builders]
-        members: {}
-    spawn:
-        type: cuboid
-        min: {x: 56.0, y: 0.0, z: 778.0}
-        max: {x: 87.0, y: 255.0, z: 799.0}
-        priority: 0
-        flags: {}
-        owners:
-            groups: [admin]
-        members: {}
-    xciting88:
-        type: cuboid
-        min: {x: 1027.0, y: 0.0, z: 1305.0}
-        max: {x: 1084.0, y: 255.0, z: 1402.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builders]
-        members: {}
+        parent: town
