@@ -21,15 +21,15 @@ jobsnotify:
   week: Woche
   months: Monate
   month: Monat
-  message: '&aDein &6MC Jobs&a hat dir &6%j&a in der letzten &c%g&a eingebracht.'
+  message: '&6MC Jobs&a hat dir in den letzten &c%g&a eingebracht: &6%j&a %p'
   overpay: '&e%p&a, du bist erschoepft und kannst durch &6MC Jobs&a im Moment nichts verdienen.'
 jobsdisplay:
-  employed: --   &cerlernt
-  unemployed: --   &9nicht_erlernt
+  employed: --   &cangenommen
+  unemployed: --   &9frei
   default: --    &3Standard
-  basepay: Grundgehalt
-  charge: Kosten
-  pay: Lohn
+  basepay: Gehalt
+  charge: kostet
+  pay: bezahlt
   level: Level
   rank: Rang
   exp: EXP
@@ -61,102 +61,102 @@ jobslist:
   specific: 'Mehr infos zu einem Beruf: &e/jobs [job_name]'
   jobs: 'Berufe:'
 jobshelp:
-  page: PAGE
+  page: Seite
   '1':
-    line1: '&7   Willkommen bei &3MC Jobs&7.  &3MC Jobs&7 wurde kreeirt um dir das verdienen'
-    line2: '&7von Geld durch verschieden Aktivitaeten auf dem Server zu ermoeglichen,'
-    line3: '&7abhaengig von dem Beruf, den du waehlst.'
-    line4: ''
-    line5: '&2   Um anzufangen waehlst du einen Beruf.  Du findest eine'
-    line6: '&2der vorhanden Berufe indem du &e/jobs list &2in den Chat eingibst.'
+    line1: '&7Willkommen bei &3MC Jobs&7.'
+    line2: '&7&3MC Jobs&7 wurde geschaffen um dir das Geldverdienen'
+    line3: '&7durch verschieden Aktivitaeten zu ermoeglichen,'
+    line4: '&7abhaengig von dem Beruf, den du waehlst.'
+    line5: '&2Um anzufangen waehlst du einen Beruf. Du findest eine Liste'
+    line6: '&2der Berufe, indem du &e/jobs list &2in den Chat eingibst.'
     line7: ''
     line8: '&2Um mehr ueber einen Beruf zu erfahren, gib in den Chat ein:'
     line9: '&e/jobs [job_name]'
     line10: ''
-    line11: '&e[job name] &2kann jede Berufsbezeichnung sein, z.B. &6Architekt&2.'
-    line12: '&e/jobs join &2und&e leave &2sind auf der naechsten Seite erklaert.'
+    line11: '&e[job_name] &2kann jede Berufsbezeichnung sein, z.B. &6Architekt&2.'
+    line12: '&e/jobs join &2und &eleave &2sind auf der naechsten Seite erklaert.'
   '2':
     line1: '&2Du nimmst einen Beruf an indem du in den Chat eingibst:'
-    line2: '&e/jobs join [job name]'
+    line2: '&e/jobs join [job_name]'
     line3: ''
-    line4: '&2Durch das Annehmen eines Berufes, kannst du Geld verdienen, bedingt'
-    line5: '&2durch das Gehalt eines Berufs.  Auf diesem Server darfst du maximal'
-    line6: '&c%j&2 Berufen gleichzeitig beitreten.'
+    line4: '&2Durch einen Beruf, verdienst du Geld, abhaengig vom'
+    line5: '&2Grundgehalt des Berufes. Auf diesem Server darfst du maximal'
+    line6: '&c%j&2 Berufe gleichzeitig annehmen.'
     line7: ''
-    line8: '&2Du kannst einen Beruf aufgeben indem du &e/jobs leave [job name]'
-    line9: '&2eingibst. Sobald du die maximal Anzahl an Berufen erreicht hast,'
-    line10: '&2ist dies die einzige Moeglichkeit einen neuen Beruf zu erlernen.'
+    line8: '&2Einen Beruf kannst du mit &e/jobs leave [job_name] &2aufgeben.'
+    line9: '&2Sobald du die maximal Anzahl an Berufen erreicht hast,'
+    line10: '&2ist dies der einzige Weg einen neuen Beruf zu erlernen.'
     line11: ''
     line12: '&2Mehr ueber den Befehl &e/jobs list&2 auf der naechsten Seite.'
   '3':
-    line1: '&2Der list Befehl gibt dir eine schnelle Uebersicht, ueber die'
-    line2: '&2verfuegbaren, deine aktuellen und die maximale Anzahl der Berufe,'
-    line3: '&2sowie die Berufe deen du nicht beitreten kannst.'
+    line1: '&2Der &6list&2 Befehl gibt dir eine schnelle Uebersicht, ueber deine'
+    line2: '&everfuegbaren&2, &caktuellen&2 und &4maximale&2 Anzahl an Berufen,'
+    line3: '&2sowie die Berufe denen du &8nicht beitreten&2 kannst.'
     line4: ''
     line5: '&2Bereits gelernte Berufe sind &crot&2, verfuegbare &6gold&2'
     line6: '&2und Berufe die dir versagt sind in &8dunkelgrau&2 geschrieben.'
     line7: ''
     line8: '&2Standardberufe sind &3blau&2 und werden jedem automatisch'
-    line9: '&2gegeben, sobald er den Server betritt.  Nur Spieler mit der'
-    line10: '&cmcjobs.admin.leavedefault&2 Berechtigung koennen diese aufgeben.'
-    line11: ''
+    line9: '&2gegeben, sobald er den Server betritt. Nur Spieler mit der'
+    line10: '&cmcjobs.admin.leavedefault&2-Berechtigung koennen diese.'
+    line11: '&2aufgeben.'
     line12: '&2Weiter geht es auf der naechsten Seite.'
   '4':
-    line1: '&2Nicht zu vergessen, es zeigt dir deine Berufsanzahl an und'
-    line2: '&2wie viele erlaubt sind. &c(auf diesem Server sind es: %j&2&c).'
+    line1: '&2Nicht zu vergessen, &6list&2 zeigt dir deine Berufsanzahl an'
+    line2: '&2und wie viele erlaubt sind. &c(Du kannst %j&2&c Berufe lernen).'
     line3: ''
-    line4: '&2Der &e/jobs leave&2 Befehl funktioniert wie der &ejoin'
-    line5: '&2Befehl. Du kannst ihn nur fuer Berufe nutzen, denen du auch'
-    line6: '&2angehoerst. Dies erlaubt dir einen neuen Beruf zu waehlen'
-    line7: '&2change your mind on what you want to be.'
+    line4: '&2Der &e/jobs leave&2 Befehl funktioniert wie der &ejoin &2Befehl.'
+    line5: '&2Du kannst ihn aber nur fuer Berufe nutzen, die du auch'
+    line6: '&2erlernt hast. Dies erlaubt dir einen neuen Beruf zu waehlen,'
+    line7: '&2wenn du deine Meinung in der Berufswahl aenderst.'
     line8: ''
-    line9: '&2Sobald du einen Beruf aufgegeben hast kannst du ihn fuer eine'
-    line10: '&2gewisse Zeit nicht wieder annehmen. &4(6 Stunden)&2.'
+    line9: '&2Sobald du einen Beruf aufgegeben hast kannst du ihn fuer'
+    line10: '&2eine gewisse Zeit nicht wieder annehmen. &4(6 Stunden)&2.'
     line11: ''
     line12: '&2Mehr zum Befehl &e/jobs [job name] &2auf der nachsten Seite.'
   '5':
-    line1: '&2Der &e/jobs [job name]&2 Befehl gibt alle wichtigen Informationen'
+    line1: '&2Der &e/jobs [job_name]&2 Befehl gibt alle wichtigen Informationen'
     line2: '&2zum eingegebenen Beruf.'
-    line3: ''
-    line4: '&2Am Anfang steht der &3Name des Berufs&2 danach kommt die Angabe'
-    line5: '&2ob man den Beruf &cangenommen&2 oder nicht. In diesem Fall steht'
-    line6: '&2dort &9nicht angenommen&2.'
-    line7: '&2Als naechstes seht ihr den &aBasislohn&2 des Berufs.Dieser gibt an, wie'
-    line8: '&2viel Geld fuer eine &6TIER1 Taetigkeit&2 bezahlt wird.'
-    line9: '&2Die letzte angegebene Information ist, ob der Beruf jemanden &abezahlt'
+    line3: '&2Als erstes steht der &3Name des Berufs&2, danach steht ob man'
+    line4: '&2den Beruf &cangenommen&2 hat oder ob er &9frei&2 ist.'
+    line5: '&2Als naechstes seht ihr das &aGrundgehalt&2 des Berufs. Dieser'
+    line6: '&2gibt an, viel Geld fuer eine &6TIER1 Taetigkeit&2 bezahlt wird.'
+    line7: '&2(Bitte beachtet, das serverseitige Einstellung wie &8"pay_scale"'
+    line8: '&2diesen Wert verfälschen können. Infos auf unserer HP.)'
+    line9: '&2Die letzte angegebene Information ist, ob der Beruf &abezahlt'
     line10: '&2oder man &cbezahlen&2 muss um die &eTaetigkeit&2 auszuueben.'
     line11: ''
     line12: '&2Auf der nachsten Seite gibt es weitere Informationen.'
   '6':
     line1: '&2Wie gesagt, kann ein Beruf dich &abezahlen&2 oder &ckosten&2. Als'
-    line2: '&2Beispiel: &6Mienenarbeiter&2 &abezahlt&2 dich fuer den Abbau von &7Eisenerz&2.'
+    line2: '&2Bsp: &6Mienenarbeiter&2 &abezahlt&2 dich fuers Abbauen von &7Eisenerz&2.'
     line3: '&2Im Gegenzug &cbezahlst&2 du aber wenn du &7Eisenerz&2 platzierst.'
-    line4: '&7(Dies gilt nur fuer Standardeinstellungen. Bei uns ist dies &2nicht aktiv&7.)'
-    line5: '&2Wenn du den Beruf &cangenommen&2 steht dort ausserdem dein aktuelles'
-    line6: '&6level&2 und der &6Rang&2 den du bisher erreicht hast.'
+    line4: '&7(Dies gilt fuer Standardeinstellungen.&2 Bei uns nicht.&7)'
+    line5: '&2Wenn du den Beruf &cangenommen&2 hast steht dort ausserdem'
+    line6: '&2dein &6Level&2 und der &6Rang&2 den du bisher erreicht hast.'
     line7: '&2Die darauffolgende Zeile ist die &6Beschreibung&2.'
     line8: ''
-    line9: '&2Im naechsten Abschnitt stehen die &eTaetigkeiten&2 und welche Bloecke'
-    line10: '&2oder Mobs mit dem Beruf interagieren.'
+    line9: '&2Im naechsten Abschnitt stehen die &eTaetigkeiten&2 und welche'
+    line10: '&2Blocke oder Mobs mit dem Beruf interagieren.'
     line11: ''
     line12: '&2Die naechste Seite erklaert die &eTaetigkeiten&2.'
   '7':
-    line1: '&2Taetigkeiten: &6Abbau&2, &6Setzen&2, &6Toeten&2, &6Herstellen&2,'
+    line1: '&2Taetigkeiten sind: &6Abbau&2, &6Setzen&2, &6Toeten&2, &6Herstellen&2,'
     line2: '&6Reparieren&2, &6Angeln&2, &6Traenke&2, und &6Verzaubern&2.'
     line3: ''
-    line4: '&6Abbau&2: Ist das zerstoeren von Bloecken. &7z.B. Erde&2.'
+    line4: '&6Abbau&2: Ist das zerstoeren von Bloecken. &7z.B. Stein&2.'
     line5: '&6Setzen&2: Ist das setzen von Bloecken &7z.B. Steintreppe&2.'
     line6: '&6Toeten&2: Ist das besiegen von Monstern &7z.B. Spinnen&2.'
-    line7: '&6Herstelle&2: Ist das bauen von Bloecken/Items &7z.B. Holzschwert&2.'
+    line7: '&6Herstellen&2: Ist das bauen von Bloecken/Items &7z.B. Holzschwert&2.'
     line8: '&6Reparieren&2: Ist das Reparieren von Items &7z.B. Steinschaufel&2.'
-    line9: '&2Dies gilt &6auch&2 fuer Reparaturen durch &6mcMMO&2 falls es installiert wurde.'
-    line10: '&6Angeln&2: &aBezahlt&2 oder &ckostet&2 beim Benutzen der Angel um'
-    line11: '&2Fische zu fangen oder gegen Monster.'
+    line9: '&2Dies gilt &6auch&2 fuer &6mcMMO&2 falls es installiert wurde.'
+    line10: '&6Angeln&2: &aBezahlt&2 beim Fische fangen oder'
+    line11: '&ckostet&2 beim Benutzen der Angel gegen Monster.'
     line12: '&6Traenke&2 und &6Verzaubern&2 auf der naechsten Seite.'
   '8':
-    line1: '&6Traenke&2: &aBezahlt&2 oder &ckostet&2 beim Benutzen eines Braustandes'
-    line2: '&2um Traenke herzustellen.'
-    line3: '&6Verzaubern&2: &aBezahlt&2 oder &ckostet&2 wenn man ein Item verzaubert.'
+    line1: '&6Traenke&2: &aBezahlt&2 beim Benutzen eines Braustandes'
+    line2: '&6Verzaubern&2: &aBezahlt&2 dich wenn du ein Item verzauberst.'
+    line3: ''
     line4: ''
     line5: '&eEnglische&c Sprachdatei von: &6RathelmMC'
     line6: '&eFranzoesische&c Sprachdatei von: &6Monezombie'
@@ -211,9 +211,9 @@ experience:
   reset: '&eDein &6%j&e-Level wurde auf &c0&e resettet.'
   rank: '&eDu hast den Rang &6%g&e in &6%j&e erreicht.'
 payment:
-  pay: '&6%j&a hat dir &6%g&a eingebracht, %p.'
+  pay: '&6%j&a hat dir &6%g&a %p eingebracht.'
   payxp: '&6%j&a hat dir &6%g&a Erfahrung eingebracht.'
-  charge: '&6%j&a hat dich &c%g&a gekostet, %p.'
+  charge: '&6%j&a hat dich &c%g&a %p gekostet.'
   chargexp: '&6%j&a hat dich &c%g&a Erfahrung gekostet.'
   currency_single: Euro
   currency_plural: Euro
@@ -425,7 +425,8 @@ materials:
   coal_ore: Kohle-Erz
   cobblestone: Pflasterstein
   cobblestone_stairs: Pflastersteintreppe
-  cocoa_plant: Kakaobohnenpflanze
+  cocoa: Kakaobohnenpflanze
+  ink_sack: Kakaobohne
   compass: Kompass
   cooked_beef: Steak
   cooked_chicken: gegrilltes Huhn
@@ -500,7 +501,7 @@ materials:
   huge_mushroom_1: Riesenpilz
   huge_mushroom_2: Riesenpilz
   ice: Eis
-  ink_sack: Tintensack
+  #ink_sack: Tintensack
   iron_axe: Eisenaxt
   iron_block: Eisenblock
   iron_boots: Eisenstiefel
@@ -649,7 +650,7 @@ materials:
   wood_plate: Holzdruckplatte
   wood_spade: Holzschaufel
   wood_stairs: Holztreppe
-  WOOD_STEP: Holzstufe
+  wood_step: Holzstufe
   wood_sword: Holzschwert
   wooden_door: Holztuer
   wool: Wolle

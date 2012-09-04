@@ -10,7 +10,7 @@ max_jobs:
 jobs:
   mienenarbeiter:
     description: Verdiene Geld indem du Bloecke abbaust.
-    basepay: 0.8
+    basepay: 0.7
     #exp: slow
     break:
       pays: true
@@ -21,7 +21,7 @@ jobs:
       tier5: obsidian emerald_ore diamond_ore
   architekt:
     description: Verdiene Geld durch das Bauen von Objekten.
-    basepay: 0.9
+    basepay: 0.8
     #exp: slow
     place:
       pays: true
@@ -37,7 +37,7 @@ jobs:
       tier3: piston_base piston_sticky_base jukebox powered_rail
   kopfgeldjaeger:
     description: Verdiene Geld durch das Toeten von Monstern.
-    basepay: 1.5
+    basepay: 1.2
     #exp: slow
     show_every_time: true
     defeat:
@@ -50,7 +50,7 @@ jobs:
       tier5: silverfish ender_dragon
   holzfaeller:
     description: Geld durch Baeume faellen, anpflanzen und Holz verarbeiten.
-    basepay: 0.30
+    basepay: 0.28
     #exp: slow
     break:
       pays: true
@@ -68,7 +68,7 @@ jobs:
       tier2: boat wood_axe wood_pickaxe wood_stairs chest workbench wood_door
   farmer:
     description: Verdiene durch Tiere schlachten und Felder anlegen.
-    basepay: 0.45
+    basepay: 0.39
     #exp: slow
     break:
       pays: true
@@ -85,7 +85,7 @@ jobs:
       tier2: cow chicken pig sheep
   werkzeugschmied:
     description: Verdiene durch das Herstellen von Werkzeug.
-    basepay: 4.0
+    basepay: 3.8
     #exp: slow
     craft:
       pays: true
@@ -102,7 +102,7 @@ jobs:
       tier3: diamond_axe diamond_spade diamond_hoe diamond_pickaxe
   waffenschmied:
     description:  Verdiene durch das Herstellen von Waffen.
-    basepay: 12.0
+    basepay: 10.7
     #exp: slow
     craft:
       pays: true
@@ -120,7 +120,7 @@ jobs:
       tier3: diamond_sword
   ruestungsschmied:
     description:  Verdiene durch das Herstellen von Rustungen.
-    basepay: 30.0
+    basepay: 27.6
     #exp: slow
     craft:
       pays: true
@@ -138,7 +138,7 @@ jobs:
       tier3: diamond_helmet diamond_boots diamond_chestplate diamond_leggings
   fischer:
     description: Verdiene Geld durchs Angeln.
-    basepay: 7.0
+    basepay: 6.8
     #exp: slow
     show_every_time: true
     craft:
@@ -150,7 +150,7 @@ jobs:
       tier2: dropped_item
   baecker:
     description: Verdiene Geld beim Verarbeiten von Nahrung.
-    basepay: 1.0
+    basepay: 0.75
     #exp: slow
     show_every_time: true
     craft:
@@ -163,7 +163,7 @@ jobs:
       tier5: golden_apple
   alchemist:
     description: Verdiene Geld beim Herstellen defensiver Traenke.
-    basepay: 1.8
+    basepay: 0.95
     #exp: slow
     show_every_time: true
     potions:
@@ -177,7 +177,7 @@ jobs:
       tier1: glass_bottle cauldron_item brewing_stand_item
   braumeister:
     description: Verdiene Geld beim Herstellen offensiver Traenke.
-    basepay: 1.8
+    basepay: 0.95
     #exp: slow
     show_every_time: true
     potions:
@@ -192,7 +192,7 @@ jobs:
       tier1: glass_bottle cauldron_item brewing_stand_item
   verzauberer:
     description: Verdiene indem du Waffen mit Verzauberungen aufbesserst.
-    basepay: 16.0
+    basepay: 14.5
     exp: normal
     show_every_time: true
     enchant:
@@ -205,7 +205,7 @@ jobs:
       tier5: arrow_dmg_5 sharp_5 boa_5 dmg_undead_5
   verbesserer:
     description: Verdiene durch das Verbessern von Werzeugen und Ruestungen.
-    basepay: 16.0
+    basepay: 14.5
     exp: normal
     show_every_time: true
     enchant:
@@ -218,7 +218,7 @@ jobs:
       tier5: efficiency_5 unbreaking_5 silk_touch aqua_affinity
 ranks:
   Lehrling: 1
-  Fortgeschritten: 3
+  Fortgeschritten: 4
   Profi: 10
   Veteran: 20
   Experte: 40
