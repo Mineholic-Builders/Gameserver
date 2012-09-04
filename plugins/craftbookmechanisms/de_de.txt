@@ -1,0 +1,30 @@
+mech.use-permission:Keine Berechtigung fuer diesen Mechanismus.
+mech.lift.target-sign-created:Aufzugschild Ziel erstellt.
+mech.lift.down-sign-created:Aufzugschild abwaerts erstellt.
+mech.lift.up-sign-created:Aufzugschild aufwaerts erstellt..
+mech.lift.obstruct:Das Ziel ist blockiert!
+mech.lift.no-floor:Es gibt keine Zieletage!
+mech.gate.create:Tor erstellt!
+mech.dgate.create:Kleines Tor erstellt!
+mech.gate.toggle:Tor aktiviert!
+mech.gate.not-found:Konnte kein Tor finden!
+mech.door.create:Tuer erstellt!
+mech.door.other-sign:Tuer Schild auf anderer Seite benoetigt (oder ist zu weit weg).
+mech.door.material:Tuer muss aus einem Material bestehen!
+mech.bridge.create:Brucke erstellt!
+mech.bridge.end-create:Brueckenende erstellt!
+mech.bridge.material:Bruecke muss aus einem Material bestehen!
+mech.bridge.other-sign:Brueckenschild auf anderer setie benoetigt (oder ist zu weit weg).
+mech.pay.create:Pay Created!
+mech.teleport.create:Teleporter erstellt!
+mech.teleport.alert:Du wurdest teleportiert!
+mech.cauldron.too-small:Kessel ist zu klein!
+mech.cauldron.leaky:Kessel hat ein Loch!
+mech.cauldron.no-lava:Kessel hat zu wenig Lava!
+mech.cauldron.stir:Du ruehrst im Kessel aber nichts passiert.
+mech.command.create:Befehlsschild erstellt!
+mech.cook.create:Kochstelle erstellt!
+mech.cook.ouch:Autsch, das war heiss!
+mech.hiddenswitch.key:Schluessel passt nicht!
+mech.group:Du gehoerst nicht der richtigen Gruppe an!
+mech.restock:Mechanismus nachgeladen!

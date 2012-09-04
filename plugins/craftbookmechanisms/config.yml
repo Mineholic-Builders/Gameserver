@@ -1,9 +1,9 @@
-language: en_US
+language: de_de
 obey-cancelled: true
 stop-mechanism-dupe: false
 ammeter-enable: true
 bookshelf-enable: true
-bookshelf-read-text: You pick up a book...
+bookshelf-read-text: Du liest ein Buch...
 bridge-enable: true
 bridge-redstone: true
 bridge-max-length: 30

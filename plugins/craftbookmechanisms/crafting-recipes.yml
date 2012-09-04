@@ -36,7 +36,7 @@ crafting-recipes:
       '367' : 1
       '373:16' : 1
     results:
-      '334': 1
+      '334:0': 1
   redstoneore: #1 drops 4-5 without luck enchantment - mainly for storage purpose
     type: shaped3x3
     ingredients: #5 redstonedust and 4 cobblestone
@@ -60,7 +60,7 @@ crafting-recipes:
       - 'aba'
       - 'cdc'
     results:
-      '369': 1
+      '369:0': 1
   synthetic_slime:
     type: shapeless
     ingredients: #thick potion and cactusdye
@@ -160,13 +160,13 @@ crafting-recipes:
       '305' : 1
   mycelium_block:
     type: shaped2x2
-    ingredients: #1dirt, 1redshroom, 1brownshroom, 1bonemeal
+    ingredients: #1dirt, 1brownshroom, 1redshroom, 1bonemeal
       '3' : 'a'
       '39' : 'b'
       '40' : 'c'
       '351:15' : 'd'
     shape:
-      - 'ab'
-      - 'cd'
+      - 'ac'
+      - 'bd'
     results:
       '110' : 2
