@@ -73,12 +73,12 @@ jobs:
     break:
       pays: true
       hide: false
-      tier1: yellow_flower red_rose brown_mushroom red_mushroom crops cactus sugar_cane_block pumpkin melon_block
+      tier1: yellow_flower red_rose brown_mushroom red_mushroom crops cactus sugar_cane_block pumpkin melon_block cocoa
       tier2: nether_warts
     place:
       pays: true
       hide: false
-      tier2: soil melon_stem pumpkin_stem
+      tier2: soil melon_stem pumpkin_stem ink_sack
     defeat:
       pays: true
       hide: false

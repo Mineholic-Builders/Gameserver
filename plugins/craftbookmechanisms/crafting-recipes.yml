@@ -22,7 +22,40 @@ crafting-recipes:
   sponge_reloaded: #'useless' item but can now be obtained while survival mode
     type: shaped3x3
     ingredients: #any leafes and any wool
-      '18' : 'b'
+      '18:0' : 'b'
+      '35' : 'a'
+    shape:
+      - 'bbb'
+      - 'bab'
+      - 'bbb'
+    results:
+      '19': 4
+  sponge_reloaded2: #'useless' item but can now be obtained while survival mode
+    type: shaped3x3
+    ingredients: #any leafes and any wool
+      '18:1' : 'b'
+      '35' : 'a'
+    shape:
+      - 'bbb'
+      - 'bab'
+      - 'bbb'
+    results:
+      '19': 4
+  sponge_reloaded3: #'useless' item but can now be obtained while survival mode
+    type: shaped3x3
+    ingredients: #any leafes and any wool
+      '18:2' : 'b'
+      '35' : 'a'
+    shape:
+      - 'bbb'
+      - 'bab'
+      - 'bbb'
+    results:
+      '19': 4
+  sponge_reloaded4: #'useless' item but can now be obtained while survival mode
+    type: shaped3x3
+    ingredients: #any leafes and any wool
+      '18:3' : 'b'
       '35' : 'a'
     shape:
       - 'bbb'
