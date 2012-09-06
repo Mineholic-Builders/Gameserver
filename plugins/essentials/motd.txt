@@ -4,5 +4,5 @@
 &bUhrzeit: &6{TIME}&b Im Spiel: &6{WORLDTIME24}&b (&6{WORLDDATE}&b).
 &bSpieler Online: {ONLINE}/10.
 &bSpieler Online Liste: {PLAYERLIST}
-&bGib &e/einfo &bfuer Infos oder &e/rules &bfuer die Regeln ein.
-&bBitte benutzt auch die &4Homepage &bund &4TS3 &b(&e/einfo hpts&b).
+&bGib &e/news &bfuer Infos und Neuigkeiten oder &e/rules &bfuer die Regeln ein.
+&bBitte benutzt auch die &4Homepage &bund &4TS3 &b(&e/news hpts&b).

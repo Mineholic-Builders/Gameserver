@@ -1,6 +1,6 @@
 &3Willkommen im Info-Bereich, &1{PLAYER}.
 &3Um die einzelnen Bereiche zu lesen gib bitte
-&6/einfo KAPITELNAME &3ein (z.B. /einfo allgemeines)
+&6/news KAPITELNAME &3ein (z.B. /news allgemeines)
 &3Solltest du trotzdem Fragen haben oder dir das
 &3Infosystem zu umstaendlich sein, kannst du dir
 &3das Wichtigste auch auf unserer &aHomepage &3ansehen
