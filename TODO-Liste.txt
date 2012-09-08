@@ -1,0 +1,8 @@
+**********************************************
+* Mineholic BUilders Gameserver - TODO Liste *
+**********************************************
+
+- mcJobs config fertigstellen
+- craftbook mechanisms - "sponge"-Rezept / Blätter-IDs
+- HyperEconomy fertig konfigurieren
+- RebalanceVillagers konfigurieren
