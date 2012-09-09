@@ -1,658 +1,692 @@
-# 
-# End of File
-
 jobscommand:
-  playeronly: Nur Spieler koennen das!
-  permission: '&6%p&c du hast kein recht dazu!'
-  args: '&6%p&c zu viele Argumente!'
-  exist: '&cDer Beruf &6%j&c existiert nicht!'
-  rejoin: '&7Du kannst den Beruf &6%j&7 wieder erlernen.'
-  show: '&aZeige&7 Nachrrichten des Berufs &6%j&7.'
-  hide: '&cVerstecke&7 Nachrrichten des Berufs &6%j&7.'
+    playeronly: "Nur Spieler koennen das!"
+    permission: "&6%p&c du hast kein recht dazu!"
+    args: "&6%p&c zu viele Argumente!"
+    exist: "&cDer Beruf &6%j&c existiert nicht!"
+    rejoin: "&7Du kannst den Beruf &6%j&7 wieder erlernen."
+    show: "&aZeige&7 Nachrrichten des Berufs &6%j&7."
+    hide: "&cVerstecke&7 Nachrrichten des Berufs &6%j&7."
+
 jobsnotify:
-  and: und
-  hours: Stunden
-  hour: Stunde
-  minutes: Minuten
-  minute: Minute
-  days: Tage
-  day: Tag
-  weeks: Wochen
-  week: Woche
-  months: Monate
-  month: Monat
-  message: '&6MC Jobs&a hat dir in den letzten &c%g&a eingebracht: &6%j&a %p'
-  overpay: '&e%p&a, du bist erschoepft und kannst durch &6MC Jobs&a im Moment nichts verdienen.'
+    and: und
+    hours: Stunden
+    hour: Stunde
+    minutes: Minuten
+    minute: Minute
+    days: Tage
+    day: Tag
+    weeks: Wochen
+    week: Woche
+    months: Monate
+    month: Monat
+    message: "&6MC Jobs&a hat dir in den letzten &c%g&a eingebracht: &6%j"
+    overpay: "&e%p&a, du bist erschoepft und kannst durch &6MC Jobs&a im Moment nichts verdienen."
+
 jobsdisplay:
-  employed: --   &cangenommen
-  unemployed: --   &9frei
-  default: --    &3Standard
-  basepay: Gehalt
-  charge: kostet
-  pay: bezahlt
-  level: Level
-  rank: Rang
-  exp: EXP
-  break: Abbau
-  place: Setzen
-  defeat: Toeten
-  fishing: Angeln
-  craft: Herstellen
-  repair: Reparieren
-  enchant: Verzaubern
-  potions: Traenke
-  tier: Tier
+    employed: --   &cangenommen
+    unemployed: --   &9frei
+    default: --    &3Pflicht
+    basepay: Gehalt
+    charge: kostet
+    pay: bezahlt
+    level: Level
+    rank: Rang
+    exp: EXP
+    break: Abbau
+    place: Setzen
+    defeat: Toeten
+    fishing: Angeln
+    craft: Herstellen
+    repair: Reparieren
+    enchant: Verzaubern
+    potions: Traenke
+    tier: Tier
+
 jobsjoin:
-  have: Du kennst den Beruf &6%j&c schon!
-  join: '%p hat den Beruf &9%j&7 erlernt.'
-  toomany: '&6%p&c du hast zu viele Berufe.  Um einen neuen zu lernen:'
-  command: /jobs leave [job_name]
-  jobperm: '&6%p&7 du hast kein recht den Beruf &9%j&7 zu lernen.'
-  timer: '&7Du kannst den Beruf &6%j&7 erst in &c%g&7 wieder lernen.'
+    have: "Du hast den Beruf &6%j&c schon!"
+    join: "%p hast den Beruf &9%j&7 erlernt."
+    toomany: "&6%p&c du hast zu viele Berufe.  Um einen neuen zu lernen:"
+    command: "/jobs leave [job_name]"
+    jobperm: "&6%p&7 du bist nicht berechtigt den Beruf &9%j&7 zu lernen."
+    timer: "&7Du kannst den Beruf &6%j&7 erst in &c%g&7 wieder lernen."
+ 
 jobsleave:
-  quit: Du hast den Beruf &6%j&7 aufgegeben.
-  donthave: Du hast den Beruf &6%j&c nicht erlernt.
-  leavedefault: Du kannst den Beruf &6%j&c nicht verlernen da es ein Standardberuf ist.
+    quit: "Du hast den Beruf &6%j&7 aufgegeben."
+    donthave: "Du hast den Beruf &6%j&c nicht angenommen."
+    leavedefault: "Du kannst den Beruf &6%j&c nicht aufgeben da es ein Pflichtberuf ist."
+
 jobslist:
-  available: '&e%p&2, verfuegbare Berufe:'
-  jobsin: Berufe in &crot&2 kennst du schon.
-  nojob: Berufe in &8dunkelgrau&2 sind nicht erlernbar.
-  defaultjob: Berufe in &3marineblau&2 sind Standardberufe.
-  specific: 'Mehr infos zu einem Beruf: &e/jobs [job_name]'
-  jobs: 'Berufe:'
+    available: "&e%p&2, verfuegbare Berufe:"
+    jobsin: "Berufe in &crot&2 kennst du schon."
+    nojob: "Berufe in &8dunkelgrau&2 sind nicht verfuegbar."
+    defaultjob: "Berufe in &3marineblau&2 sind Pflichtberufe."
+    specific: "Mehr infos zu einem Beruf: &e/jobs [job_name]"    
+    jobs: "Berufe:"
+
 jobshelp:
-  page: Seite
-  '1':
-    line1: '&7Willkommen bei &3MC Jobs&7.'
-    line2: '&7&3MC Jobs&7 wurde geschaffen um dir das Geldverdienen'
-    line3: '&7durch verschieden Aktivitaeten zu ermoeglichen,'
-    line4: '&7abhaengig von dem Beruf, den du waehlst.'
-    line5: '&2Um anzufangen waehlst du einen Beruf. Du findest eine Liste'
-    line6: '&2der Berufe, indem du &e/jobs list &2in den Chat eingibst.'
-    line7: ''
-    line8: '&2Um mehr ueber einen Beruf zu erfahren, gib in den Chat ein:'
-    line9: '&e/jobs [job_name]'
-    line10: ''
-    line11: '&e[job_name] &2kann jede Berufsbezeichnung sein, z.B. &6Architekt&2.'
-    line12: '&e/jobs join &2und &eleave &2sind auf der naechsten Seite erklaert.'
-  '2':
-    line1: '&2Du nimmst einen Beruf an indem du in den Chat eingibst:'
-    line2: '&e/jobs join [job_name]'
-    line3: ''
-    line4: '&2Durch einen Beruf, verdienst du Geld, abhaengig vom'
-    line5: '&2Grundgehalt des Berufes. Auf diesem Server darfst du maximal'
-    line6: '&c%j&2 Berufe gleichzeitig annehmen.'
-    line7: ''
-    line8: '&2Einen Beruf kannst du mit &e/jobs leave [job_name] &2aufgeben.'
-    line9: '&2Sobald du die maximal Anzahl an Berufen erreicht hast,'
-    line10: '&2ist dies der einzige Weg einen neuen Beruf zu erlernen.'
-    line11: ''
-    line12: '&2Mehr ueber den Befehl &e/jobs list&2 auf der naechsten Seite.'
-  '3':
-    line1: '&2Der &6list&2 Befehl gibt dir eine schnelle Uebersicht, ueber deine'
-    line2: '&everfuegbaren&2, &caktuellen&2 und &4maximale&2 Anzahl an Berufen,'
-    line3: '&2sowie die Berufe denen du &8nicht beitreten&2 kannst.'
-    line4: ''
-    line5: '&2Bereits gelernte Berufe sind &crot&2, verfuegbare &6gold&2'
-    line6: '&2und Berufe die dir versagt sind in &8dunkelgrau&2 geschrieben.'
-    line7: ''
-    line8: '&2Standardberufe sind &3blau&2 und werden jedem automatisch'
-    line9: '&2gegeben, sobald er den Server betritt. Nur Spieler mit der'
-    line10: '&cmcjobs.admin.leavedefault&2-Berechtigung koennen diese.'
-    line11: '&2aufgeben.'
-    line12: '&2Weiter geht es auf der naechsten Seite.'
-  '4':
-    line1: '&2Nicht zu vergessen, &6list&2 zeigt dir deine Berufsanzahl an'
-    line2: '&2und wie viele erlaubt sind. &c(Du kannst %j&2&c Berufe lernen).'
-    line3: ''
-    line4: '&2Der &e/jobs leave&2 Befehl funktioniert wie der &ejoin &2Befehl.'
-    line5: '&2Du kannst ihn aber nur fuer Berufe nutzen, die du auch'
-    line6: '&2erlernt hast. Dies erlaubt dir einen neuen Beruf zu waehlen,'
-    line7: '&2wenn du deine Meinung in der Berufswahl aenderst.'
-    line8: ''
-    line9: '&2Sobald du einen Beruf aufgegeben hast kannst du ihn fuer'
-    line10: '&2eine gewisse Zeit nicht wieder annehmen. &4(6 Stunden)&2.'
-    line11: ''
-    line12: '&2Mehr zum Befehl &e/jobs [job name] &2auf der nachsten Seite.'
-  '5':
-    line1: '&2Der &e/jobs [job_name]&2 Befehl gibt alle wichtigen Informationen'
-    line2: '&2zum eingegebenen Beruf.'
-    line3: '&2Als erstes steht der &3Name des Berufs&2, danach steht ob man'
-    line4: '&2den Beruf &cangenommen&2 hat oder ob er &9frei&2 ist.'
-    line5: '&2Als naechstes seht ihr das &aGrundgehalt&2 des Berufs. Dieser'
-    line6: '&2gibt an, viel Geld fuer eine &6TIER1 Taetigkeit&2 bezahlt wird.'
-    line7: '&2(Bitte beachtet, das serverseitige Einstellung wie &8"pay_scale"'
-    line8: '&2diesen Wert verfälschen können. Infos auf unserer HP.)'
-    line9: '&2Die letzte angegebene Information ist, ob der Beruf &abezahlt'
-    line10: '&2oder man &cbezahlen&2 muss um die &eTaetigkeit&2 auszuueben.'
-    line11: ''
-    line12: '&2Auf der nachsten Seite gibt es weitere Informationen.'
-  '6':
-    line1: '&2Wie gesagt, kann ein Beruf dich &abezahlen&2 oder &ckosten&2. Als'
-    line2: '&2Bsp: &6Mienenarbeiter&2 &abezahlt&2 dich fuers Abbauen von &7Eisenerz&2.'
-    line3: '&2Im Gegenzug &cbezahlst&2 du aber wenn du &7Eisenerz&2 platzierst.'
-    line4: '&7(Dies gilt fuer Standardeinstellungen.&2 Bei uns nicht.&7)'
-    line5: '&2Wenn du den Beruf &cangenommen&2 hast steht dort ausserdem'
-    line6: '&2dein &6Level&2 und der &6Rang&2 den du bisher erreicht hast.'
-    line7: '&2Die darauffolgende Zeile ist die &6Beschreibung&2.'
-    line8: ''
-    line9: '&2Im naechsten Abschnitt stehen die &eTaetigkeiten&2 und welche'
-    line10: '&2Blocke oder Mobs mit dem Beruf interagieren.'
-    line11: ''
-    line12: '&2Die naechste Seite erklaert die &eTaetigkeiten&2.'
-  '7':
-    line1: '&2Taetigkeiten sind: &6Abbau&2, &6Setzen&2, &6Toeten&2, &6Herstellen&2,'
-    line2: '&6Reparieren&2, &6Angeln&2, &6Traenke&2, und &6Verzaubern&2.'
-    line3: ''
-    line4: '&6Abbau&2: Ist das zerstoeren von Bloecken. &7z.B. Stein&2.'
-    line5: '&6Setzen&2: Ist das setzen von Bloecken &7z.B. Steintreppe&2.'
-    line6: '&6Toeten&2: Ist das besiegen von Monstern &7z.B. Spinnen&2.'
-    line7: '&6Herstellen&2: Ist das bauen von Bloecken/Items &7z.B. Holzschwert&2.'
-    line8: '&6Reparieren&2: Ist das Reparieren von Items &7z.B. Steinschaufel&2.'
-    line9: '&2Dies gilt &6auch&2 fuer &6mcMMO&2 falls es installiert wurde.'
-    line10: '&6Angeln&2: &aBezahlt&2 beim Fische fangen oder'
-    line11: '&ckostet&2 beim Benutzen der Angel gegen Monster.'
-    line12: '&6Traenke&2 und &6Verzaubern&2 auf der naechsten Seite.'
-  '8':
-    line1: '&6Traenke&2: &aBezahlt&2 beim Benutzen eines Braustandes'
-    line2: '&6Verzaubern&2: &aBezahlt&2 dich wenn du ein Item verzauberst.'
-    line3: ''
-    line4: ''
-    line5: '&eEnglische&c Sprachdatei von: &6RathelmMC'
-    line6: '&eFranzoesische&c Sprachdatei von: &6Monezombie'
-    line7: '&eDeutsche&c Sprachdatei von: &6xciting88 (inoffiziell)'
-    line8: '&eNiederlaendische&c Sprachdatei von: &6Dreeass'
-    line9: '&eRussische&c Sprachdatei von: &6&6Grim_joy'
-    line10: '&eSpanische&c Sprachdatei von: &6Nicht vorhanden'
-    line11: ''
-    line12: '&7Informationen auf:&6 http://dev.bukkit.org/server-mods/mcjobs/'
-  endofpage: '&7Weiter auf Seite %g'
-  command: '&6/jobs help %g'
-  finish: '&7Ende der Hilfedatei'
-  nohelp: '&7%g&c ist keine Hilfeseite!'
+    page: Seite
+    1:
+        line1: "&7Willkommen bei &3MC Jobs&7."
+        line2: "&7&3MC Jobs&7 wurde geschaffen um dir das Geldverdienen"
+        line3: "&7durch verschieden Aktivitaeten zu ermoeglichen,"
+        line4: "&7abhaengig von dem Beruf, den du waehlst."
+        line5: "&2Um anzufangen waehlst du einen Beruf. Du findest eine Liste"
+        line6: "&2der Berufe, indem du &e/jobs list &2in den Chat eingibst."
+        line7: ""
+        line8: "&2Um mehr ueber einen Beruf zu erfahren, gib in den Chat ein:"
+        line9: "&e/jobs [job_name]"
+        line10: ""
+        line11: "&e[job_name] &2kann jede Berufsbezeichnung sein, z.B. &6Architekt&2."
+        line12: "&e/jobs join &2und &eleave &2sind auf der naechsten Seite erklaert."
+    2:
+        line1: "&2Du nimmst einen Beruf an indem du in den Chat eingibst:"
+        line2: "&e/jobs join [job_name]"
+        line3: ""
+        line4: "&2Durch einen Beruf, verdienst du Geld, abhaengig vom"
+        line5: "&2Grundgehalt des Berufes. Auf diesem Server darfst du maximal"
+        line6: "&c%j&2 Berufe gleichzeitig annehmen."
+        line7: ""
+        line8: "&2Einen Beruf kannst du mit &e/jobs leave [job_name] &2aufgeben."
+        line9: "&2Sobald du die maximal Anzahl an Berufen erreicht hast,"
+        line10: "&2ist dies der einzige Weg einen neuen Beruf zu erlernen."
+        line11: ""
+        line12: "&2Mehr ueber den Befehl &e/jobs list&2 auf der naechsten Seite."
+    3:
+        line1: "&2Der &6list&2 Befehl gibt dir eine schnelle Uebersicht, ueber deine"
+        line2: "&everfuegbaren&2, &caktuellen&2 und &4maximale&2 Anzahl an Berufen,"
+        line3: "&2sowie die Berufe denen du &8nicht beitreten&2 kannst."
+        line4: ""
+        line5: "&2Bereits gelernte Berufe sind &crot&2, verfuegbare &6gold&2"
+        line6: "&2und Berufe die dir versagt sind in &8dunkelgrau&2 geschrieben."
+        line7: ""
+        line8: "&2Standardberufe sind &3blau&2 und werden jedem automatisch"
+        line9: "&2gegeben, sobald er den Server betritt. Nur Spieler mit der"
+        line10: "&cmcjobs.admin.leavedefault&2-Berechtigung koennen diese."
+        line11: "&2aufgeben."
+        line12: "&2Weiter geht es auf der naechsten Seite."
+    4:
+        line1: "&2Nicht zu vergessen, &6list&2 zeigt dir deine Berufsanzahl an"
+        line2: "&2und wie viele erlaubt sind. &c(Du kannst %j&2&c Berufe lernen)."
+        line3: ""
+        line4: "&2Der &e/jobs leave&2 Befehl funktioniert wie der &ejoin &2Befehl."
+        line5: "&2Du kannst ihn aber nur fuer Berufe nutzen, die du auch"
+        line6: "&2erlernt hast. Dies erlaubt dir einen neuen Beruf zu waehlen,"
+        line7: "&2wenn du deine Meinung in der Berufswahl aenderst."
+        line8: ""
+        line9: "&2Sobald du einen Beruf aufgegeben hast kannst du ihn fuer"
+        line10: "&2eine gewisse Zeit nicht wieder annehmen. &4(6 Stunden)&2."
+        line11: ""
+        line12: "&2Mehr zum Befehl &e/jobs [job name] &2auf der nachsten Seite."
+    5:
+        line1: "&2Der &e/jobs [job_name]&2 Befehl gibt alle wichtigen Informationen"
+        line2: "&2zum eingegebenen Beruf."
+        line3: "&2Als erstes steht der &3Name des Berufs&2, danach steht ob man"
+        line4: "&2den Beruf &cangenommen&2 hat oder ob er &9frei&2 ist."
+        line5: "&2Als naechstes seht ihr das &aGrundgehalt&2 des Berufs. Dieser"
+        line6: "&2gibt an, viel Geld fuer eine &6TIER1 Taetigkeit&2 bezahlt wird."
+        line7: "&2(Bitte beachtet, das serverseitige Einstellung wie &8pay_scale"
+        line8: "&2diesen Wert verfälschen können. Infos auf unserer HP.)"
+        line9: "&2Die letzte angegebene Information ist, ob der Beruf &abezahlt"
+        line10: "&2oder man &cbezahlen&2 muss um die &eTaetigkeit&2 auszuueben."
+        line11: ""
+        line12: "&2Auf der nachsten Seite gibt es weitere Informationen."
+    6:
+        line1: "&2Wie gesagt, kann ein Beruf dich &abezahlen&2 oder &ckosten&2. Als"
+        line2: "&2Bsp: &6Mienenarbeiter&2 &abezahlt&2 dich fuers Abbauen von &7Eisenerz&2."
+        line3: "&2Im Gegenzug &cbezahlst&2 du aber wenn du &7Eisenerz&2 platzierst."
+        line4: "&7(Dies gilt fuer Standardeinstellungen.&2 Bei uns nicht.&7)"
+        line5: "&2Wenn du den Beruf &cangenommen&2 hast steht dort ausserdem"
+        line6: "&2dein &6Level&2 und der &6Rang&2 den du bisher erreicht hast."
+        line7: "&2Die darauffolgende Zeile ist die &6Beschreibung&2."
+        line8: ""
+        line9: "&2Im naechsten Abschnitt stehen die &eTaetigkeiten&2 und welche"
+        line10: "&2Blocke oder Mobs mit dem Beruf interagieren."
+        line11: ""
+        line12: "&2Die naechste Seite erklaert die &eTaetigkeiten&2."
+    7:
+        line1: "&2Taetigkeiten sind: &6Abbau&2, &6Setzen&2, &6Toeten&2, &6Herstellen&2,"
+        line2: "&6Reparieren&2, &6Angeln&2, &6Traenke&2, und &6Verzaubern&2."
+        line3: ""
+        line4: "&6Abbau&2: Ist das zerstoeren von Bloecken. &7z.B. Stein&2."
+        line5: "&6Setzen&2: Ist das setzen von Bloecken &7z.B. Steintreppe&2."
+        line6: "&6Toeten&2: Ist das besiegen von Monstern &7z.B. Spinnen&2."
+        line7: "&6Herstellen&2: Ist das bauen von Bloecken/Items &7z.B. Holzschwert&2."
+        line8: "&6Reparieren&2: Ist das Reparieren von Items &7z.B. Steinschaufel&2."
+        line9: "&2Dies gilt &6auch&2 fuer &6mcMMO&2 falls es installiert wurde."
+        line10: "&6Angeln&2: &aBezahlt&2 beim Fische fangen oder"
+        line11: "&ckostet&2 beim Benutzen der Angel gegen Monster."
+        line12: "&6Traenke&2 und &6Verzaubern&2 auf der naechsten Seite."
+    8:
+        line1: "&6Traenke&2: &aBezahlt&2 beim Benutzen eines Braustandes"
+        line2: "&6Verzaubern&2: &aBezahlt&2 dich wenn du ein Item verzauberst."
+        line3: ""
+        line4: ""
+        line5: "&eEnglische&c Sprachdatei von: &6RathelmMC"
+        line6: "&eFranzoesische&c Sprachdatei von: &6Monezombie"
+        line7: "&eDeutsche&c Sprachdatei von: &6xciting88 (inoffiziell)"
+        line8: "&eNiederlaendische&c Sprachdatei von: &6Dreeass"
+        line9: "&eRussische&c Sprachdatei von: &6Grim_joy"
+        line10: "&eSpanische&c Sprachdatei von: &6Nicht vorhanden"
+        line11: ""
+        line12: "&7Informationen auf:&6 http://dev.bukkit.org/server-mods/mcjobs/"
+    endofpage: "&7Weiter auf Seite %g"
+    command: "&6/jobs help %g"
+    finish: "&7Ende der Hilfedatei"
+    nohelp: "&7%g&c ist keine Hilfeseite!"
+
 admincommand:
-  permission: '&6%p&c dazu bist du nicht berechtigt!'
-  failedreload: '&cNeu laden gescheitert!'
-  succeedreload: '&6MC Jobs&c neu geladen!'
-  defaults: '&7config.yml auf Standardeinstellungen gesetzt.'
-  args: '&cZu viele Argumente fuer &e/jadm&c.'
-  exist: '&6%j&c gibt es nicht!'
+    permission: "&6%p&c dazu bist du nicht berechtigt!"
+    failedreload: "&cNeu laden gescheitert!"
+    succeedreload: "&6MC Jobs&c neu geladen!"
+    defaults: "&7config.yml auf Standardeinstellungen gesetzt."
+    args: "&cZu viele Argumente fuer &e/jadm&c."
+    exist: "&6%j&c gibt es nicht!"
+
 adminadd:
-  args: '&cFalsche Argumnte:  &e/jadm add [Spieler/Gruppe] [job_name]'
-  offline: '&6%p&c Gruppe existiert nicht oder Spieler ist nicht online!'
-  novault: '&6%p&c unbekannter Spieler!'
-  hasjob: '&6%p&7 kennt den Beruf &9%j&7 bereits.'
-  empty: '&7Es sind keine &eSpieler&7 in der Gruppe &6%p&7 online.'
-  added: '&6%p&7 wurde der Beruf &9%j&7 zugeteilt.'
-  padded: '&6%p&2 dir wurde der Beruf &9%j&2 durch einen Admin zugewiesen.'
+    args: "&cFalsche Argumente:  &e/jadm add [Spieler/Gruppe] [job_name]"
+    offline: "&6%p&c Gruppe existiert nicht oder Spieler war noch nicht online!"
+    novault: "&6%p&c unbekannter Spieler!"
+    hasjob: "&6%p&7 kennt den Beruf &9%j&7 bereits."
+    empty: "&7Es sind keine &eSpieler&7 in der Gruppe &6%p&7 online."
+    added: "&6%p&7 wurde der Beruf &9%j&7 zugeteilt."
+    padded: "&6%p&2 dir wurde der Beruf &9%j&2 durch einen Admin zugewiesen."
+
 adminremove:
-  args: '&cFalsche Argumnte:  &e/jadm remove [Spieler/Gruppe] [job_name]'
-  nojob: '&6%p&7 kennt den Beruf &9%j&7 nicht.'
-  nodefault: '&6%p&c du hast keine Rechte &3Standard&cberufe zu entfernen!'
-  removed: '&6%p&7 hat den Beruf &9%j&7 verlernt.'
-  premoved: '&6%p&2 du wurdest von dem Beruf &9%j&2 durch einen Admin ausgeschlossen.'
+    args: "&cFalsche Argumnte:  &e/jadm remove [Spieler/Gruppe] [job_name]"
+    nojob: "&6%p&7 kennt den Beruf &9%j&7 nicht."
+    nodefault: "&6%p&c du hast keine Rechte &3Pflicht&cberufe zu entfernen!"
+    removed: "&6%p&7 hat den Beruf &9%j&7 aufgegeben."
+    premoved: "&6%p&2 du wurdest von dem Beruf &9%j&2 durch einen Admin ausgeschlossen."
+
+
 adminlist:
-  args: '&cFalsche Argumnte:  &e/jadm list [Spieler/Gruppe]'
-  playerlist: '&2%p&7: %g'
-  nojobs: '&2%p&c kennt keinen Beruf.'
-  wrongpage: '&e%g ungueltige Seite. Benutze Seite 1 stattdessen.'
+    args: "&cFalsche Argumnte:  &e/jadm list [Spieler/Gruppe]"
+    playerlist: "&2%p&7: %g"
+    nojobs: "&2%p&c hat keinen Beruf..."
+    wrongpage: "&e%g ungueltige Seite. Benutze Seite 1 stattdessen."
+
 pitch:
-  line0: 'Dieser Server benutzt:'
-  line1: '&aEine Liste aller Berufe: &e/jobs list'
-  line2: '&aEinen Beruf erlernen: &e/jobs join [job_name]'
-  line3: '&aSpielen, &2Geld verdienen&a, Spass haben!'
+    line0: "Dieser Server benutzt:"
+    line1: "&aEine Liste aller Berufe: &e/jobs list"
+    line2: "&aEinen Beruf annehmen: &e/jobs join [job_name]"
+    line3: "&aSpielen, &2Geld verdienen&a, Spass haben!"
+    
 onadminlogin:
-  toolow: '&eDie Bezahlung ist zu gering fuer &6EXP&e basierte Economy. Ueberdenke eine
-    Aenderung der &2Zahlungsskalierung&e auf &2high&e in der Datei config.yml.'
-  outofdate: '&eConfig.yml ist ziemlich alt. &6MC Jobs&e koennte fehlerhaft funktionieren
-    ohne die Datei neu zu laden.'
+    toolow: "&eDie Bezahlung ist zu gering fuer &6EXP&e basierte Economy. Ueberdenke eine Aenderung des &2pay_scale&e auf &2high&e in der Datei config.yml."
+    outofdate: "&eConfig.yml ist ziemlich alt. &6MC Jobs&e koennte fehlerhaft funktionieren ohne die Datei neu zu laden."
+
 experience:
-  level: '&eDu hast Level &6%g&e in &6%j&e erreicht.'
-  reset: '&eDein &6%j&e-Level wurde auf &c0&e resettet.'
-  rank: '&eDu hast den Rang &6%g&e in &6%j&e erreicht.'
+    level: "&eDu hast Level &6%g&e in &6%j&e erreicht."
+    reset: "&eDein &6%j&e-Level wurde auf &c0&e resettet."
+    rank:  "&eDu hast den Rang &6%g&e in &6%j&e erreicht."
+    added_lvl: "&7Du hast &6%p &a%g&7 Level in &6%j&7 erreicht."
+    padded_lvl: "&7Dir wurden &a%g&7 Level in &6%j&7 durch einen Admin gegeben."
+    added_xp: "&7&7Du hast &6%p &a%g&7 EXP in &6%j&7 erreicht."
+    padded_xp: "&7Dir wurden &a%g&7 EXP in &6%j&7 durch einen Admin gegeben."
+    nojob: "&6%p&c hat den Beruf &6%j&c nicht."
+
 payment:
-  pay: '&6%j&a hat dir &6%g&a %p eingebracht.'
-  payxp: '&6%j&a hat dir &6%g&a Erfahrung eingebracht.'
-  charge: '&6%j&a hat dich &c%g&a %p gekostet.'
-  chargexp: '&6%j&a hat dich &c%g&a Erfahrung gekostet.'
-  currency_single: Euro
-  currency_plural: Euro
+    pay: "&6%j&a hat dir &6%g&a %p eingebracht."
+    payxp: "&6%j&a hat dir &6%g&a Erfahrung eingebracht."
+    charge: "&6%j&a hat dich &c%g&a %p gekostet."
+    chargexp: "&6%j&a hat dich &c%g&a Erfahrung gekostet."
+    currency_single: EURO
+    currency_plural: EURO
+    
 spaces:
-  jobslist: 16
-  display: 4
-  displaytwo: 14
-  displaythree: 9
-  chargelen: 7
-  numhelp: 8
+    jobslist: 16
+    display: 4
+    displaytwo: 8
+    displaythree: 4
+    chargelen: 7
+    numhelp: 8
+
 entities:
-  blaze: Lohe
-  cow: Kuh
-  cave_spider: Hoehlenspinne
-  chicken: Huhn
-  creeper: Creeper
-  dropped_item: Fisch
-  ender_dragon: Enderdrache
-  enderman: Enderman
-  ghast: Ghast
-  giant: Riese
-  iron_golem: eisengolem
-  magma_cube: Magmaschleim
-  mushroom_cow: Mooshroom
-  npc: NPC
-  ocelot: Ozelot
-  pig: Schwein
-  pig_zombie: Zombie Pigman
-  player: Spieler
-  sheep: Schaf
-  silverfish: Silberfisch
-  skeleton: Skelett
-  slime: Schleim
-  snowman: Schneegolem
-  spider: Spinne
-  squid: Tintenfisch
-  wolf: Wolf
-  zombie: Zombie
+    blaze:        Lohe
+    cow:          Kuh
+    cave_spider:  Hoehlenspinne
+    chicken:      Huhn
+    creeper:      Creeper
+    dropped_item: Fisch
+    ender_dragon: Enderdrache
+    enderman:     Enderman
+    ghast:        Ghast
+    giant:        Riese
+    iron_golem:   Eisengolem
+    magma_cube:   Magmaschleim
+    mushroom_cow: Mooshroom
+    npc:          NPC
+    ocelot:       Ozelot
+    pig:          Schwein
+    pig_zombie:   Zombie Pigman
+    player:       Spieler
+    sheep:        Schaf
+    silverfish:   Silberfisch
+    skeleton:     Skelett
+    slime:        Schleim
+    snowman:      Schneegolem
+    spider:       Spinne
+    squid:        Tintenfisch
+    villager:     Dorfbewohner
+    wolf:         Wolf
+    zombie:       Zombie
+
 potions:
-  water: Wasserflasche
-  awkward: seltsamer Trank
-  thick: dickfluessiger Trank
-  mundane: gewoehnlicher Trank
-  mundane_ext: gewoehnlicher Extend
-  regen: Regen
-  regen_ext: Regen Extend
-  regen_two: Regen II
-  regen_two_ext: Regen II Extend
-  regen_spl: Regen Splash
-  regen_ext_spl: Regen Extend Splash
-  regen_two_spl: Regen II Splash
-  swift: Schnelligkeit
-  swift_ext: Schnell Extend
-  swift_two: Schnell II
-  swift_two_ext: Schnell II Extend
-  swift_spl: Schnell Splash
-  swift_ext_spl: Schnell Extend Splash
-  swift_two_spl: Schnell II Splash
-  fire_res: Feuerresistenz
-  fire_res_ext: Feuerresistenz Extend
-  fire_res_spl: Feuerresistenz Splash
-  fire_res_ext_spl: Feuerresistenz Extend Splash
-  poison: Giftschaden
-  poison_ext: Giftschaden Extend
-  poison_two: Giftschaden II
-  poison_two_ext: Giftschaden II Extend
-  poison_spl: Giftschaden Splash
-  poison_ext_spl: Giftschaden Extend Splash
-  poison_two_spl: Giftschaden II Splash
-  health: Heilung
-  health_two: Heilung II
-  health_spl: Heilung Splash
-  health_two_spl: Heilung II Splash
-  weak: Schwaeche
-  weak_ext: Schwaeche Extend
-  weak_two: Schwaeche II
-  weak_spl: Schwaeche Splash
-  weak_ext_spl: Schwaeche Extend Splash
-  weak_two_spl: Schwaeche II Splash
-  strength: Staerke
-  strength_ext: Staerke Extend
-  strength_two: Staerke II
-  strength_two_ext: Staerke II Extend
-  strength_spl: Staerke Splash
-  strength_ext_spl: Staerke Extend Splash
-  strength_two_spl: Staerke II Splash
-  slow: Verlangsamung
-  slow_ext: Langsam Extend
-  slow_two: Langsam II
-  slow_spl: Langsam Splash
-  slow_ext_spl: Langsam Extend Splash
-  slow_two_spl: Langsam II Splash
-  harm: Schaden
-  harm_two: Schaden II
-  harm_spl: Schaden Splash
-  harm_two_spl: Schaden II Splash
-  rev_fire_res: Feuerresistenz
-  rev_slow: Langsam
-  rev_health: Heilung
-  rev_harm: schaden
-  rev_weak: Schwaeche
+    water:            Wasserflasche
+    awkward:          seltsamer Trank
+    thick:            dickfluessiger Trank
+    mundane:          gewoehnlicher Trank
+    mundane_ext:      gewoehnlicher Extend
+    regen:            Regen
+    regen_ext:        Regen Extend
+    regen_two:        Regen II
+    regen_two_ext:    Regen II Extend
+    regen_spl:        Regen Splash
+    regen_ext_spl:    Regen Extend Splash
+    regen_two_spl:    Regen II Splash
+    swift:            Schnelligkeit
+    swift_ext:        Schnell Extend
+    swift_two:        Schnell II
+    swift_two_ext:    Schnell II Extend
+    swift_spl:        Schnell Splash
+    swift_ext_spl:    Schnell Extend Splash
+    swift_two_spl:    Schnell II Splash
+    fire_res:         Feuerresistenz
+    fire_res_ext:     Feuerresistenz Extend
+    fire_res_spl:     Feuerresistenz Splash
+    fire_res_ext_spl: Feuerresistenz Extend Splash
+    poison:           Giftschaden
+    poison_ext:       Giftschaden Extend
+    poison_two:       Giftschaden II
+    poison_two_ext:   Giftschaden II Extend
+    poison_spl:       Giftschaden Splash
+    poison_ext_spl:   Giftschaden Extend Splash
+    poison_two_spl:   Giftschaden II Splash
+    health:           Heilung
+    health_two:       Heilung II
+    health_spl:       Heilung Splash
+    health_two_spl:   Heilung II Splash
+    weak:             Schwaeche
+    weak_ext:         Schwaeche Extend
+    weak_two:         Schwaeche II
+    weak_spl:         Schwaeche Splash
+    weak_ext_spl:     Schwaeche Extend Splash
+    weak_two_spl:     Schwaeche II Splash
+    strength:         Staerke
+    strength_ext:     Staerke Extend
+    strength_two:     Staerke II
+    strength_two_ext: Staerke II Extend
+    strength_spl:     Staerke Splash
+    strength_ext_spl: Staerke Extend Splash
+    strength_two_spl: Staerke II Splash
+    slow:             Verlangsamung
+    slow_ext:         Langsam Extend
+    slow_two:         Langsam II
+    slow_spl:         Langsam Splash
+    slow_ext_spl:     Langsam Extend Splash
+    slow_two_spl:     Langsam II Splash
+    harm:             Schaden
+    harm_two:         Schaden II
+    harm_spl:         Schaden Splash
+    harm_two_spl:     Schaden II Splash
+    rev_fire_res:     Feuerresistenz
+    rev_slow:         Langsam
+    rev_health:       Heilung
+    rev_harm:         Schaden
+    rev_weak:         Schwaeche
+
 enchant:
-  arrow_dmg_1: Staerke I
-  arrow_dmg_2: Staerke II
-  arrow_dmg_3: Staerke III
-  arrow_dmg_4: Staerke IV
-  arrow_dmg_5: Staerke V
-  arrow_fire: Flamme
-  arrow_inf: Unendlichkeit
-  arrow_knock_1: Schlag I
-  arrow_knock_2: Schlag II
-  sharp_1: Schaerfe I
-  sharp_2: Schaerfe II
-  sharp_3: Schaerfe III
-  sharp_4: Schaerfe IV
-  sharp_5: Schaerfe V
-  boa_1: Nemesis der Gliederfuesser I
-  boa_2: Nemesis der Gliederfuesser II
-  boa_3: Nemesis der Gliederfuesser III
-  boa_4: Nemesis der Gliederfuesser IV
-  boa_5: Nemesis der Gliederfuesser V
-  dmg_undead_1: Bann I
-  dmg_undead_2: Bann II
-  dmg_undead_3: Bann III
-  dmg_undead_4: Bann IV
-  dmg_undead_5: Bann V
-  efficiency_1: Effizienz I
-  efficiency_2: Effizienz II
-  efficiency_3: Effizienz III
-  efficiency_4: Effizienz IV
-  efficiency_5: Effizienz V
-  unbreaking_1: Haltbarkeit I
-  unbreaking_2: Haltbarkeit II
-  unbreaking_3: Haltbarkeit III
-  unbreaking_4: Haltbarkeit IV
-  unbreaking_5: Haltbarkeit V
-  fire_aspect_1: Verbrennung I
-  fire_aspect_2: Verbrennung II
-  knockback_1: Rueckstoss I
-  knockback_2: Rueckstoss II
-  fortune_1: Glueck I
-  fortune_2: Glueck II
-  fortune_3: Glueck III
-  looting_1: Pluenderung I
-  looting_2: Pluenderung II
-  looting_3: Pluenderung III
-  respiration_1: Atmung I
-  respiration_2: Atmung II
-  respiration_3: Atmung III
-  protection_1: Schutz I
-  protection_2: Schutz II
-  protection_3: Schutz III
-  protection_4: Schutz IV
-  blast_prot_1: Explosionsschutz I
-  blast_prot_2: Explosionsschutz II
-  blast_prot_3: Explosionsschutz III
-  blast_prot_4: Explosionsschutz IV
-  feather_fall_1: Federfall I
-  feather_fall_2: Federfall II
-  feather_fall_3: Federfall III
-  feather_fall_4: Federfall IV
-  fire_prot_1: Feuerschutz I
-  fire_prot_2: Feuerschutz II
-  fire_prot_3: Feuerschutz III
-  fire_prot_4: Feuerschutz IV
-  proj_prot_1: Schusssicher I
-  proj_prot_2: Schusssicher II
-  proj_prot_3: Schusssicher III
-  proj_prot_4: Schusssicher IV
-  silk_touch: Behutsamkeit
-  aqua_affinity: Wasseraffinitaet
+    arrow_dmg_1:      Staerke I
+    arrow_dmg_2:      Staerke II
+    arrow_dmg_3:      Staerke III
+    arrow_dmg_4:      Staerke IV
+    arrow_dmg_5:      Staerke V
+    arrow_fire:       Flamme
+    arrow_inf:        Unendlichkeit
+    arrow_knock_1:    Schlag I
+    arrow_knock_2:    Schlag II
+    sharp_1:          Schaerfe I
+    sharp_2:          Schaerfe II
+    sharp_3:          Schaerfe III
+    sharp_4:          Schaerfe IV
+    sharp_5:          Schaerfe V
+    boa_1:            Nemesis der Gliederfuesser I
+    boa_2:            Nemesis der Gliederfuesser II
+    boa_3:            Nemesis der Gliederfuesser III
+    boa_4:            Nemesis der Gliederfuesser IV
+    boa_5:            Nemesis der Gliederfuesser V
+    dmg_undead_1:     Bann I
+    dmg_undead_2:     Bann II
+    dmg_undead_3:     Bann III
+    dmg_undead_4:     Bann IV
+    dmg_undead_5:     Bann V
+    efficiency_1:     Effizienz I
+    efficiency_2:     Effizienz II
+    efficiency_3:     Effizienz III
+    efficiency_4:     Effizienz IV
+    efficiency_5:     Effizienz V
+    unbreaking_1:     Haltbarkeit I
+    unbreaking_2:     Haltbarkeit II
+    unbreaking_3:     Haltbarkeit III
+    unbreaking_4:     Haltbarkeit IV
+    unbreaking_5:     Haltbarkeit V
+    fire_aspect_1:    Verbrennung I
+    fire_aspect_2:    Verbrennung II
+    knockback_1:      Rueckstoss I
+    knockback_2:      Rueckstoss II
+    fortune_1:        Glueck I
+    fortune_2:        Glueck II
+    fortune_3:        Glueck III
+    looting_1:        Pluenderung I
+    looting_2:        Pluenderung II
+    looting_3:        Pluenderung III
+    respiration_1:    Atmung I
+    respiration_2:    Atmung II
+    respiration_3:    Atmung III
+    protection_1:     Schutz I
+    protection_2:     Schutz II
+    protection_3:     Schutz III
+    protection_4:     Schutz IV
+    blast_prot_1:     Explosionsschutz I
+    blast_prot_2:     Explosionsschutz II
+    blast_prot_3:     Explosionsschutz III
+    blast_prot_4:     Explosionsschutz IV
+    feather_fall_1:   Federfall I
+    feather_fall_2:   Federfall II
+    feather_fall_3:   Federfall III
+    feather_fall_4:   Federfall IV
+    fire_prot_1:      Feuerschutz I
+    fire_prot_2:      Feuerschutz II
+    fire_prot_3:      Feuerschutz III
+    fire_prot_4:      Feuerschutz IV
+    proj_prot_1:      Schusssicher I
+    proj_prot_2:      Schusssicher II
+    proj_prot_3:      Schusssicher III
+    proj_prot_4:      Schusssicher IV
+    silk_touch:       Behutsamkeit
+    aqua_affinity:    Wasseraffinitaet
+    
 materials:
-  air: Luft
-  apple: Apfel
-  arrow: Pfeil
-  bed: Bett
-  bed_block: Bett
-  bedrock: Bedrock
-  blaze_powder: Lohenstaub
-  blaze_rod: Lohenrute
-  boat: Boot
-  bone: Knochen
-  book: Buch
-  bookshelf: Buecherregal
-  bow: Bogen
-  bowl: Schuessel
-  bread: Brot
-  brewing_stand: Braustand
-  brewing_stand_item: Braustand
-  brick: Steinziegel
-  brick_stairs: Steinziegelstufe
-  brown_mushroom: brauner Pilz
-  bucket: Eimer
-  burning_furnace: Ofen
-  cactus: Kaktus
-  cake: Kuchen
-  cake_block: Kuchen
-  cauldron: Kessel
-  cauldron_item: Kessel
-  chainmail_boots: Kettenstiefel
-  chainmail_chestplate: Kettenharnisch
-  chainmail_helmet: Kettenhelm
-  chainmail_leggings: Kettenbeinschutz
-  chest: Truhe
-  clay: Lehm
-  clay_ball: Ton
-  clay_brick: Ton-Ziegel
-  coal: Kohle
-  coal_ore: Kohle-Erz
-  cobblestone: Pflasterstein
-  cobblestone_stairs: Pflastersteintreppe
-  cocoa: Kakaobohnenpflanze
-  ink_sack: Kakaobohne
-  compass: Kompass
-  cooked_beef: Steak
-  cooked_chicken: gegrilltes Huhn
-  cooked_fish: gegrillter Fisch
-  cookie: Keks
-  crops: Keimling
-  dead_bush: Toter Busch
-  detector_rail: Sensorschiene
-  diamond: Diamant
-  diamond_axe: Diamantaxt
-  diamond_block: Diamantblock
-  diamond_boots: Diamantstiefel
-  diamond_chestplate: Diamantharnisch
-  diamond_helmet: Diamanthelm
-  diamond_hoe: Diamanthaue
-  diamond_leggings: Diamantbeinschutz
-  diamond_ore: Diamant-Erz
-  diamond_pickaxe: Diamantspitzhacke
-  diamond_spade: Diamantschaufel
-  diamond_sword: Diamantschwert
-  diode: Verzoegerer
-  diode_block_off: Verzoegerer
-  diode_block_on: Verzoegerer
-  dirt: Erde
-  dispenser: Spender
-  double_step: Doppelstufe
-  dragon_egg: Drachenei
-  egg: Ei
-  emerald_ore: Smaragd-Erz
-  enchantment_table: Verzauberungstisch
-  ender_pearl: Enderperle
-  ender_portal: Ender Portal
-  ender_portal_frame: Ender Portal Block
-  ender_stone: End-Stein
-  exp_bottle: Exp-Flasche
-  eye_of_ender: Enderauge
-  feather: Feder
-  fence: Zaun
-  fence_gate: Zauntor
-  fermented_spider_eye: Fermentiertes Spinnenauge
-  fire: Feuer
-  fireball: Feuerball
-  fishing_rod: Angelrute
-  flint: Feuerstein
-  flint_and_steel: Feuerzeug
-  furnace: Ofen
-  ghast_tear: Ghast-Traene
-  glass: Glas
-  glass_bottle: Flasche
-  glowing_redstone_ore: Redstone-Erz
-  glowstone: Glowstone
-  glowstone_dust: Glowstonestaub
-  gold_axe: Goldaxt
-  gold_block: Goldblock
-  gold_boots: Goldschuhe
-  gold_chestplate: Goldharnisch
-  gold_helmet: Goldhelm
-  gold_hoe: Goldhaue
-  gold_ingot: Goldbarren
-  gold_leggings: Gold-Beinschutz
-  gold_nugget: Gold-Nugget
-  gold_ore: Gold-Erz
-  gold_pickaxe: Goldspitzhacke
-  gold_record: schallplatte - 13
-  gold_spade: Goldschaufel
-  gold_sword: Goldschwert
-  golden_apple: Goldener Apfel
-  grass: erde
-  gravel: Kies
-  green_record: Schallplatte - cat
-  grilled_pork: gegrilltes Schweinefleisch
-  huge_mushroom_1: Riesenpilz
-  huge_mushroom_2: Riesenpilz
-  ice: Eis
-  #ink_sack: Tintensack
-  iron_axe: Eisenaxt
-  iron_block: Eisenblock
-  iron_boots: Eisenstiefel
-  iron_chestplate: Eisenharnisch
-  iron_door: Eisentuer
-  iron_door_block: Eisentuer
-  iron_fence: Eisenzaun
-  iron_helmet: Eisenhelm
-  iron_hoe: Eisenhaue
-  iron_ingot: Eisenbarren
-  iron_leggings: Eisenbeinschutz
-  iron_ore: Eisen-Erz
-  iron_pickaxe: Eisenspitzhacke
-  iron_spade: Eisenschaufel
-  iron_sword: Eisenschwert
-  jack_o_lantern: Kuerbislaterne
-  jukebox: Plattenspieler
-  ladder: Leiter
-  lapis_block: Lapislazuli-Block
-  lapis_ore: Lapislazuli-erz
-  lava: Lava
-  lava_bucket: Lavaeimer
-  leather: Leder
-  leather_boots: Lederschuhe
-  leather_chestplate: Lederharnisch
-  leather_helmet: Lederhelm
-  leather_leggings: Lederhose
-  leaves: Laub
-  lever: Hebel
-  locked_chest: Locked Chest
-  log: Tree Log
-  long_grass: Busch
-  magma_cream: Magmacreme
-  map: Karte
-  melon: Stueck Wassermelone
-  melon_block: Wassermelone
-  melon_seeds: Wassermelonensamen
-  melon_stem: Wassermelonenpflanze
-  milk_bucket: Milch
-  minecart: Lore
-  mob_spawner: Mob Spawner
-  monster_egg: Monster Egg
-  monster_eggs: Silverfish Block
-  mossy_cobblestone: Bemooster Plasterstein
-  mushroom_soup: Pilzsuppe
-  mycel: Myzel
-  nether_brick: Nether-Ziegel
-  nether_brick_stairs: Netherziegel-Treppe
-  nether_fence: Nether-Zaun
-  nether_stalk: Nether-Warze
-  nether_warts: Nether-Warze
-  netherrack: Netherstein
-  note_block: Notenblock
-  obsidian: Obsidian
-  painting: Gemaelde
-  paper: Papier
-  piston_base: Kolben
-  piston_extension: Kolben
-  piston_moving_piece: Kolben
-  piston_sticky_base: klebriger Kolben
-  pork: rohes Schweinefleisch
-  portal: Portal
-  potion: Trank
-  powered_minecart: Lohre mit Ofen
-  powered_rail: Antriebsschiene
-  pumpkin: Kuerbis
-  pumpkin_seeds: Kuerbissamen
-  pumpkin_stem: Kuerbispflanze
-  rails: Schiene
-  raw_beef: rohes Rinffleisch
-  raw_chicken: rohes Huhn
-  raw_fish: roher Fisch
-  record_10: Schallplatte - ward
-  record_11: Schallplatte - 11
-  record_3: Schallplatte - blocks
-  record_4: Schallplatte - chirp
-  record_5: Schallplatte - far
-  record_6: Schallplatte - mall
-  record_7: Schallplatte - mellohi
-  record_8: Schallplatte - stal
-  record_9: Schallplatte - strad
-  red_mushroom: roter Pilz
-  red_rose: Rote Blume
-  redstone: Redstonestaub
-  redstone_lamp_off: Redstone-Lampe
-  redstone_lamp_on: Redstone-Lampe
-  redstone_ore: Redstone-Erz
-  redstone_torch_off: Redstonefackel
-  redstone_torch_on: Redstonefackel
-  redstone_wire: Redstonestaub
-  rotten_flesh: verrottetes Fleisch
-  saddle: Sattel
-  sand: Sand
-  sandstone: Sandstein
-  sapling: Setzling
-  seeds: Weizensamen
-  shears: Schere
-  sign: Schild
-  sign_post: Schild
-  slime_ball: Schleimball
-  smooth_brick: Smooth Brick
-  smooth_stairs: Smooth Brick Stairs
-  snow: Schnee
-  snow_ball: Schneeball
-  snow_block: Schneeblock
-  soil: Ackerboden
-  soul_sand: Seelensand
-  speckled_melon: Glitzernde Melone
-  spider_eye: Spinnenauge
-  sponge: Schwamm
-  stationary_lava: Lava
-  stationary_water: Wasser
-  step: Stufe
-  stick: Stock
-  stone: Stein
-  stone_axe: Steinaxt
-  stone_button: Steinknopf
-  stone_hoe: Steinhaue
-  stone_pickaxe: Steinspitzhacke
-  stone_plate: Steindruckplatte
-  stone_spade: Steinschaufel
-  stone_sword: Steinschwert
-  storage_minecart: Gueterlohre
-  string: Faden
-  sugar: Zucker
-  sugar_cane: Zuckerrohr
-  sugar_cane_block: Zuckerrohr
-  sulphur: Sprengpulver
-  thin_glass: Glasscheibe
-  tnt: TNT
-  torch: Fackel
-  trap_door: Falltuer
-  vine: Ranken
-  wall_sign: Schild
-  watch: Uhr
-  water: Wasser
-  water_bucket: Wassereimer
-  water_lily: Seerosenblatt
-  web: Spinnennetz
-  wheat: Weizen
-  wood: Bretter
-  wood_axe: Holzaxt
-  wood_door: Holztuer
-  wood_hoe: Holzhaue
-  wood_pickaxe: Holzspitzhacke
-  wood_plate: Holzdruckplatte
-  wood_spade: Holzschaufel
-  wood_stairs: Holztreppe
-  wood_step: Holzstufe
-  wood_sword: Holzschwert
-  wooden_door: Holztuer
-  wool: Wolle
-  workbench: Werkbank
-  yellow_flower: Gelbe Blume
+    air:                  Luft
+    apple:                Apfel
+    arrow:                Pfeil
+    bed:                  Bett
+    bed_block:            Bett
+    bedrock:              Bedrock
+    birch_wood_stairs:    Birkenholztreppe
+    blaze_powder:         Lohenstaub
+    blaze_rod:            Lohenrute
+    boat:                 Boot
+    bone:                 Knochen
+    book:                 Buch
+    book_and_quill:       Buch und Feder
+    bookshelf:            Buecherregal
+    bow:                  Bogen
+    bowl:                 Schuessel
+    bread:                Brot
+    brewing_stand:        Braustand
+    brewing_stand_item:   Braustand
+    brick:                Steinziegel
+    brick_stairs:         Steinziegelstufe
+    brown_mushroom:       brauner Pilz
+    bucket:               Eimer
+    burning_furnace:      Ofen
+    cactus:               Kaktus
+    cake:                 Kuchen
+    cake_block:           Kuchen
+    cauldron:             Kessel
+    cauldron_item:        Kessel
+    chainmail_boots:      Kettenstiefel
+    chainmail_chestplate: Kettenharnisch
+    chainmail_helmet:     Kettenhelm
+    chainmail_leggings:   Kettenbeinschutz
+    chest:                Truhe
+    clay:                 Lehm
+    clay_ball:            Ton
+    clay_brick:           Ton-Ziegel
+    coal:                 Kohle
+    coal_ore:             Kohle-Erz
+    cobblestone:          Pflasterstein
+    cobblestone_stairs:   Pflastersteintreppe
+    cocoa:                Kakaobohnenpflanze
+    compass:              Kompass
+    cooked_beef:          Steak
+    cooked_chicken:       gegrilltes Huhn
+    cooked_fish:          gegrillter Fisch
+    cookie:               Keks
+    crops:                Keimling
+    dead_bush:            Toter Busch
+    detector_rail:        Sensorschiene
+    diamond:              Diamant
+    diamond_axe:          Diamantaxt
+    diamond_block:        Diamantblock
+    diamond_boots:        Diamantstiefel
+    diamond_chestplate:   Diamantharnisch
+    diamond_helmet:       Diamanthelm
+    diamond_hoe:          Diamanthaue
+    diamond_leggings:     Diamantbeinschutz
+    diamond_ore:          Diamant-Erz
+    diamond_pickaxe:      Diamantspitzhacke
+    diamond_spade:        Diamantschaufel
+    diamond_sword:        Diamantschwert
+    diode:                Verzoegerer
+    diode_block_off:      Verzoegerer
+    diode_block_on:       Verzoegerer
+    dirt:                 Erde
+    dispenser:            Spender
+    double_step:          Doppelstufe
+    dragon_egg:           Drachenei
+    egg:                  Ei
+    emerald:              Smaragd
+    emerald_block:        Smaragdblock
+    emerald_ore:          Smaragd-Erz
+    enchantment_table:    Verzauberungstisch
+    ender_chest:          Ender-Truhe
+    ender_pearl:          Enderperle
+    ender_portal:         Ender Portal
+    ender_portal_frame:   Ender Portal Block
+    ender_stone:          End-Stein
+    exp_bottle:           Exp-Flasche
+    eye_of_ender:         Enderauge
+    feather:              Feder
+    fence:                Zaun
+    fence_gate:           Zauntor
+    fermented_spider_eye: Fermentiertes Spinnenauge
+    fire:                 Feuer
+    fireball:             Feuerball
+    fishing_rod:          Angelrute
+    flint:                Feuerstein
+    flint_and_steel:      Feuerzeug
+    furnace:              Ofen
+    ghast_tear:           Ghast-Traene
+    glass:                Glas
+    glass_bottle:         Flasche
+    glowing_redstone_ore: Redstone-Erz
+    glowstone:            Glowstone
+    glowstone_dust:       Glowstonestaub
+    gold_axe:             Goldaxt
+    gold_block:           Goldblock
+    gold_boots:           Goldschuhe
+    gold_chestplate:      Goldharnisch
+    gold_helmet:          Goldhelm
+    gold_hoe:             Goldhaue
+    gold_ingot:           Goldbarren
+    gold_leggings:        Gold-Beinschutz
+    gold_nugget:          Gold-Nugget
+    gold_ore:             Gold-Erz
+    gold_pickaxe:         Goldspitzhacke
+    gold_record:          Schallplatte - 13
+    gold_spade:           Goldschaufel
+    gold_sword:           Goldschwert
+    golden_apple:         Goldener Apfel
+    grass:                Grasblock
+    gravel:               Kies
+    green_record:         Schallplatte - cat
+    grilled_pork:         gegrilltes Schweinefleisch
+    huge_mushroom_1:      Riesenpilz
+    huge_mushroom_2:      Riesenpilz
+    ice:                  Eis
+    ink_sack:             Tintensack
+    iron_axe:             Eisenaxt
+    iron_block:           Eisenblock
+    iron_boots:           Eisenstiefel
+    iron_chestplate:      Eisenharnisch
+    iron_door:            Eisentuer
+    iron_door_block:      Eisentuer
+    iron_fence:           Eisengitter
+    iron_helmet:          Eisenhelm
+    iron_hoe:             Eisenhaue
+    iron_ingot:           Eisenbarren
+    iron_leggings:        Eisenbeinschutz
+    iron_ore:             Eisen-Erz
+    iron_pickaxe:         Eisenspitzhacke
+    iron_spade:           Eisenschaufel
+    iron_sword:           Eisenschwert
+    jack_o_lantern:       Kuerbislaterne
+    jukebox:              Plattenspieler
+    jungle_wood_stairs:   Tropenholztreppe
+    ladder:               Leiter
+    lapis_block:          Lapislazuli-Block
+    lapis_ore:            Lapislazuli-erz
+    lava:                 Lava
+    lava_bucket:          Lavaeimer
+    leather:              Leder
+    leather_boots:        Lederschuhe
+    leather_chestplate:   Lederharnisch
+    leather_helmet:       Lederhelm
+    leather_leggings:     Lederhose
+    leaves:               Laub
+    lever:                Hebel
+    locked_chest:         Locked Chest
+    log:                  Baumstamm
+    long_grass:           Busch
+    magma_cream:          Magmacreme
+    map:                  Karte
+    melon:                Stueck Wassermelone
+    melon_block:          Wassermelone
+    melon_seeds:          Wassermelonensamen
+    melon_stem:           Wassermelonenpflanze
+    milk_bucket:          Milch
+    minecart:             Lore
+    mob_spawner:          Mob Spawner
+    monster_egg:          Monster Egg
+    monster_eggs:         Silverfish Block
+    mossy_cobblestone:    Bemooster Plasterstein
+    mushroom_soup:        Pilzsuppe
+    mycel:                Myzel
+    nether_brick:         Nether-Ziegel
+    nether_brick_stairs:  Netherziegel-Treppe
+    nether_fence:         Nether-Zaun
+    nether_stalk:         Nether-Warze
+    nether_warts:         Nether-Warze
+    netherrack:           Netherstein
+    note_block:           Notenblock
+    obsidian:             Obsidian
+    painting:             Gemaelde
+    paper:                Papier
+    piston_base:          Kolben
+    piston_extension:     Kolben
+    piston_moving_piece:  Kolben
+    piston_sticky_base:   klebriger Kolben
+    pork:                 rohes Schweinefleisch
+    portal:               Portal
+    potion:               Trank
+    powered_minecart:     Lohre mit Ofen
+    powered_rail:         Antriebsschiene
+    pumpkin:              Kuerbis
+    pumpkin_seeds:        Kuerbissamen
+    pumpkin_stem:         Kuerbispflanze
+    rails:                Schiene
+    raw_beef:             rohes Rindfleisch
+    raw_chicken:          rohes Huhn
+    raw_fish:             roher Fisch
+    record_10:            Schallplatte - ward
+    record_11:            Schallplatte - 11
+    record_3:             Schallplatte - blocks
+    record_4:             Schallplatte - chirp
+    record_5:             Schallplatte - far
+    record_6:             Schallplatte - mall
+    record_7:             Schallplatte - mellohi
+    record_8:             Schallplatte - stal
+    record_9:             Schallplatte - strad
+    red_mushroom:         roter Pilz
+    red_rose:             Rote Blume
+    redstone:             Redstonestaub
+    redstone_lamp_off:    Redstone-Lampe
+    redstone_lamp_on:     Redstone-Lampe
+    redstone_ore:         Redstone-Erz
+    redstone_torch_off:   Redstonefackel
+    redstone_torch_on:    Redstonefackel
+    redstone_wire:        Redstonestaub
+    rotten_flesh:         verrottetes Fleisch
+    saddle:               Sattel
+    sand:                 Sand
+    sandstone:            Sandstein
+    sandstone_stairs:     Sandsteintreppe
+    sapling:              Setzling
+    seeds:                Weizensamen
+    shears:               Schere
+    sign:                 Schild
+    sign_post:            Schild
+    slime_ball:           Schleimball
+    smooth_brick:         Smooth Brick
+    smooth_stairs:        Smooth Brick Stairs
+    snow:                 Schnee
+    snow_ball:            Schneeball
+    snow_block:           Schneeblock
+    soil:                 Ackerboden
+    soul_sand:            Seelensand
+    speckled_melon:       Glitzernde Melone
+    spider_eye:           Spinnenauge
+    sponge:               Schwamm
+    spruce_wood_stairs:   Fichtenholztreppe
+    stationary_lava:      Lava
+    stationary_water:     Wasser
+    step:                 Stufe
+    stick:                Stock
+    stone:                Stein
+    stone_axe:            Steinaxt
+    stone_button:         Steinknopf
+    stone_hoe:            Steinhaue
+    stone_pickaxe:        Steinspitzhacke
+    stone_plate:          Steindruckplatte
+    stone_spade:          Steinschaufel
+    stone_sword:          Steinschwert
+    storage_minecart:     Gueterlohre
+    string:               Faden
+    sugar:                Zucker
+    sugar_cane:           Zuckerrohr
+    sugar_cane_block:     Zuckerrohr
+    sulphur:              Sprengpulver
+    thin_glass:           Glasscheibe
+    tnt:                  TNT
+    torch:                Fackel
+    trap_door:            Falltuer
+    tripwire:             Stolperdraht
+    tripwire_hook:        Haken
+    vine:                 Ranken
+    wall_sign:            Schild
+    watch:                Uhr
+    water:                Wasser
+    water_bucket:         Wassereimer
+    water_lily:           Seerosenblatt
+    web:                  Spinnennetz
+    wheat:                Weizen
+    wood:                 Bretter
+    wood_axe:             Holzaxt
+    wood_door:            Holztuer
+    wood_double_step:     Doppelte Holzstufe
+    wood_hoe:             Holzhaue
+    wood_pickaxe:         Holzspitzhacke
+    wood_plate:           Holzdruckplatte
+    wood_spade:           Holzschaufel
+    wood_stairs:          Holztreppe
+    wood_step:            Holzstufe
+    wood_sword:           Holzschwert
+    wooden_door:          Holztuer
+    wool:                 Wolle
+    workbench:            Werkbank
+    written_book:         geschriebenes Buch
+    yellow_flower:        Gelbe Blume
+
+# End of File

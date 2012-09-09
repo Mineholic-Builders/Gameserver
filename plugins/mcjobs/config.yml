@@ -1,240 +1,36 @@
 max_pay: -1
 percent_cost: 95
 show_pay: true
-time_interval: 30
-rejoin_interval: 360
+timers:
+  time_interval: 30
+  rejoin_interval: 360
+  player_save: 10
+  show_interval: 5
+  delete_cache: 180
 max_jobs:
-  default: 3
-  builder: 3
-  admin: 3
-jobs:
-  mienenarbeiter:
-    description: Verdiene Geld indem du Bloecke abbaust.
-    basepay: 0.7
-    #exp: slow
-    break:
-      pays: true
-      hide: false
-      tier1: stone coal_ore netherrack dirt sand grass gravel
-      tier2: iron_ore glowing_redstone_ore clay soul_sand
-      tier3: gold_ore lapis_ore glowstone mycel
-      tier5: obsidian emerald_ore diamond_ore
-  architekt:
-    description: Verdiene Geld durch das Bauen von Objekten.
-    basepay: 0.8
-    #exp: slow
-    place:
-      pays: true
-      hide: false
-      tier1: wood wood_stairs sign_post wooden_door wall_sign furnace workbench trap_door chest fence bed_block ladder
-      tier2: cobblestone_stairs step stone_plate glass thin_glass fence_gate stone
-      tier3: brick brick_stairs sandstone smooth_brick smooth_stairs nether_brick nether_fence nether_brick_stairs
-      tier4: iron_door_block dispenser bookshelf iron_fence brewing_stand enchantment_table
-    craft:
-      pays: true
-      tier1: redstone_torch_on rails detector_rail stone_plate wood_plate stone_button lever
-      tier2: diode_block_off redstone_lamp_off note_block
-      tier3: piston_base piston_sticky_base jukebox powered_rail
-  kopfgeldjaeger:
-    description: Verdiene Geld durch das Toeten von Monstern.
-    basepay: 1.2
-    #exp: slow
-    show_every_time: true
-    defeat:
-      pays: true
-      hide: false
-      tier1: zombie skeleton slime
-      tier2: creeper cave_spider spider
-      tier3: pig_zombie wolf
-      tier4: blaze magma_cube ghast
-      tier5: silverfish ender_dragon
-  holzfaeller:
-    description: Geld durch Baeume faellen, anpflanzen und Holz verarbeiten.
-    basepay: 0.28
-    #exp: slow
-    break:
-      pays: true
-      hide: false
-      tier1: leaves
-      tier4: log
-    place:
-      pays: true
-      hide: false
-      tier2: sapling
-    craft:
-      pays: true
-      hide: false
-      tier1: bowl fence fence_gate wood_spade wood_hoe wood_step
-      tier2: boat wood_axe wood_pickaxe wood_stairs chest workbench wood_door
-  farmer:
-    description: Verdiene durch Tiere schlachten und Felder anlegen.
-    basepay: 0.39
-    #exp: slow
-    break:
-      pays: true
-      hide: false
-      tier1: yellow_flower red_rose brown_mushroom red_mushroom crops cactus sugar_cane_block pumpkin melon_block cocoa
-      tier2: nether_warts
-    place:
-      pays: true
-      hide: false
-      tier2: soil melon_stem pumpkin_stem ink_sack
-    defeat:
-      pays: true
-      hide: false
-      tier2: cow chicken pig sheep
-  werkzeugschmied:
-    description: Verdiene durch das Herstellen von Werkzeug.
-    basepay: 3.8
-    #exp: slow
-    craft:
-      pays: true
-      hide: false
-      tier1: stone_axe stone_spade stone_hoe stone_pickaxe
-      tier2: iron_axe iron_spade iron_hoe iron_pickaxe compass
-      tier3: gold_axe gold_spade gold_hoe gold_pickaxe
-      tier4: diamond_axe diamond_spade diamond_hoe diamond_pickaxe
-    repair:
-      pays: true
-      hide: false
-      tier1: stone_axe stone_spade stone_hoe stone_pickaxe
-      tier2: gold_axe iron_axe gold_spade iron_spade gold_hoe iron_hoe gold_pickaxe iron_pickaxe
-      tier3: diamond_axe diamond_spade diamond_hoe diamond_pickaxe
-  waffenschmied:
-    description:  Verdiene durch das Herstellen von Waffen.
-    basepay: 10.7
-    #exp: slow
-    craft:
-      pays: true
-      hide: false
-      tier1: wood_sword
-      tier2: stone_sword bow
-      tier3: gold_sword
-      tier4: iron_sword
-      tier5: diamond_sword
-    repair:
-      pays: true
-      hide: false
-      tier1: stone_sword bow
-      tier2: gold_sword iron_sword
-      tier3: diamond_sword
-  ruestungsschmied:
-    description:  Verdiene durch das Herstellen von Rustungen.
-    basepay: 27.6
-    #exp: slow
-    craft:
-      pays: true
-      hide: false
-      tier1: leather_helmet leather_boots
-      tier2: leather_chestplate leather_leggings chainmail_boots chainmail_helmet
-      tier3: iron_helmet iron_boots iron_chestplate iron_leggings chainmail_chestplate chainmail_leggings
-      tier4: gold_chestplate gold_leggings gold_helmet gold_boots
-      tier5: diamond_helmet diamond_boots diamond_chestplate diamond_leggings
-    repair:
-      pays: true
-      hide: false
-      tier1: leather_helmet leather_boots leather_chestplate leather_leggings chainmail_boots chainmail_helmet
-      tier2: iron_helmet gold_helmet iron_boots gold_boots iron_chestplate gold_chestplate iron_leggings gold_leggings chainmail_chestplate chainmail_leggings
-      tier3: diamond_helmet diamond_boots diamond_chestplate diamond_leggings
-  fischer:
-    description: Verdiene Geld durchs Angeln.
-    basepay: 6.8
-    #exp: slow
-    show_every_time: true
-    craft:
-      pays: true
-      tier1: fishing_rod
-    fishing:
-      pays: true
-      hide: false
-      tier2: dropped_item
-  baecker:
-    description: Verdiene Geld beim Verarbeiten von Nahrung.
-    basepay: 0.75
-    #exp: slow
-    show_every_time: true
-    craft:
-      pays: true
-      hide: false
-      tier1: cooked_fish bread sugar
-      tier2: cooked_beef cooked_chicken grilled_pork cookie
-      tier3: mushroom_soup fermented_spider_eye
-      tier4: cake speckled_melon
-      tier5: golden_apple
-  alchemist:
-    description: Verdiene Geld beim Herstellen defensiver Traenke.
-    basepay: 0.95
-    #exp: slow
-    show_every_time: true
-    potions:
-      pays: true
-      hide: false
-      tier1: awkward
-      tier2: regen swift fire_res strength health
-      tier3: fire_res_ext fire_res_spl swift_spl swift_ext swift_two health_spl health_two regen_spl regen_ext regen_two strength_spl strength_ext strength_two
-      tier4: fire_res_ext_spl swift_ext_spl swift_two_spl health_two_spl regen_ext_spl regen_two_spl strength_two_spl strength_ext_spl
-    craft:
-      tier1: glass_bottle cauldron_item brewing_stand_item
-  braumeister:
-    description: Verdiene Geld beim Herstellen offensiver Traenke.
-    basepay: 0.95
-    #exp: slow
-    show_every_time: true
-    potions:
-      pays: true
-      hide: false
-      tier1: mundane mundane_ext thick
-      tier2: poison weak
-      tier3: slow harm poison_spl poison_ext poison_two weak_spl weak_ext
-      tier4: slow_ext slow_spl harm_spl harm_two poison_ext_spl poison_two_spl weak_ext_spl
-      tier5: slow_ext_spl harm_two_spl
-    craft:
-      tier1: glass_bottle cauldron_item brewing_stand_item
-  verzauberer:
-    description: Verdiene indem du Waffen mit Verzauberungen aufbesserst.
-    basepay: 14.5
-    exp: normal
-    show_every_time: true
-    enchant:
-      pays: true
-      hide: false
-      tier1: arrow_dmg_1 arrow_fire arrow_inf arrow_knock_1 sharp_1 boa_1 dmg_undead_1 fire_aspect_1 knockback_1 looting_1
-      tier2: arrow_dmg_2 arrow_knock_2 sharp_2 boa_2 dmg_undead_2 fire_aspect_2 knockback_2 looting_2
-      tier3: arrow_dmg_3 sharp_3 boa_3 dmg_undead_3 looting_3
-      tier4: arrow_dmg_4 sharp_4 boa_4 dmg_undead_4
-      tier5: arrow_dmg_5 sharp_5 boa_5 dmg_undead_5
-  verbesserer:
-    description: Verdiene durch das Verbessern von Werzeugen und Ruestungen.
-    basepay: 14.5
-    exp: normal
-    show_every_time: true
-    enchant:
-      pays: true
-      hide: false
-      tier1: efficiency_1 unbreaking_1 fortune_1 respiration_1 protection_1 blast_prot_1 feather_fall_1 fire_prot_1 proj_prot_1
-      tier2: efficiency_2 unbreaking_2 fortune_2 respiration_2 protection_2 blast_prot_2 feather_fall_2 fire_prot_2 proj_prot_2
-      tier3: efficiency_3 unbreaking_3 fortune_3 respiration_3 protection_3 blast_prot_3 feather_fall_3 fire_prot_3 proj_prot_3
-      tier4: efficiency_4 unbreaking_4 protection_4 blast_prot_4 feather_fall_4 fire_prot_4 proj_prot_4
-      tier5: efficiency_5 unbreaking_5 silk_touch aqua_affinity
+  default: 4
+  builder: 4
+  Admin: 4
 ranks:
-  Lehrling: 1
-  Fortgeschritten: 4
-  Profi: 10
-  Veteran: 20
-  Experte: 40
-  Meister: 60
-  Grossmeister: 90
-  Nerd: 100
+  novice: 1
+  apprentice: 10
+  trained: 20
+  professional: 50
+  veteran: 100
+  expert: 250
+  master: 500
+  grandmaster: 1000
 advanced:
   language: custom
   usePerms: true
-  multiWorld: false
+  multiWorld: true
   payment_type: money
   payment_mod: vault
-  pay_scale: low
   log_mod: none
-  xp_modifier: 15
+  pay_scale: 15
+  xp_modifier: 10
   pay_spawners: false
   spawn_distance: 8
   nopitch: false
-  version: 3000
+  prune: false
+  version: 3100
