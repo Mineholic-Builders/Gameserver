@@ -247,33 +247,3 @@ jobs:
       tier3: efficiency_3 unbreaking_3 fortune_3
       tier4: efficiency_4 unbreaking_4
       tier5: efficiency_5 unbreaking_5 silk_touch
-  #abrisskosten:
-    #description: Abriss und Umbau kostet nunmal Geld.
-    #basepay: 0.21
-    #show_every_time: true
-    #exp: 0
-    #default: true
-    #break:
-      #pays: false
-      #hide: false
-      #tier1: wood wood_stairs sign_post wooden_door wall_sign furnace workbench trap_door chest fence bed_block ladder cobblestone_stairs step stone_plate glass thin_glass fence_gate sapling melon_stem pumpkin_stem
-      #tier2: brick brick_stairs sandstone smooth_brick smooth_stairs nether_brick nether_fence nether_brick_stairs redstone_wire redstone_torch_on redstone_torch_off iron_door_block dispenser bookshelf iron_fence
-      #tier3: stone_button lever stone_plate wood_plate diode_block_off diode_block_on piston_base piston_sticky_base redstone_lamp_off redstone_lamp_on
-      #tier4: note_block jukebox
-      #tier5: brewing_stand enchantment_table
-  #steuern:
-    #description: Das Platzieren bestimmter Bloecke ist mit Steuern versehen.
-    #basepay: 2.71
-    #show_every_time: true
-    #exp: 0
-    #default: true
-    #place:
-      #pays: false
-      #hide: false
-      #tier1: coal_ore iron_ore gold_ore yellow_flower red_rose brown_mushroom red_mushroom crops cactus sugar_cane_block pumpkin melon_block
-      #tier3: obsidian lapis_ore diamond_ore
-      #tier5: tnt
-    #defeat:
-      #pays: false
-      #hide: false
-      #tier5: player villager
