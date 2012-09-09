@@ -22,40 +22,7 @@ crafting-recipes:
   sponge_reloaded: #'useless' item but can now be obtained while survival mode
     type: shaped3x3
     ingredients: #any leafes and any wool
-      '18:0' : 'b'
-      '35' : 'a'
-    shape:
-      - 'bbb'
-      - 'bab'
-      - 'bbb'
-    results:
-      '19': 4
-  sponge_reloaded2: #'useless' item but can now be obtained while survival mode
-    type: shaped3x3
-    ingredients: #any leafes and any wool
-      '18:1' : 'b'
-      '35' : 'a'
-    shape:
-      - 'bbb'
-      - 'bab'
-      - 'bbb'
-    results:
-      '19': 4
-  sponge_reloaded3: #'useless' item but can now be obtained while survival mode
-    type: shaped3x3
-    ingredients: #any leafes and any wool
-      '18:2' : 'b'
-      '35' : 'a'
-    shape:
-      - 'bbb'
-      - 'bab'
-      - 'bbb'
-    results:
-      '19': 4
-  sponge_reloaded4: #'useless' item but can now be obtained while survival mode
-    type: shaped3x3
-    ingredients: #any leafes and any wool
-      '18:3' : 'b'
+      '18' : 'b'
       '35' : 'a'
     shape:
       - 'bbb'
@@ -203,3 +170,36 @@ crafting-recipes:
       - 'bd'
     results:
       '110' : 2
+  mossy_bricks:
+    type: shaped3x3
+    ingredients: #8 stonebricks, 1 veins
+      '98:0' : 'a'
+      '106' : 'b'
+    shape:
+      - 'aaa'
+      - 'aba'
+      - 'aaa'
+    results:
+      '98:1' : 8
+  cracked_bricks:
+    type: shaped3x3
+    ingredients: #8 stonebricks, 1 wooden pick
+      '98:0' : 'a'
+      '270' : 'b'
+    shape:
+      - 'aaa'
+      - 'aba'
+      - 'aaa'
+    results:
+      '98:2' : 8
+  circled_bricks:
+    type: shaped3x3
+    ingredients: #8 stone, 1 flint
+      'stone' : 'a'
+      '318' : 'b'
+    shape:
+      - 'aaa'
+      - 'aba'
+      - 'aaa'
+    results:
+      '98:3' : 8
