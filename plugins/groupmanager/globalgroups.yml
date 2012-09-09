@@ -376,11 +376,18 @@ groups:
     - mcjobs.jobsavail.kopfgeldjaeger
     - mcjobs.jobsavail.mienenarbeiter
     - mcjobs.jobsavail.ruestungsschmied
-    - mcjobs.jobsavail.verbesserer
-    - mcjobs.jobsavail.verzauberer
     - mcjobs.jobsavail.waffenschmied
     - mcjobs.jobsavail.werkzeugschmied
-    - mcjobs.world.all
+    - mcjobs.jobsavail.graeber
+    - mcjobs.jobsavail.tischler
+    - mcjobs.jobsavail.elektriker
+    - mcjobs.jobsavail.ruestungsmagier
+    - mcjobs.jobsavail.waffenmagier
+    - mcjobs.jobsavail.werkzeugmagier
+    - mcjobs.jobsavail.abrisskosten
+    - mcjobs.jobsavail.steuern
+    - mcjobs.world.world2
+    - mcjobs.world.world2_nether
 
   g:mcjobs_admin:
     permissions:

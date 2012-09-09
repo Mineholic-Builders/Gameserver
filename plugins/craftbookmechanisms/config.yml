@@ -12,6 +12,7 @@ bridge-blocks:
 - 4
 - 5
 - 20
+- 98
 - 112
 door-enable: true
 door-redstone: true
