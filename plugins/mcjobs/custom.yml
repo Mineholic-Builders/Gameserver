@@ -1,4 +1,4 @@
-﻿jobscommand:
+jobscommand:
     playeronly: "Nur Spieler koennen das!"
     permission: "&6%p&c du hast kein recht dazu!"
     args: "&6%p&c zu viele Argumente!"
@@ -198,7 +198,6 @@ adminremove:
     removed: "&6%p&7 hat den Beruf &9%j&7 aufgegeben."
     premoved: "&6%p&2 du wurdest von dem Beruf &9%j&2 durch einen Admin ausgeschlossen."
 
-
 adminlist:
     args: "&cFalsche Argumnte:  &e/jadm list [Spieler/Gruppe]"
     playerlist: "&2%p&7: %g"
@@ -210,7 +209,7 @@ pitch:
     line1: "&aEine Liste aller Berufe: &e/jobs list"
     line2: "&aEinen Beruf annehmen: &e/jobs join [job_name]"
     line3: "&aSpielen, &2Geld verdienen&a, Spass haben!"
-    
+
 onadminlogin:
     toolow: "&eDie Bezahlung ist zu gering fuer &6EXP&e basierte Economy. Ueberdenke eine Aenderung des &2pay_scale&e auf &2high&e in der Datei config.yml."
     outofdate: "&eConfig.yml ist ziemlich alt. &6MC Jobs&e koennte fehlerhaft funktionieren ohne die Datei neu zu laden."
@@ -232,7 +231,7 @@ payment:
     chargexp: "&6%j&a hat dich &c%g&a Erfahrung gekostet."
     currency_single: EURO
     currency_plural: EURO
-    
+
 spaces:
     jobslist: 16
     display: 4
@@ -405,7 +404,7 @@ enchant:
     proj_prot_4:      Schusssicher IV
     silk_touch:       Behutsamkeit
     aqua_affinity:    Wasseraffinitaet
-    
+
 materials:
     air:                  Luft
     apple:                Apfel
