@@ -203,3 +203,15 @@ crafting-recipes:
       - 'aaa'
     results:
       '98:3' : 8
+  four_arrows:
+    type: shaped3x3
+    ingredients: #3 flint, 3 stick, 3 feather
+      'flint' : 'a'
+      '280' : 'b'
+      '288' : 'c'
+    shape:
+      - 'aaa'
+      - 'bbb'
+      - 'ccc'
+    results:
+      '262' : 4
