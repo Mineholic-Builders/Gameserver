@@ -45,10 +45,10 @@ change-playerlist: true
 add-prefix-suffix: false
 
 # The delay, in seconds, required between /home, /tp, etc.
-teleport-cooldown: 0
+teleport-cooldown: 60
 
 # The delay, in seconds, before a user actually teleports.  If the user moves or gets attacked in this timeframe, the teleport never occurs.
-teleport-delay: 0
+teleport-delay: 1
 
 # The delay, in seconds, a player can't be attacked by other players after he has been teleported by a command
 # This will also prevent that the player can attack other players
@@ -344,7 +344,7 @@ sethome-multiple:
 
 # Set timeout in seconds for players to accept tpa before request is cancelled.
 # Set to 0 for no timeout
-tpa-accept-cancellation: 15
+tpa-accept-cancellation: 30
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -353,7 +353,7 @@ tpa-accept-cancellation: 15
 ############################################################
 
 # Defines the balance with which new players begin.  Defaults to 0.
-starting-balance: 0
+starting-balance: 500
 
 # worth-# defines the value of an item when it is sold to the server via /sell.
 # These are now defined in worth.yml
@@ -364,6 +364,18 @@ command-costs:
   #example: 1000
   # /kit tools costs $1500 PER USE
   #kit-tools: 1500
+  dynmap hide: 2500
+  dynmap show: 2500
+  afk: 100
+  mail send: 50
+  nick: 100
+  spawn: 100
+  home: 100
+  sethome: 250
+  delhome: 50
+  tpask: 200
+  lwc flag magnet on: 250
+  changepw: 100
 
 # Set this to a currency symbol you want to use.
 currency-symbol: '€'
