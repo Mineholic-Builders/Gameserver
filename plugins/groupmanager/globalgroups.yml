@@ -452,3 +452,20 @@ groups:
   g:xauth_admin:
     permissions:
     - xauth.admin.*
+
+# Permission nodes for ZavAutoMessager
+# http://dev.bukkit.org/server-mods/zavautomessager/pages/Documentation
+
+  g:zavam_default:
+    permissions:
+    - zavautomessager.see
+
+  g:zavam_admin:
+    permissions:
+    - -zavautomessager.toggle
+    - zavautomessager.view
+    - zavautomessager.list
+    - zavautomessager.broadcast
+    - zavautomessager.add
+    - zavautomessager.remove
+    - zavautomessager.reload
