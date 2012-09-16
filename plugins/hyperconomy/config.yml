@@ -1,0 +1,59 @@
+version: 0.948
+config:
+  shopcheckinterval: 40
+  logwriteinterval: 15
+  saveinterval: 700
+  signupdateinterval: 13
+  purchasetaxpercent: 0
+  initialpurchasetaxpercent: 100
+  statictaxpercent: 300
+  enchanttaxpercent: 100
+  daystosavehistory: 30
+  initialshopbalance: 20000000
+  shop-has-unlimited-money: true
+  global-shop-account: hyperconomy
+  use-shop-exit-message: false
+  use-notifications: true
+  use-info-signs: true
+  use-transaction-signs: true
+  store-price-history: true
+  use-chest-shops: true
+  use-shop-permissions: false
+  require-chest-shops-to-be-in-shop: false
+  currency-symbol: €
+  notify-for: 56, 57, 129, 133, 264, 388
+  sales-tax-percent: 60
+  run-automatic-backups: true
+  dynamic-tax:
+    use-dynamic-tax: false
+    money-floor: 0
+    money-cap: 1000000
+    max-tax-percent: 30
+  enchantment:
+    classvalue:
+      wood: .05
+      leather: .05
+      stone: .1
+      chainmail: .15
+      iron: .2
+      gold: .15
+      diamond: .25
+      bow: .15
+  sql-connection:
+    use-sql: true
+    username: mc_statistician
+    port: 3306
+    password: mc_statistician
+    host: localhost
+    database: mc_economy
+    max-sql-threads: 20
+  web-page:
+    port: 8765
+    use-web-page: true
+    background-color: EEEEF6
+    font-color: 333333
+    border-color: D8DFE4
+    increase-value-color: A0FFB0
+    decrease-value-color: FFA0A0
+    highlight-row-color: B4FAF9
+    header-color: B8B4FF
