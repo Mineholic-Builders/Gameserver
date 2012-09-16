@@ -20,7 +20,7 @@ permissionsenabled: true
 chatformat: '[&6MB-Messager&f]: %msg'
 
 # Should the messages be displayed in a random order
-messageinrandomorder: true
+messageinrandomorder: false
 
 updatechecking: true
 
@@ -29,5 +29,5 @@ messagesinconsole: false
 requireplayersonline: true
 
 messages:
-    - '&cWillkommen bei den Mineholic Builders'
-    - '&cUnser Server geht am 28. September offline und wir sind zur Zeit am suchen nach der best moeglichsten Loesung.'
+    - '&cWillkommen bei den Mineholic Builders!'
+    - '&cUnser &cServer &cgeht &cam &c28. &cSeptember &coffline &cund &cwir &csind &czur &cZeit &cauf &cder &cSuche &cnach &cder &cbest &cmoeglichsten &cLoesung.'

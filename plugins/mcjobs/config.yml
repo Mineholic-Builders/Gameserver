@@ -4,13 +4,13 @@ show_pay: true
 timers:
   time_interval: 30
   rejoin_interval: 360
-  player_save: 10
-  show_interval: 5
+  player_save: 5
+  show_interval: 30
   delete_cache: 180
 max_jobs:
   default: 4
   builder: 4
-  Admin: 4
+  admin: 4
 ranks:
   novice: 1
   apprentice: 10
