@@ -20,7 +20,7 @@ config:
   use-chest-shops: true
   use-shop-permissions: false
   require-chest-shops-to-be-in-shop: false
-  currency-symbol: €
+  currency-symbol: EUR
   notify-for: 56, 57, 129, 133, 264, 388
   sales-tax-percent: 60
   run-automatic-backups: true
@@ -41,14 +41,14 @@ config:
       bow: .15
   sql-connection:
     use-sql: true
-    username: mc_statistician
+    username: 
     port: 3306
-    password: mc_statistician
-    host: localhost
-    database: mc_economy
+    password: 
+    host: 
+    database: 
     max-sql-threads: 20
   web-page:
-    port: 8765
+    port: 
     use-web-page: true
     background-color: EEEEF6
     font-color: 333333

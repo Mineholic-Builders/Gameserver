@@ -2956,7 +2956,7 @@ minecart:
   initiation:
     initiation: false
     startprice: 320.0
-saddle: LESEZEICHEN
+saddle:
   information:
     type: item
     category: unknown
