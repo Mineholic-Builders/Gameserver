@@ -332,6 +332,23 @@ groups:
     - -essentials.setspawn
     - essentials.*
 
+# Permission nodes for HyperConomy
+# http://dev.bukkit.org/server-mods/hyperconomy/pages/permissions/
+
+  g:hyperconomy_default:
+    permissions:
+    - hyperconomy.info
+    - hyperconomy.notify
+    - hyperconomy.shop.*
+    - hyperconomy.buysign
+    - hyperconomy.sellsign
+    - hyperconomy.top
+    - hyperconomy.xp
+
+  g:hyperconomy_admin:
+    permissions:
+    - hyperconomy.*
+
 # Permission nodes for LWC
 # https://github.com/Hidendra/LWC/wiki/Permissions
 

@@ -20,6 +20,7 @@ groups:
     - g:craftbook_default
     - g:dynmap_default
     - g:essentials_default
+    - g:hyperconomy_default
     - g:lwc_default
     - g:mcjobs_default
     - g:worldguard_default
@@ -66,6 +67,7 @@ groups:
     - g:craftbook_admin
     - g:dynmap_admin
     - g:essentials_admin
+    - g:hyperconomy_admin
     - g:lwc_admin
     - g:mcjobs_admin
     - g:nolagg_admin
