@@ -163,6 +163,7 @@ potential-offers:
             cloth: 0.5
             chickenRaw: 0.5
             fishCooked: 0.4
+            '103': 0.2
             
         sells:
             bread: 0.9
@@ -170,8 +171,6 @@ potential-offers:
             '360': 0.3
             apple: 0.3
             cookie: 0.3
-            shears: 0.3
-            flintAndSteel: 0.3
             chickenCooked: 0.3
             arrow: 0.5
             
@@ -304,9 +303,10 @@ potential-offers:
     blacksmith:
         buys:
             coal: 0.7
+            charcoal: 0.3
             ingotIron: 0.5
             ingotGold: 0.5
-            diamond: 0.5
+            diamond: 0.1
             
         sells:
             swordIron: 0.5
@@ -362,18 +362,20 @@ potential-offers:
             nothing
         
 buy-values:
-    coal: [6, 22]
-    ingotIron: [7, 19]
-    ingotGold: [4, 12]
+    coal: [12, 22]
+    charcoal: [24, 48]
+    ingotIron: [9, 19]
+    ingotGold: [5, 12]
     diamond: [-3, 1]
-    fishCooked: [14, 29]
-    chickenRaw: [14, 29]
+    fishCooked: [18, 29]
+    chickenRaw: [18, 29]
     porkchopRaw: [16, 32]
     beefRaw: [16, 32]
     cloth: [48, 96]
     wheat: [48, 96]
     paper: [64, 128]
     book: [23, 47]
+    '103': [32, 48]
     writtenBook: [1, 2]
     # The following are unused:
     enderPearl: [-128]
@@ -381,7 +383,7 @@ buy-values:
     seeds: [64, 128]
     seeds_melon: [48, 96]
     seeds_pumpkin: [48, 96]
-    rottenFlesh: [32, 128]
+    rottenFlesh: [64, 128]
 sell-values:
     redstone: [-32, -16]
     lightgem: [-16, -8]
@@ -396,16 +398,14 @@ sell-values:
     cookie: [-64, -56]
     bookshelf: [-24, -12]
     eyeOfEnder: [-64]
-    shears: [-2, 2]
-    flintAndSteel: [-6]
     arrow: [-64, -48] # Yes, this is incorrect, but that's how it is in vanilla!
     compass: [-1, 1]
     clock: [-1, 1]
-    swordIron: [1, 2]
-    hatchetIron: [1, 2]
-    pickaxeIron: [1, 2]
-    shovelIron: [1, 2]
-    hoeIron: [1, 2]
+    swordIron: [1]
+    hatchetIron: [1]
+    pickaxeIron: [1]
+    shovelIron: [1]
+    hoeIron: [1]
     swordDiamond: [3, 6]
     hatchetDiamond: [4, 8]
     pickaxeDiamond: [4, 8]
