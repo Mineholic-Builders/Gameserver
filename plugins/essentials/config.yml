@@ -42,10 +42,10 @@ change-playerlist: true
 # The value of change-displayname (above) has to be true.
 # If you don't set this, it will default to true if essentials chat is installed.
 # Don't forget to remove the # in front of the line
-add-prefix-suffix: false
+add-prefix-suffix: true
 
 # The delay, in seconds, required between /home, /tp, etc.
-teleport-cooldown: 60
+teleport-cooldown: 15
 
 # The delay, in seconds, before a user actually teleports.  If the user moves or gets attacked in this timeframe, the teleport never occurs.
 teleport-delay: 1
@@ -432,10 +432,10 @@ chat:
   group-formats:
   #  Default: '{WORLDNAME} {DISPLAYNAME}&7:&f {MESSAGE}'
   #  Admins: '{WORLDNAME} &c[{GROUP}]&f {DISPLAYNAME}&7:&c {MESSAGE}'
-    Admin: '&c{DISPLAYNAME}&7: &f{MESSAGE}'
-    Moderator: '&5{DISPLAYNAME}&7: &f{MESSAGE}'
-    Builder: '&2{DISPLAYNAME}&7: &f{MESSAGE}'
-    Default: '&e{DISPLAYNAME}&7: &f{MESSAGE}'
+   # Admin: '&c{DISPLAYNAME}&7: &f{MESSAGE}'
+   # Moderator: '&5{DISPLAYNAME}&7: &f{MESSAGE}'
+   # Builder: '&2{DISPLAYNAME}&7: &f{MESSAGE}'
+   # Default: '&e{DISPLAYNAME}&7: &f{MESSAGE}'
 
   # If you are using group formats make sure to remove the '#' to allow the setting to be read.
 

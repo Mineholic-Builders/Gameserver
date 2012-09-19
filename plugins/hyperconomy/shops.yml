@@ -1,0 +1,13 @@
+Einkaufszentrum:
+  world: world2
+  p1:
+    x: -312
+    y: 71
+    z: 3773
+  economy: default
+  p2:
+    x: -360
+    y: 84
+    z: 3726
+  shopmessage1: '&aWelcome to %n'
+  shopmessage2: '&9Type &b/hc &9for help.'

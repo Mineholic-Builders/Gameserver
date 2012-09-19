@@ -1,0 +1,1448 @@
+world2|-316|73|3746:
+  itemname: stone
+  type: stock
+  economy: default
+world2|-315|73|3746:
+  itemname: stone
+  type: sb
+  economy: default
+world2|-317|72|3742:
+  itemname: oaklog
+  type: stock
+  economy: default
+world2|-317|74|3742:
+  itemname: oaklog
+  type: sb
+  economy: default
+world2|-317|74|3741:
+  itemname: sprucelog
+  type: sb
+  economy: default
+world2|-317|72|3741:
+  itemname: sprucelog
+  type: stock
+  economy: default
+world2|-317|72|3740:
+  itemname: birchlog
+  type: stock
+  economy: default
+world2|-317|72|3739:
+  itemname: junglelog
+  type: stock
+  economy: default
+world2|-317|74|3740:
+  itemname: birchlog
+  type: sb
+  economy: default
+world2|-317|74|3739:
+  itemname: junglelog
+  type: sb
+  economy: default
+world2|-331|72|3730:
+  itemname: sand
+  type: stock
+  economy: default
+world2|-330|72|3730:
+  itemname: sandstone
+  type: stock
+  economy: default
+world2|-329|72|3730:
+  itemname: hieroglyph
+  type: stock
+  economy: default
+world2|-328|72|3730:
+  itemname: smoothsandstone
+  type: stock
+  economy: default
+world2|-331|74|3730:
+  itemname: sand
+  type: sb
+  economy: default
+world2|-330|74|3730:
+  itemname: sandstone
+  type: sb
+  economy: default
+world2|-329|74|3730:
+  itemname: hieroglyph
+  type: sb
+  economy: default
+world2|-328|74|3730:
+  itemname: smoothsandstone
+  type: sb
+  economy: default
+world2|-346|74|3730:
+  itemname: stone
+  type: sb
+  economy: default
+world2|-345|74|3730:
+  itemname: cobblestone
+  type: sb
+  economy: default
+world2|-343|74|3730:
+  itemname: mossystonebrick
+  type: sb
+  economy: default
+world2|-342|74|3730:
+  itemname: crackedstonebrick
+  type: sb
+  economy: default
+world2|-341|74|3730:
+  itemname: chiseledstonebrick
+  type: sb
+  economy: default
+world2|-344|74|3730:
+  itemname: stonebrick
+  type: sb
+  economy: default
+world2|-341|72|3730:
+  itemname: chiseledstonebrick
+  type: stock
+  economy: default
+world2|-342|72|3730:
+  itemname: crackedstonebrick
+  type: stock
+  economy: default
+world2|-343|72|3730:
+  itemname: mossystonebrick
+  type: stock
+  economy: default
+world2|-344|72|3730:
+  itemname: stonebrick
+  type: stock
+  economy: default
+world2|-345|72|3730:
+  itemname: cobblestone
+  type: stock
+  economy: default
+world2|-346|72|3730:
+  itemname: stone
+  type: stock
+  economy: default
+world2|-355|72|3758:
+  itemname: wool
+  type: stock
+  economy: default
+world2|-355|74|3756:
+  itemname: graywool
+  type: sb
+  economy: default
+world2|-355|74|3757:
+  itemname: lightgraywool
+  type: sb
+  economy: default
+world2|-355|72|3757:
+  itemname: lightgraywool
+  type: stock
+  economy: default
+world2|-355|72|3756:
+  itemname: graywool
+  type: stock
+  economy: default
+world2|-355|74|3755:
+  itemname: blackwool
+  type: sb
+  economy: default
+world2|-355|74|3754:
+  itemname: redwool
+  type: sb
+  economy: default
+world2|-355|74|3753:
+  itemname: orangewool
+  type: sb
+  economy: default
+world2|-355|74|3752:
+  itemname: yellowwool
+  type: sb
+  economy: default
+world2|-355|74|3750:
+  itemname: greenwool
+  type: sb
+  economy: default
+world2|-355|74|3749:
+  itemname: bluewool
+  type: sb
+  economy: default
+world2|-355|74|3748:
+  itemname: lightbluewool
+  type: sb
+  economy: default
+world2|-355|74|3751:
+  itemname: limewool
+  type: sb
+  economy: default
+world2|-355|72|3755:
+  itemname: blackwool
+  type: stock
+  economy: default
+world2|-355|72|3754:
+  itemname: redwool
+  type: stock
+  economy: default
+world2|-355|72|3753:
+  itemname: orangewool
+  type: stock
+  economy: default
+world2|-355|72|3752:
+  itemname: yellowwool
+  type: stock
+  economy: default
+world2|-355|72|3751:
+  itemname: limewool
+  type: stock
+  economy: default
+world2|-355|72|3750:
+  itemname: greenwool
+  type: stock
+  economy: default
+world2|-355|72|3749:
+  itemname: bluewool
+  type: stock
+  economy: default
+world2|-355|72|3748:
+  itemname: lightbluewool
+  type: stock
+  economy: default
+world2|-355|74|3743:
+  itemname: brownwool
+  type: sb
+  economy: default
+world2|-355|74|3744:
+  itemname: purplewool
+  type: sb
+  economy: default
+world2|-355|74|3745:
+  itemname: magentawool
+  type: sb
+  economy: default
+world2|-355|74|3746:
+  itemname: pinkwool
+  type: sb
+  economy: default
+world2|-355|74|3747:
+  itemname: cyanwool
+  type: sb
+  economy: default
+world2|-355|72|3746:
+  itemname: pinkwool
+  type: stock
+  economy: default
+world2|-355|72|3747:
+  itemname: cyanwool
+  type: stock
+  economy: default
+world2|-355|72|3745:
+  itemname: magentawool
+  type: stock
+  economy: default
+world2|-355|72|3744:
+  itemname: purplewool
+  type: stock
+  economy: default
+world2|-355|72|3743:
+  itemname: brownwool
+  type: stock
+  economy: default
+world2|-340|72|3730:
+  itemname: lapisore
+  type: stock
+  economy: default
+world2|-339|72|3730:
+  itemname: lapisblock
+  type: stock
+  economy: default
+world2|-338|72|3730:
+  itemname: ironore
+  type: stock
+  economy: default
+world2|-337|72|3730:
+  itemname: ironblock
+  type: stock
+  economy: default
+world2|-336|72|3730:
+  itemname: goldore
+  type: stock
+  economy: default
+world2|-335|72|3730:
+  itemname: goldblock
+  type: stock
+  economy: default
+world2|-334|72|3730:
+  itemname: redstoneore
+  type: stock
+  economy: default
+world2|-333|72|3730:
+  itemname: diamondblock
+  type: stock
+  economy: default
+world2|-332|72|3730:
+  itemname: emeraldblock
+  type: stock
+  economy: default
+world2|-340|74|3730:
+  itemname: lapisore
+  type: sb
+  economy: default
+world2|-339|74|3730:
+  itemname: lapisblock
+  type: sb
+  economy: default
+world2|-338|74|3730:
+  itemname: ironore
+  type: sb
+  economy: default
+world2|-337|74|3730:
+  itemname: ironblock
+  type: sb
+  economy: default
+world2|-336|74|3730:
+  itemname: goldore
+  type: sb
+  economy: default
+world2|-335|74|3730:
+  itemname: goldblock
+  type: sb
+  economy: default
+world2|-334|74|3730:
+  itemname: redstoneore
+  type: sb
+  economy: default
+world2|-333|74|3730:
+  itemname: diamondblock
+  type: sb
+  economy: default
+world2|-332|74|3730:
+  itemname: emeraldblock
+  type: sb
+  economy: default
+world2|-327|74|3730:
+  itemname: glass
+  type: sb
+  economy: default
+world2|-327|72|3730:
+  itemname: glass
+  type: stock
+  economy: default
+world2|-326|74|3730:
+  itemname: glasspane
+  type: sb
+  economy: default
+world2|-326|72|3730:
+  itemname: glasspane
+  type: stock
+  economy: default
+world2|-317|74|3757:
+  itemname: clay
+  type: sb
+  economy: default
+world2|-317|74|3758:
+  itemname: netherrack
+  type: sb
+  economy: default
+world2|-317|74|3759:
+  itemname: soulsand
+  type: sb
+  economy: default
+world2|-317|74|3760:
+  itemname: snowblock
+  type: sb
+  economy: default
+world2|-317|74|3762:
+  itemname: sponge
+  type: sb
+  economy: default
+world2|-317|74|3761:
+  itemname: endstone
+  type: sb
+  economy: default
+world2|-317|72|3757:
+  itemname: clay
+  type: stock
+  economy: default
+world2|-317|72|3758:
+  itemname: netherrack
+  type: stock
+  economy: default
+world2|-317|72|3759:
+  itemname: soulsand
+  type: stock
+  economy: default
+world2|-317|72|3760:
+  itemname: snowblock
+  type: stock
+  economy: default
+world2|-317|72|3761:
+  itemname: endstone
+  type: stock
+  economy: default
+world2|-317|72|3762:
+  itemname: sponge
+  type: stock
+  economy: default
+world2|-337|79|3732:
+  itemname: diamond
+  type: sb
+  economy: default
+world2|-336|79|3732:
+  itemname: emerald
+  type: sb
+  economy: default
+world2|-333|79|3732:
+  itemname: coal
+  type: sb
+  economy: default
+world2|-332|79|3732:
+  itemname: charcoal
+  type: sb
+  economy: default
+world2|-331|79|3732:
+  itemname: flint
+  type: sb
+  economy: default
+world2|-335|79|3732:
+  itemname: ironingot
+  type: sb
+  economy: default
+world2|-334|79|3732:
+  itemname: goldingot
+  type: sb
+  economy: default
+world2|-330|79|3732:
+  itemname: redstone
+  type: sb
+  economy: default
+world2|-329|79|3732:
+  itemname: glowstonedust
+  type: sb
+  economy: default
+world2|-317|74|3738:
+  itemname: glowstone
+  type: sb
+  economy: default
+world2|-317|72|3738:
+  itemname: glowstone
+  type: stock
+  economy: default
+world2|-355|74|3758:
+  itemname: wool
+  type: sb
+  economy: default
+world2|-337|77|3732:
+  itemname: diamond
+  type: stock
+  economy: default
+world2|-330|77|3732:
+  itemname: redstone
+  type: stock
+  economy: default
+world2|-329|77|3732:
+  itemname: glowstonedust
+  type: stock
+  economy: default
+world2|-331|77|3732:
+  itemname: flint
+  type: stock
+  economy: default
+world2|-332|77|3732:
+  itemname: charcoal
+  type: stock
+  economy: default
+world2|-333|77|3732:
+  itemname: coal
+  type: stock
+  economy: default
+world2|-334|77|3732:
+  itemname: goldingot
+  type: stock
+  economy: default
+world2|-336|77|3732:
+  itemname: emerald
+  type: stock
+  economy: default
+world2|-335|77|3732:
+  itemname: ironingot
+  type: stock
+  economy: default
+world2|-343|79|3732:
+  itemname: gunpowder
+  type: sb
+  economy: default
+world2|-342|79|3732:
+  itemname: blazerod
+  type: sb
+  economy: default
+world2|-341|79|3732:
+  itemname: enderpearl
+  type: sb
+  economy: default
+world2|-340|79|3732:
+  itemname: slimeball
+  type: sb
+  economy: default
+world2|-339|79|3732:
+  itemname: bone
+  type: sb
+  economy: default
+world2|-338|79|3732:
+  itemname: goldnugget
+  type: sb
+  economy: default
+world2|-338|77|3732:
+  itemname: goldnugget
+  type: stock
+  economy: default
+world2|-339|77|3732:
+  itemname: bone
+  type: stock
+  economy: default
+world2|-340|77|3732:
+  itemname: slimeball
+  type: stock
+  economy: default
+world2|-341|77|3732:
+  itemname: enderpearl
+  type: stock
+  economy: default
+world2|-342|77|3732:
+  itemname: blazerod
+  type: stock
+  economy: default
+world2|-343|77|3732:
+  itemname: gunpowder
+  type: stock
+  economy: default
+world2|-328|79|3732:
+  itemname: clayball
+  type: sb
+  economy: default
+world2|-327|79|3732:
+  itemname: leather
+  type: sb
+  economy: default
+world2|-326|79|3732:
+  itemname: paper
+  type: sb
+  economy: default
+world2|-325|79|3732:
+  itemname: feather
+  type: sb
+  economy: default
+world2|-328|77|3732:
+  itemname: clayball
+  type: stock
+  economy: default
+world2|-327|77|3732:
+  itemname: leather
+  type: stock
+  economy: default
+world2|-326|77|3732:
+  itemname: paper
+  type: stock
+  economy: default
+world2|-325|77|3732:
+  itemname: feather
+  type: stock
+  economy: default
+world2|-347|79|3732:
+  itemname: string
+  type: sb
+  economy: default
+world2|-346|79|3732:
+  itemname: egg
+  type: sb
+  economy: default
+world2|-345|79|3732:
+  itemname: sugar
+  type: sb
+  economy: default
+world2|-344|79|3732:
+  itemname: firecharge
+  type: sb
+  economy: default
+world2|-347|77|3732:
+  itemname: string
+  type: stock
+  economy: default
+world2|-346|77|3732:
+  itemname: egg
+  type: stock
+  economy: default
+world2|-345|77|3732:
+  itemname: sugar
+  type: stock
+  economy: default
+world2|-344|77|3732:
+  itemname: firecharge
+  type: stock
+  economy: default
+world2|-326|79|3766:
+  itemname: netherwarts
+  type: sb
+  economy: default
+world2|-327|79|3766:
+  itemname: redmushroom
+  type: sb
+  economy: default
+world2|-328|79|3766:
+  itemname: brownmushroom
+  type: sb
+  economy: default
+world2|-329|79|3766:
+  itemname: sugarcane
+  type: sb
+  economy: default
+world2|-331|79|3766:
+  itemname: melonseeds
+  type: sb
+  economy: default
+world2|-332|79|3766:
+  itemname: pumpkinseeds
+  type: sb
+  economy: default
+world2|-333|79|3766:
+  itemname: cocoabeans
+  type: sb
+  economy: default
+world2|-330|79|3766:
+  itemname: seeds
+  type: sb
+  economy: default
+world2|-333|77|3766:
+  itemname: cocoabeans
+  type: stock
+  economy: default
+world2|-332|77|3766:
+  itemname: pumpkinseeds
+  type: stock
+  economy: default
+world2|-331|77|3766:
+  itemname: melonseeds
+  type: stock
+  economy: default
+world2|-330|77|3766:
+  itemname: seeds
+  type: stock
+  economy: default
+world2|-329|77|3766:
+  itemname: sugarcane
+  type: stock
+  economy: default
+world2|-328|77|3766:
+  itemname: brownmushroom
+  type: stock
+  economy: default
+world2|-327|77|3766:
+  itemname: redmushroom
+  type: stock
+  economy: default
+world2|-326|77|3766:
+  itemname: netherwarts
+  type: stock
+  economy: default
+world2|-334|79|3766:
+  itemname: woodhoe
+  type: sb
+  economy: default
+world2|-335|79|3766:
+  itemname: stonehoe
+  type: sb
+  economy: default
+world2|-336|79|3766:
+  itemname: ironhoe
+  type: sb
+  economy: default
+world2|-337|79|3766:
+  itemname: goldhoe
+  type: sb
+  economy: default
+world2|-338|79|3766:
+  itemname: diamondhoe
+  type: sb
+  economy: default
+world2|-334|77|3766:
+  itemname: woodhoe
+  type: stock
+  economy: default
+world2|-335|77|3766:
+  itemname: stonehoe
+  type: stock
+  economy: default
+world2|-336|77|3766:
+  itemname: ironhoe
+  type: stock
+  economy: default
+world2|-337|77|3766:
+  itemname: goldhoe
+  type: stock
+  economy: default
+world2|-338|77|3766:
+  itemname: diamondhoe
+  type: stock
+  economy: default
+world2|-319|79|3750:
+  itemname: 13disk
+  type: sb
+  economy: default
+world2|-319|79|3751:
+  itemname: catdisk
+  type: sb
+  economy: default
+world2|-319|79|3754:
+  itemname: fardisk
+  type: sb
+  economy: default
+world2|-319|79|3753:
+  itemname: chirpdisk
+  type: sb
+  economy: default
+world2|-319|79|3752:
+  itemname: blocksdisk
+  type: sb
+  economy: default
+world2|-319|79|3755:
+  itemname: malldisk
+  type: sb
+  economy: default
+world2|-319|79|3756:
+  itemname: mellohidisk
+  type: sb
+  economy: default
+world2|-319|79|3757:
+  itemname: staldisk
+  type: sb
+  economy: default
+world2|-319|79|3758:
+  itemname: straddisk
+  type: sb
+  economy: default
+world2|-319|79|3749:
+  itemname: warddisk
+  type: sb
+  economy: default
+world2|-319|79|3748:
+  itemname: 11disk
+  type: sb
+  economy: default
+world2|-319|79|3746:
+  itemname: bucket
+  type: sb
+  economy: default
+world2|-319|79|3745:
+  itemname: waterbucket
+  type: sb
+  economy: default
+world2|-319|79|3744:
+  itemname: lavabucket
+  type: sb
+  economy: default
+world2|-319|79|3747:
+  itemname: jukebox
+  type: sb
+  economy: default
+world2|-319|79|3743:
+  itemname: milk
+  type: sb
+  economy: default
+world2|-319|79|3742:
+  itemname: bookandquill
+  type: sb
+  economy: default
+world2|-319|79|3741:
+  itemname: noteblock
+  type: sb
+  economy: default
+world2|-319|79|3740:
+  itemname: painting
+  type: sb
+  economy: default
+world2|-319|79|3739:
+  itemname: enderchest
+  type: sb
+  economy: default
+world2|-319|79|3737:
+  itemname: saddle
+  type: sb
+  economy: default
+world2|-319|79|3738:
+  itemname: enchantmenttable
+  type: sb
+  economy: default
+world2|-319|79|3759:
+  itemname: rails
+  type: sb
+  economy: default
+world2|-319|79|3760:
+  itemname: poweredrail
+  type: sb
+  economy: default
+world2|-319|79|3761:
+  itemname: detectorrail
+  type: sb
+  economy: default
+world2|-319|77|3761:
+  itemname: detectorrail
+  type: stock
+  economy: default
+world2|-319|77|3760:
+  itemname: poweredrail
+  type: stock
+  economy: default
+world2|-319|77|3759:
+  itemname: rails
+  type: stock
+  economy: default
+world2|-319|77|3758:
+  itemname: straddisk
+  type: stock
+  economy: default
+world2|-319|77|3757:
+  itemname: staldisk
+  type: stock
+  economy: default
+world2|-319|77|3756:
+  itemname: mellohidisk
+  type: stock
+  economy: default
+world2|-319|77|3755:
+  itemname: malldisk
+  type: stock
+  economy: default
+world2|-319|77|3754:
+  itemname: fardisk
+  type: stock
+  economy: default
+world2|-319|77|3753:
+  itemname: chirpdisk
+  type: stock
+  economy: default
+world2|-319|77|3752:
+  itemname: blocksdisk
+  type: stock
+  economy: default
+world2|-319|77|3751:
+  itemname: catdisk
+  type: stock
+  economy: default
+world2|-319|77|3750:
+  itemname: 13disk
+  type: stock
+  economy: default
+world2|-319|77|3749:
+  itemname: warddisk
+  type: stock
+  economy: default
+world2|-319|77|3748:
+  itemname: 11disk
+  type: stock
+  economy: default
+world2|-319|77|3747:
+  itemname: jukebox
+  type: stock
+  economy: default
+world2|-319|77|3746:
+  itemname: bucket
+  type: stock
+  economy: default
+world2|-319|77|3745:
+  itemname: waterbucket
+  type: stock
+  economy: default
+world2|-319|77|3744:
+  itemname: lavabucket
+  type: stock
+  economy: default
+world2|-319|77|3743:
+  itemname: milk
+  type: stock
+  economy: default
+world2|-319|77|3742:
+  itemname: bookandquill
+  type: stock
+  economy: default
+world2|-319|77|3741:
+  itemname: noteblock
+  type: stock
+  economy: default
+world2|-319|77|3740:
+  itemname: painting
+  type: stock
+  economy: default
+world2|-319|77|3739:
+  itemname: enderchest
+  type: stock
+  economy: default
+world2|-319|77|3738:
+  itemname: enchantmenttable
+  type: stock
+  economy: default
+world2|-319|77|3737:
+  itemname: saddle
+  type: stock
+  economy: default
+world2|-353|79|3761:
+  itemname: apple
+  type: sb
+  economy: default
+world2|-353|79|3760:
+  itemname: bread
+  type: sb
+  economy: default
+world2|-353|79|3759:
+  itemname: rawpork
+  type: sb
+  economy: default
+world2|-353|79|3757:
+  itemname: rawfish
+  type: sb
+  economy: default
+world2|-353|79|3756:
+  itemname: cookedfish
+  type: sb
+  economy: default
+world2|-353|79|3758:
+  itemname: cookedpork
+  type: sb
+  economy: default
+world2|-353|79|3755:
+  itemname: cake
+  type: sb
+  economy: default
+world2|-353|79|3754:
+  itemname: cookie
+  type: sb
+  economy: default
+world2|-353|79|3752:
+  itemname: rawbeef
+  type: sb
+  economy: default
+world2|-353|79|3750:
+  itemname: rawchicken
+  type: sb
+  economy: default
+world2|-353|79|3753:
+  itemname: melon
+  type: sb
+  economy: default
+world2|-353|79|3751:
+  itemname: cookedbeef
+  type: sb
+  economy: default
+world2|-353|79|3749:
+  itemname: cookedchicken
+  type: sb
+  economy: default
+world2|-353|79|3748:
+  itemname: goldenapple
+  type: sb
+  economy: default
+world2|-353|79|3747:
+  itemname: enchantedapple
+  type: sb
+  economy: default
+world2|-353|79|3744:
+  itemname: rosered
+  type: sb
+  economy: default
+world2|-353|79|3743:
+  itemname: cactusgreen
+  type: sb
+  economy: default
+world2|-353|79|3742:
+  itemname: lapislazuli
+  type: sb
+  economy: default
+world2|-353|79|3741:
+  itemname: dandelionyellow
+  type: sb
+  economy: default
+world2|-353|79|3740:
+  itemname: bonemeal
+  type: sb
+  economy: default
+world2|-353|79|3745:
+  itemname: inksac
+  type: sb
+  economy: default
+world2|-353|77|3740:
+  itemname: bonemeal
+  type: stock
+  economy: default
+world2|-353|77|3741:
+  itemname: dandelionyellow
+  type: stock
+  economy: default
+world2|-353|77|3742:
+  itemname: lapislazuli
+  type: stock
+  economy: default
+world2|-353|77|3743:
+  itemname: cactusgreen
+  type: stock
+  economy: default
+world2|-353|77|3744:
+  itemname: rosered
+  type: stock
+  economy: default
+world2|-353|77|3745:
+  itemname: inksac
+  type: stock
+  economy: default
+world2|-353|77|3761:
+  itemname: apple
+  type: stock
+  economy: default
+world2|-353|77|3760:
+  itemname: bread
+  type: stock
+  economy: default
+world2|-353|77|3759:
+  itemname: rawpork
+  type: stock
+  economy: default
+world2|-353|77|3758:
+  itemname: cookedpork
+  type: stock
+  economy: default
+world2|-353|77|3757:
+  itemname: rawfish
+  type: stock
+  economy: default
+world2|-353|77|3756:
+  itemname: cookedfish
+  type: stock
+  economy: default
+world2|-353|77|3755:
+  itemname: cake
+  type: stock
+  economy: default
+world2|-353|77|3754:
+  itemname: cookie
+  type: stock
+  economy: default
+world2|-353|77|3753:
+  itemname: melon
+  type: stock
+  economy: default
+world2|-353|77|3752:
+  itemname: rawbeef
+  type: stock
+  economy: default
+world2|-353|77|3751:
+  itemname: cookedbeef
+  type: stock
+  economy: default
+world2|-353|77|3750:
+  itemname: rawchicken
+  type: stock
+  economy: default
+world2|-353|77|3749:
+  itemname: cookedchicken
+  type: stock
+  economy: default
+world2|-353|77|3748:
+  itemname: goldenapple
+  type: stock
+  economy: default
+world2|-353|77|3747:
+  itemname: enchantedapple
+  type: stock
+  economy: default
+world2|-347|74|3730:
+  itemname: obsidian
+  type: sb
+  economy: default
+world2|-347|72|3730:
+  itemname: obsidian
+  type: stock
+  economy: default
+world2|-324|74|3761:
+  itemname: leatherhelmet
+  type: sb
+  economy: default
+world2|-328|74|3762:
+  itemname: ironhelmet
+  type: sb
+  economy: default
+world2|-328|74|3763:
+  itemname: ironchestplate
+  type: sb
+  economy: default
+world2|-328|74|3764:
+  itemname: ironleggings
+  type: sb
+  economy: default
+world2|-328|74|3765:
+  itemname: ironboots
+  type: sb
+  economy: default
+world2|-327|74|3766:
+  itemname: diamondhelmet
+  type: sb
+  economy: default
+world2|-326|74|3766:
+  itemname: diamondchestplate
+  type: sb
+  economy: default
+world2|-325|74|3766:
+  itemname: diamondleggings
+  type: sb
+  economy: default
+world2|-324|74|3766:
+  itemname: diamondboots
+  type: sb
+  economy: default
+world2|-323|74|3765:
+  itemname: goldhelmet
+  type: sb
+  economy: default
+world2|-323|74|3764:
+  itemname: goldchestplate
+  type: sb
+  economy: default
+world2|-323|74|3763:
+  itemname: goldleggings
+  type: sb
+  economy: default
+world2|-323|74|3762:
+  itemname: goldboots
+  type: sb
+  economy: default
+world2|-331|74|3771:
+  itemname: chainmailhelmet
+  type: sb
+  economy: default
+world2|-331|74|3770:
+  itemname: chainmailchestplate
+  type: sb
+  economy: default
+world2|-331|74|3769:
+  itemname: chainmailleggings
+  type: sb
+  economy: default
+world2|-331|74|3768:
+  itemname: chainmailboots
+  type: sb
+  economy: default
+world2|-325|74|3761:
+  itemname: leatherchestplate
+  type: sb
+  economy: default
+world2|-326|74|3761:
+  itemname: leatherleggings
+  type: sb
+  economy: default
+world2|-327|74|3761:
+  itemname: leatherboots
+  type: sb
+  economy: default
+world2|-316|74|3754:
+  itemname: ice
+  type: sb
+  economy: default
+world2|-316|72|3754:
+  itemname: ice
+  type: stock
+  economy: default
+world2|-331|72|3771:
+  itemname: chainmailhelmet
+  type: stock
+  economy: default
+world2|-331|72|3770:
+  itemname: chainmailchestplate
+  type: stock
+  economy: default
+world2|-331|72|3769:
+  itemname: chainmailleggings
+  type: stock
+  economy: default
+world2|-331|72|3768:
+  itemname: chainmailboots
+  type: stock
+  economy: default
+world2|-327|72|3766:
+  itemname: diamondhelmet
+  type: stock
+  economy: default
+world2|-326|72|3766:
+  itemname: diamondchestplate
+  type: stock
+  economy: default
+world2|-324|72|3766:
+  itemname: diamondboots
+  type: stock
+  economy: default
+world2|-325|72|3766:
+  itemname: diamondleggings
+  type: stock
+  economy: default
+world2|-323|72|3765:
+  itemname: goldhelmet
+  type: stock
+  economy: default
+world2|-323|72|3764:
+  itemname: goldchestplate
+  type: stock
+  economy: default
+world2|-323|72|3763:
+  itemname: goldleggings
+  type: stock
+  economy: default
+world2|-323|72|3762:
+  itemname: goldboots
+  type: stock
+  economy: default
+world2|-324|72|3761:
+  itemname: leatherhelmet
+  type: stock
+  economy: default
+world2|-325|72|3761:
+  itemname: leatherchestplate
+  type: stock
+  economy: default
+world2|-326|72|3761:
+  itemname: leatherleggings
+  type: stock
+  economy: default
+world2|-327|72|3761:
+  itemname: leatherboots
+  type: stock
+  economy: default
+world2|-328|72|3762:
+  itemname: ironhelmet
+  type: stock
+  economy: default
+world2|-328|72|3763:
+  itemname: ironchestplate
+  type: stock
+  economy: default
+world2|-328|72|3764:
+  itemname: ironleggings
+  type: stock
+  economy: default
+world2|-328|72|3765:
+  itemname: ironboots
+  type: stock
+  economy: default
+world2|-348|74|3766:
+  itemname: diamondpickaxe
+  type: sb
+  economy: default
+world2|-347|74|3766:
+  itemname: diamondaxe
+  type: sb
+  economy: default
+world2|-346|74|3766:
+  itemname: diamondshovel
+  type: sb
+  economy: default
+world2|-345|74|3766:
+  itemname: diamondsword
+  type: sb
+  economy: default
+world2|-344|74|3765:
+  itemname: goldpickaxe
+  type: sb
+  economy: default
+world2|-344|74|3764:
+  itemname: goldaxe
+  type: sb
+  economy: default
+world2|-344|74|3763:
+  itemname: goldshovel
+  type: sb
+  economy: default
+world2|-344|74|3762:
+  itemname: goldsword
+  type: sb
+  economy: default
+world2|-345|74|3761:
+  itemname: stonepickaxe
+  type: sb
+  economy: default
+world2|-346|74|3761:
+  itemname: stoneaxe
+  type: sb
+  economy: default
+world2|-347|74|3761:
+  itemname: stoneshovel
+  type: sb
+  economy: default
+world2|-348|74|3761:
+  itemname: stonesword
+  type: sb
+  economy: default
+world2|-349|74|3762:
+  itemname: ironpickaxe
+  type: sb
+  economy: default
+world2|-349|74|3763:
+  itemname: ironaxe
+  type: sb
+  economy: default
+world2|-349|74|3764:
+  itemname: ironshovel
+  type: sb
+  economy: default
+world2|-349|74|3765:
+  itemname: ironsword
+  type: sb
+  economy: default
+world2|-349|72|3765:
+  itemname: ironsword
+  type: stock
+  economy: default
+world2|-349|72|3764:
+  itemname: ironshovel
+  type: stock
+  economy: default
+world2|-349|72|3763:
+  itemname: ironaxe
+  type: stock
+  economy: default
+world2|-349|72|3762:
+  itemname: ironpickaxe
+  type: stock
+  economy: default
+world2|-348|72|3761:
+  itemname: stonesword
+  type: stock
+  economy: default
+world2|-347|72|3761:
+  itemname: stoneshovel
+  type: stock
+  economy: default
+world2|-346|72|3761:
+  itemname: stoneaxe
+  type: stock
+  economy: default
+world2|-345|72|3761:
+  itemname: stonepickaxe
+  type: stock
+  economy: default
+world2|-344|72|3762:
+  itemname: goldsword
+  type: stock
+  economy: default
+world2|-344|72|3763:
+  itemname: goldshovel
+  type: stock
+  economy: default
+world2|-344|72|3764:
+  itemname: goldaxe
+  type: stock
+  economy: default
+world2|-344|72|3765:
+  itemname: goldpickaxe
+  type: stock
+  economy: default
+world2|-345|72|3766:
+  itemname: diamondsword
+  type: stock
+  economy: default
+world2|-346|72|3766:
+  itemname: diamondshovel
+  type: stock
+  economy: default
+world2|-347|72|3766:
+  itemname: diamondaxe
+  type: stock
+  economy: default
+world2|-348|72|3766:
+  itemname: diamondpickaxe
+  type: stock
+  economy: default
+world2|-341|74|3768:
+  itemname: woodpickaxe
+  type: sb
+  economy: default
+world2|-341|72|3768:
+  itemname: woodpickaxe
+  type: stock
+  economy: default
+world2|-341|74|3769:
+  itemname: woodaxe
+  type: sb
+  economy: default
+world2|-341|72|3769:
+  itemname: woodaxe
+  type: stock
+  economy: default
+world2|-341|74|3770:
+  itemname: woodshovel
+  type: sb
+  economy: default
+world2|-341|72|3770:
+  itemname: woodshovel
+  type: stock
+  economy: default
+world2|-341|74|3771:
+  itemname: woodsword
+  type: sb
+  economy: default
+world2|-341|72|3771:
+  itemname: woodsword
+  type: stock
+  economy: default
+world2|-353|79|3746:
+  itemname: rottenflesh
+  type: sb
+  economy: default
+world2|-353|77|3746:
+  itemname: rottenflesh
+  type: stock
+  economy: default
+world2|-325|74|3730:
+  itemname: netherbrick
+  type: sb
+  economy: default
+world2|-325|72|3730:
+  itemname: netherbrick
+  type: stock
+  economy: default
+world2|-325|77|3766:
+  itemname: cactus
+  type: stock
+  economy: default
+world2|-325|79|3766:
+  itemname: cactus
+  type: sb
+  economy: default
+world2|-349|79|3766:
+  itemname: yellowflower
+  type: sb
+  economy: default
+world2|-349|77|3766:
+  itemname: yellowflower
+  type: stock
+  economy: default
+world2|-348|77|3766:
+  itemname: redrose
+  type: stock
+  economy: default
+world2|-348|79|3766:
+  itemname: redrose
+  type: sb
+  economy: default
+world2|-353|77|3762:
+  itemname: spidereye
+  type: stock
+  economy: default
+world2|-353|79|3762:
+  itemname: spidereye
+  type: sb
+  economy: default
+world2|-347|79|3766:
+  itemname: fern
+  type: sb
+  economy: default
+world2|-347|77|3766:
+  itemname: fern
+  type: stock
+  economy: default
+world2|-346|79|3766:
+  itemname: tallgrass
+  type: sb
+  economy: default
+world2|-346|77|3766:
+  itemname: tallgrass
+  type: stock
+  economy: default

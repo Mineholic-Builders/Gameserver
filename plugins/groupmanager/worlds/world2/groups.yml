@@ -40,7 +40,16 @@ groups:
     - g:worldedit_builder
     - g:worldguard_builder
     info:
-      prefix: '&2'
+      prefix: '&2[Builder]&r '
+      build: true
+      suffix: ''
+  Eastside_Builder:
+    default: false
+    permissions: []
+    inheritance:
+    - builder
+    info:
+      prefix: '&9[&eEastside &bBuilder&9] &9'
       build: true
       suffix: ''
   Moderator:
@@ -76,16 +85,6 @@ groups:
     - g:xauth_admin
     - g:zavam_admin
     info:
-      prefix: '&c'
-      build: true
-      suffix: ''
-  Owner:
-    default: false
-    permissions:
-    - '*'
-    inheritance:
-    - admin
-    info:
-      prefix: '&4'
+      prefix: '&4[Admin] &c'
       build: true
       suffix: ''
