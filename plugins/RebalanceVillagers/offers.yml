@@ -1,0 +1,430 @@
+currency-item:
+    emerald
+    
+potential-offers:
+    
+    # This is a sample villager profession: the unused green villager. By default this villager will never spawn, so I
+    # am using its offer list as an example to teach you how this config works. Actual offers used by existing
+    # villagers can be found after this. If you're good at guessing, you may be able to skip this "tutorial"
+    # altogether - otherwise, think of it as a reference in case you're uncertain.
+    # Oh, and if you wanted to give actual offers to the 5th villager, but don't want to delete all this informative
+    # text, simply change that '5' to '20' or some other profession ID you're not worried about (anything above 4 is
+    # unused by default).
+    '5':
+        # First, every profession is followed by an indented list representing the offers which can generate. There are
+        # three sections which must exist: 'buys', 'sells', and 'other'.
+        
+        # "buys": These are items a villager will buy from a player. The format is:
+        #   item-name: offer-probability
+        # 
+        # You can specify an item ID or block ID for item-name if you wish, but it must be enclosed in apostrophes.
+        # 
+        # The value for offer-probability must be a decimal number between 0.0 and 1.0, inclusive. If it is 0.0, the
+        # offer will simply never be generated. If it is 1.0, it will be extremely likely to be generated, and also
+        # prevents the villager from generating "default" offers (explained later in this file).
+        # 
+        # You only specify the item to be bought here - the amount to buy (or buy it for) is specified later in this
+        # file, in 'buy-values'. These items are bought by the villager, in exchange for the currency-item.
+        # If an item is not specified in 'buy-values', its value will default to 1 of the currency-item.
+        buys:
+            bedrock: 0.5
+            record: 0.3
+            '329': 0.5
+        # Note that this villager will accept any record, as they do not distinguish between damage values - this is a
+        # vanilla mechanic which I cannot safely change.
+        # Also, '329' is the ID of a saddle. "saddle" (without quotes) would have worked equally well, but I just
+        # wanted to demonstrate :p
+        
+        # "sells": These are items a villager will sell to a player. The format is:
+        #   item-name: offer-probability
+        # 
+        # You only specify the item to be sold here (and the chance of the offer) - the amount to sell (or sell it for)
+        # is specified later in this file, in 'sell-values'. These items are sold by the villager, in exchange for the
+        # currency-item.
+        # If an item is not specified in 'sell-values', its value will default to 1 of the currency-item.
+        #
+        # This list is formatted exactly the same as 'buys', so instead of demonstrating sell offers, I'll take the
+        # opportunity to show you how you should properly indicate a villager has no offers in a list:
+        sells:
+            nothing
+        
+        # "other": These are special or custom offers. They allow you to specify the exact contents of all three offer
+        # slots (the two inputs and one output), and thus allow you to create offers the 'buys' and 'sells' list cannot
+        # create. Each element in this list is a custom offer, which can have any name you desire.
+        #
+        # Note that each custom offer must have a different name, and if you use numbers as names, those numbers must
+        # be in apostrophes!
+        other:
+            # This is a custom offer. Yes, that was descriptive.
+            custom-offer:
+                
+                # All custom offers must have a 'buyA' property. This is the first input slot of the trade.
+                buyA:
+                    # The following are all the properties an offer slot can have.
+                    # These will also work in 'buyB' and 'sell'.
+                    
+                    # The only mandatory property is the item itself. Again, this can be an ID in apostrophes.
+                    item: swordIron
+                    
+                    # The damage-value of an item. This is optional and defaults to 0. Some items use damage-values for
+                    # alternate forms of the item, such as different dyes. In this case, we are specifying a request
+                    # for a half-used iron sword. Note that villagers ignore the damage value when buying an item - a
+                    # villager will just as easily accept an almost-depleted iron sword or an unused iron sword here!
+                    damage: 125
+                    
+                    # The amount of an item in this stack. Smart Stacking and Smart Compression do NOT apply for custom
+                    # offers, so unless you want some rather unfriendly glitches, never put more than 64 here! Also
+                    # never put less than 1, for the same reasons.
+                    # This property is optional and defaults to 1 if it is missing.
+                    # This number must be in [] brackets, because it is actually a range. I'll mention more about that
+                    # below.
+                    amount: [1]
+                    
+                    # The level range to enchant the item at. This does a standard enchantment on the item, with
+                    # properties identical to an enchantment performed by a player spending the given amount of
+                    # levels.
+                    # If this property is missing, the item is not enchanted. There is no point in attempting to
+                    # enchant unenchantable items using this. In addition, like damage values, villagers will not
+                    # recognize enchantments when buying an item - thus this villager would just as easily accept an
+                    # unenchanted sword!
+                    # Again, this property is in [] brackets because it is a range. This means that a random number is
+                    # picked, ranging anywhere between the first and second number - in this case, the enchantment will
+                    # be anywhere between 15 and 30 levels, inclusive. If you only specify one value in a range, it
+                    # will not be random, instead using that fixed value (which is why "amount: [1]" above specifies we
+                    # are only requiring one of the item).
+                    enchant-level: [15,30]
+                
+                # The buyB property is optional, and represents the second input slot of a trade. Its format is exactly
+                # the same as buyA.
+                buyB:
+                    # Rather than specifying an item name or ID, you can set the name to "currency-item" to use the
+                    # currency item you specified at the start of this configuration.
+                    item: currency-item
+                    
+                    # Here we see a random range specified for the item amount: anywhere between 34 and 64 of the
+                    # currency item will be requested. As a reminder, you should never set amount higher than 64 for
+                    # custom offers such as this.
+                    amount: [34,64]
+                
+                # All custom offers must also have a 'sell' property. As its name suggests, it represents the output
+                # slot of a trade. Its format is the same as buyA and buyB, but damage values and enchantments actually
+                # matter here, as the item displayed above the output slot is exactly the item the player will get!
+                sell:
+                    # '1' is the ID of stone. Of course, a simple "stone" would have sufficed, but I felt like
+                    # demonstrating ID use as this offer is nonsensical already.
+                    item: '1'
+                    amount: [5, 6]
+                
+                # The probability value of this offer. This functions in exactly the same way as the probability of
+                # non-custom offers. Note that if you forget this property, the offer will simply never be generated,
+                # as it will be processed with a probability of zero.
+                probability: 0.5
+            
+            # This is another custom offer. Yes, the tutorial's not done yet!
+            # First, notice how I was too lazy to think of a name, so I simply called my offer "'1'". The apostrophes,
+            # as you've probably learned by now, are mandatory if you're just using numbers.
+            '1':
+                buyA:
+                    # The names my plugin identifies are the in-code names Minecraft uses for items - in this case,
+                    # dyePowder is actually the item for ink sacs, bonemeal, lapis, and other dyes. When in doubt, just
+                    # use an ID instead :p
+                    item: dyePowder
+                    
+                    # A damage value of 4 on dyePowder is Lapis Lazuli. But remember: villagers can't differentiate
+                    # between damage values, so while the offer slot will display lapis, the villager will just as
+                    # easily accept ink sacs, bonemeal, or any other dyes!
+                    damage: 4
+                    amount: [9,15]
+                sell:
+                    # Oh, guess what? My plugin can also make use of Bukkit's ItemStack loading feature. If you know
+                    # how to write ItemStacks in yml, or have a plugin that can output them, you can specify the exact
+                    # enchantments you want your item to have. I'm not explaining how ItemStacks are written, as I'm
+                    # not so certain myself, but you can guess by looking at the following, and even copy it as a
+                    # basis. Sadly, Bukkit provides no mechanism for loading a book's text from yml, so this feature is
+                    # really only useful for getting specific enchants.
+                    # Note: if you wish to use an itemstack, you must only include the 'itemstack' property. Other
+                    # properties are ignored, or the itemstack itself will be ignored if 'item' exists.
+                    itemstack:
+                        ==: org.bukkit.inventory.ItemStack
+                        type: IRON_PICKAXE
+                        damage: 200
+                        amount: 23
+                        enchantments:
+                            DIG_SPEED: 4
+                            DURABILITY: 3
+                            SILK_TOUCH: 1
+                probability: 0.1
+    # That's the end of the "tutorial". The following are actual offers used by the plugin.
+    
+    farmer:
+        buys:
+            wheat: 0.9
+            # (cloth is wool)
+            cloth: 0.5
+            chickenRaw: 0.5
+            fishCooked: 0.4
+            
+        sells:
+            bread: 0.9
+            # ('360' is melon slice. "melon" would be ambiguous as it references both the item and the block)
+            '360': 0.3
+            apple: 0.3
+            cookie: 0.3
+            shears: 0.3
+            flintAndSteel: 0.3
+            chickenCooked: 0.3
+            arrow: 0.5
+            
+        other:
+            gravel-conversion:
+                buyA:
+                    item: gravel
+                    amount: [20]
+                buyB:
+                    item: currency-item
+                    amount: [1]
+                sell:
+                    item: flint
+                    amount: [15, 20]
+                probability: 0.5
+            
+    librarian:
+        buys:
+            paper: 0.8
+            book: 0.8
+            writtenBook: 0.3
+            
+        sells:
+            bookshelf: 0.8
+            glass: 0.2
+            compass: 0.2
+            clock: 0.2
+            
+        other:
+            nothing
+            
+    priest:
+        buys:
+            rottenFlesh: 0.1
+            
+        sells:
+            expBottle: 0.2
+            redstone: 0.4
+            lightgem: 0.3  
+            
+        other:
+            enchant1:
+                buyA:
+                    item: swordIron
+                buyB:
+                    item: currency-item
+                    amount: [1, 3]
+                sell:
+                    item: swordIron
+                    enchant-level: [9, 19]
+                probability: 0.1
+                
+            enchant2:
+                buyA:
+                    item: swordDiamond
+                buyB:
+                    item: currency-item
+                    amount: [5, 9]
+                sell:
+                    item: swordDiamond
+                    enchant-level: [15, 30]
+                probability: 0.1
+                
+            enchant3:
+                buyA:
+                    item: chestplateIron
+                buyB:
+                    item: currency-item
+                    amount: [1, 3]
+                sell:
+                    item: chestplateIron
+                    enchant-level: [9, 19]
+                probability: 0.1
+                
+            enchant4:
+                buyA:
+                    item: chestplateDiamond
+                buyB:
+                    item: currency-item
+                    amount: [4, 9]
+                sell:
+                    item: chestplateDiamond
+                    enchant-level: [15, 30]
+                probability: 0.1
+                
+            enchant5:
+                buyA:
+                    item: hatchetIron
+                buyB:
+                    item: currency-item
+                    amount: [1, 3]
+                sell:
+                    item: hatchetIron
+                    enchant-level: [9, 19]
+                probability: 0.1
+                
+            enchant6:
+                buyA:
+                    item: hatchetDiamond
+                buyB:
+                    item: currency-item
+                    amount: [4, 9]
+                sell:
+                    item: hatchetDiamond
+                    enchant-level: [15, 30]
+                probability: 0.1
+                
+            enchant7:
+                buyA:
+                    item: pickaxeIron
+                buyB:
+                    item: currency-item
+                    amount: [1, 3]
+                sell:
+                    item: pickaxeIron
+                    enchant-level: [9, 19]
+                probability: 0.1
+                
+            enchant8:
+                buyA:
+                    item: pickaxeDiamond
+                buyB:
+                    item: currency-item
+                    amount: [4, 9]
+                sell:
+                    item: pickaxeDiamond
+                    enchant-level: [15, 30]
+                probability: 0.1
+            
+    blacksmith:
+        buys:
+            coal: 0.7
+            ingotIron: 0.5
+            ingotGold: 0.5
+            diamond: 0.5
+            
+        sells:
+            swordIron: 0.5
+            swordDiamond: 0.5
+            hatchetIron: 0.3
+            hatchetDiamond: 0.3
+            pickaxeIron: 0.5
+            pickaxeDiamond: 0.5
+            shovelIron: 0.2
+            shovelDiamond: 0.2
+            hoeIron: 0.2
+            hoeDiamond: 0.2
+            
+            bootsIron: 0.2
+            bootsDiamond: 0.2
+            helmetIron: 0.2
+            helmetDiamond: 0.2
+            chestplateIron: 0.2
+            chestplateDiamond: 0.2
+            leggingsIron: 0.2
+            leggingsDiamond: 0.2
+            bootsChain: 0.1
+            helmetChain: 0.1
+            chestplateChain: 0.1
+            leggingsChain: 0.1
+            
+        other:
+            nothing
+            
+    butcher:
+        buys:
+            coal: 0.7
+            porkchopRaw: 0.5
+            beefRaw: 0.5
+            
+        sells:
+            saddle: 0.1
+            # ("cloth" items are actually leather)
+            chestplateCloth: 0.3
+            bootsCloth: 0.3
+            helmetCloth: 0.3
+            leggingsCloth: 0.3
+            porkchopCooked: 0.3
+            beefCooked: 0.3
+        other:
+            nothing
+    default-offers:
+        buys:
+            ingotGold : 1.0
+        sells:
+            nothing
+        other:
+            nothing
+        
+buy-values:
+    coal: [6, 22]
+    ingotIron: [7, 19]
+    ingotGold: [4, 12]
+    diamond: [-3, 1]
+    fishCooked: [14, 29]
+    chickenRaw: [14, 29]
+    porkchopRaw: [16, 32]
+    beefRaw: [16, 32]
+    cloth: [48, 96]
+    wheat: [48, 96]
+    paper: [64, 128]
+    book: [23, 47]
+    writtenBook: [1, 2]
+    # The following are unused:
+    enderPearl: [-128]
+    eyeOfEnder: [-32]
+    seeds: [64, 128]
+    seeds_melon: [48, 96]
+    seeds_pumpkin: [48, 96]
+    rottenFlesh: [32, 128]
+sell-values:
+    redstone: [-32, -16]
+    lightgem: [-16, -8]
+    glass: [-64, -48]
+    chickenCooked: [-19, -11]
+    porkchopCooked: [-17, -10]
+    beefCooked: [-17, -10]
+    saddle: [-1, 1]
+    '360': [-64, -52]
+    apple: [-56, -32]
+    bread: [-64, -48]
+    cookie: [-64, -56]
+    bookshelf: [-24, -12]
+    eyeOfEnder: [-64]
+    shears: [-2, 2]
+    flintAndSteel: [-6]
+    arrow: [-64, -48] # Yes, this is incorrect, but that's how it is in vanilla!
+    compass: [-1, 1]
+    clock: [-1, 1]
+    swordIron: [1, 2]
+    hatchetIron: [1, 2]
+    pickaxeIron: [1, 2]
+    shovelIron: [1, 2]
+    hoeIron: [1, 2]
+    swordDiamond: [3, 6]
+    hatchetDiamond: [4, 8]
+    pickaxeDiamond: [4, 8]
+    shovelDiamond: [2, 6]
+    hoeDiamond: [2, 6]
+    helmetCloth: [1, 2]
+    chestplateCloth: [1, 2]
+    leggingsCloth: [1, 2]
+    bootsCloth: [1, 2]
+    helmetIron: [1, 2]
+    chestplateIron: [1, 2]
+    leggingsIron: [1, 2]
+    bootsIron: [1, 2]
+    helmetDiamond: [2, 3]
+    chestplateDiamond: [4, 6]
+    leggingsDiamond: [3, 5]
+    bootsDiamond: [2, 3]
+    expBottle: [-32, -16]
+    helmetChain: [1, 3]
+    chestplateChain: [2, 4]
+    leggingsChain: [2, 4]
+    bootsChain: [1, 3]
