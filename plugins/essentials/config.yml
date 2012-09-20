@@ -366,14 +366,15 @@ command-costs:
   #kit-tools: 1500
   dynmap hide: 2500
   dynmap show: 2500
-  afk: 100
+  afk: 80
   mail send: 50
   nick: 100
-  spawn: 100
-  home: 100
+  spawn: 80
+  home: 80
   sethome: 250
   delhome: 50
-  tpask: 200
+  tpask: 160
+  tpa: 160
   lwc flag magnet on: 250
   changepw: 100
 
