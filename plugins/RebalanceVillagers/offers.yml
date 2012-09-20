@@ -362,11 +362,11 @@ potential-offers:
             nothing
         
 buy-values:
-    coal: [12, 22]
-    charcoal: [24, 48]
-    ingotIron: [9, 19]
-    ingotGold: [5, 12]
-    diamond: [-3, 1]
+    coal: [24, 44]
+    charcoal: [48, 96]
+    ingotIron: [13, 22]
+    ingotGold: [8, 16]
+    diamond: [-1, 1]
     fishCooked: [18, 29]
     chickenRaw: [18, 29]
     porkchopRaw: [16, 32]
@@ -377,7 +377,6 @@ buy-values:
     book: [23, 47]
     '103': [32, 48]
     writtenBook: [1, 2]
-    # The following are unused:
     enderPearl: [-128]
     eyeOfEnder: [-32]
     seeds: [64, 128]

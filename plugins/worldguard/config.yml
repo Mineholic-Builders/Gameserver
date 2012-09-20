@@ -29,7 +29,7 @@ regions:
         password: worldguard
     enable: true
     invincibility-removes-mobs: false
-    high-frequency-flags: false
+    high-frequency-flags: true
     wand: 339
     max-claim-volume: 30000
     claim-only-inside-existing-regions: false
@@ -63,7 +63,7 @@ ignition:
     block-lighter: false
 fire:
     disable-lava-fire-spread: true
-    disable-all-fire-spread: false
+    disable-all-fire-spread: true
     disable-fire-spread-blocks: []
     lava-spread-blocks: []
 mobs:
@@ -101,7 +101,7 @@ weather:
     prevent-lightning-strike-blocks: []
     disable-lightning-strike-fire: false
     disable-thunderstorm: false
-    disable-weather: true
+    disable-weather: false
     disable-pig-zombification: false
     disable-powered-creepers: false
     always-raining: false
@@ -126,7 +126,7 @@ blacklist:
             pass: ''
             table: blacklist_events
         file:
-            enable: false
+            enable: true
             path: worldguard/logs/%Y-%m-%d.log
             open-files: 10
 summary-on-start: true

@@ -7,7 +7,7 @@
 offer-removal:
 
     # Whether or not to remove offers. Plugin default is false, vanilla default is true.
-    remove-offers: false
+    remove-offers: true
 
     # Offer removal range. These values are not used if 'remove-offers' is set to false.
     # If an offer has been used at least 'minimum' times, it may randomly be removed. If it has
