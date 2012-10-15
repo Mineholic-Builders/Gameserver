@@ -1,9 +1,9 @@
-version: 0.949
+version: 0.95
 config:
   shopcheckinterval: 40
   logwriteinterval: 15
   saveinterval: 700
-  signupdateinterval: 2
+  signupdateinterval: 1
   purchasetaxpercent: 0
   initialpurchasetaxpercent: 100
   statictaxpercent: 300
@@ -31,24 +31,24 @@ config:
     max-tax-percent: 30
   enchantment:
     classvalue:
-      wood: 0.05
-      leather: 0.05
-      stone: 0.1
-      chainmail: 0.15
-      iron: 0.2
-      gold: 0.15
-      diamond: 0.25
-      bow: 0.15
+      wood: 0.5
+      leather: 0.5
+      stone: 0.5
+      chainmail: 0.5
+      iron: 0.5
+      gold: 0.5
+      diamond: 0.5
+      bow: 0.5
   sql-connection:
     use-sql: true
-    username: msteinfeldsql1
-    port: 3306
-    password: e8ab0450
-    host: 62.75.230.152
-    database: msteinfeldsql1
+    username: ******
+    port: ******
+    password: ******
+    host: 127.0.0.1
+    database: minebuildersql1
     max-sql-threads: 20
   web-page:
-    port: 22668
+    port: ******
     use-web-page: true
     background-color: EEEEF6
     font-color: 333333
@@ -58,4 +58,6 @@ config:
     highlight-row-color: B4FAF9
     header-color: B8B4FF
     web-page-economy: default
-  error-count: 0
+  error-count: 595
+  require-transaction-signs-to-be-in-shop: false
+  unlimited-stock-for-static-items: false

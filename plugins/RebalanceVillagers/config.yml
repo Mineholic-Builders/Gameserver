@@ -7,7 +7,7 @@
 offer-removal:
 
     # Whether or not to remove offers. Plugin default is false, vanilla default is true.
-    remove-offers: true
+    remove-offers: false
 
     # Offer removal range. These values are not used if 'remove-offers' is set to false.
     # If an offer has been used at least 'minimum' times, it may randomly be removed. If it has
@@ -15,8 +15,8 @@ offer-removal:
     # the GUI is closed and it is not the final offer slot. These are vanilla mechanics.
     # Plugin defaults are 20 and 40, while vanilla defaults are 3 and 13.
     removal-chance:
-        minimum: 15
-        maximum: 50
+        minimum: 20
+        maximum: 40
     
     # The number of ticks, after the trading GUI is closed, before an offer is removed. Vanilla default is 20.
     # Note: this property and 'offer-generation.generation-ticks' effectively override each other: offers are generated
@@ -42,7 +42,7 @@ offer-generation:
     # Note: this property and 'offer-removal.removal-ticks' effectively override each other: offers are generated and
     # removed simultaneously, and the last action (causing removal or causing generation) determines the actual number
     # of ticks before *both* removal and generation occur.
-    generation-ticks: 50
+    generation-ticks: 60
     
     # If set to true, allows new offers to be generated after any trade. By default, new offers are only generated
     # after a trade with the final offer slot - hence the vanilla default is false. Note that, if you are setting
@@ -55,7 +55,7 @@ offer-generation:
     # the proper conditions are fulfilled.
     # Note that this probability may seem misleading: if you set it to 50, it would be a 50% chance for *every*
     # transaction capable of generating offers, not a 50% chance every time the trading GUI is closed.
-    probability: 80
+    probability: 100
     
     
 general-trading:
@@ -72,7 +72,7 @@ general-trading:
     allow-bickering: false
     
     # Whether or not players can trade with villager children. The vanilla default is false.
-    can-trade-children: true
+    can-trade-children: false
     
     
 general:

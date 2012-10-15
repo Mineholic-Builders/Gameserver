@@ -207,6 +207,6 @@ protections:
 
 modes:
     droptransfer:
-        enabled: true
+        enabled: false
     persist:
         enabled: true

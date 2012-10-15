@@ -1,0 +1,78 @@
+portals:
+  world2_town:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Markezzz
+    location: -22.0,36.0,8.0:-19.0,40.0,8.0
+    world: world2_town
+    destination: p:world2_spawn:n
+  world2_spawn:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Markezzz
+    location: 68.0,70.0,806.0:71.0,74.0,806.0
+    world: world2
+    destination: p:world2_town:n
+  world2_resources:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Markezzz
+    location: 65.0,219.0,-98.0:68.0,223.0,-98.0
+    world: world2_resources
+    destination: p:world2_resources2:n
+  world2_resources2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Markezzz
+    location: -27.0,36.0,8.0:-24.0,40.0,8.0
+    world: world2_town
+    destination: p:world2_resources
+  dave-resource:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Markezzz
+    location: 60.0,218.0,-98.0:63.0,222.0,-98.0
+    world: world2_resources
+    destination: p:dave-world
+  world_pvp_exit:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Markezzz
+    location: -1.0,35.0,3.0:2.0,39.0,3.0
+    world: world2_pvp
+    destination: p:world_pvp_entry:n
+  world_pvp_entry:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Markezzz
+    location: -32.0,36.0,8.0:-29.0,40.0,8.0
+    world: world2_town
+    destination: p:world_pvp_exit

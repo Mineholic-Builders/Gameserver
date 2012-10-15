@@ -1,6 +1,6 @@
 worlds:
 -   name: world2
-    title: Minecraft - World
+    title: Minecraft - Welt
     enabled: true
     protected: false
     center:
@@ -8,33 +8,33 @@ worlds:
         y: 74.0
         z: 788.0
     sendposition: true
-    sendhealth: false
+    sendhealth: true
     bigworld: true
-    extrazoomout: 0
+    extrazoomout: 2
     visibilitylimits: []
     hiddenlimits: []
     autogenerate-to-visibilitylimits: none
     hidestyle: air
     maps:
     -   class: org.dynmap.hdmap.HDMap
+        name: surface
+        title: 3D-Karte
+        icon: images/block_surface.png
+        prefix: surface
+        perspective: iso_SE_30_lowres
+        shader: sk89q
+        lighting: shadows
+        colorscheme: sk89q
+        image-format: default
+        mapzoomin: 3
+        append_to_world: ''
+        protected: false
+    -   class: org.dynmap.hdmap.HDMap
         name: flat
         title: 2D-Karte
         icon: images/block_flat.png
         prefix: flat
         perspective: iso_S_90_lowres
-        shader: sk89q
-        lighting: shadows
-        colorscheme: sk89q
-        image-format: default
-        mapzoomin: 1
-        append_to_world: ''
-        protected: false
-    -   class: org.dynmap.hdmap.HDMap
-        name: surface
-        title: Detailansicht - Tag
-        icon: images/block_surface.png
-        prefix: surface
-        perspective: iso_SE_30_lowres
         shader: sk89q
         lighting: shadows
         colorscheme: sk89q
@@ -139,3 +139,78 @@ worlds:
     sendhealth: true
     hidestyle: stone
     bigworld: false
+-   name: world2_town
+    title: Minecraft - Stadt
+    enabled: true
+    protected: false
+    center:
+        x: 0.0
+        y: 36.0
+        z: 0.0
+    sendposition: true
+    sendhealth: true
+    bigworld: false
+    extrazoomout: 0
+    visibilitylimits: []
+    hiddenlimits: []
+    autogenerate-to-visibilitylimits: none
+    hidestyle: stone
+    maps:
+    -   class: org.dynmap.hdmap.HDMap
+        name: surface_town
+        title: 3D-Karte
+        icon: images/block_surface.png
+        prefix: surface_town
+        perspective: iso_SE_30_lowres
+        shader: sk89q
+        lighting: shadows
+        colorscheme: sk89q
+        image-format: default
+        mapzoomin: 2
+        append_to_world: ''
+        protected: false
+    -   class: org.dynmap.hdmap.HDMap
+        name: flat_town
+        title: 2D-Karte
+        icon: images/block_flat.png
+        prefix: flat_town
+        perspective: iso_S_90_lowres
+        shader: sk89q
+        lighting: shadows
+        colorscheme: sk89q
+        image-format: default
+        mapzoomin: 2
+        append_to_world: ''
+        protected: false
+-   name: world2_resources
+    title: Minecraft - Resourcen
+    enabled: false
+    protected: false
+    center:
+        x: 0
+        y: 217.0
+        z: 0
+    sendposition: true
+    sendhealth: true
+    bigworld: true
+    extrazoomout: 0
+    visibilitylimits: []
+    hiddenlimits: []
+    autogenerate-to-visibilitylimits: none
+    hidestyle: air
+-   name: world2_pvp
+    title: Minecraft - PvP
+    enabled: false
+    protected: false
+    center:
+        x: 0
+        y: 217.0
+        z: 0
+    sendposition: true
+    sendhealth: true
+    bigworld: true
+    extrazoomout: 0
+    visibilitylimits: []
+    hiddenlimits: []
+    autogenerate-to-visibilitylimits: none
+    hidestyle: air

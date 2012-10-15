@@ -10,65 +10,41 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    aalex852_schafe:
+        type: cuboid
+        min: {x: -338.0, y: 70.0, z: 3600.0}
+        max: {x: -330.0, y: 72.0, z: 3603.0}
+        priority: 0
+        flags: {}
+        owners:
+            players: [aalex852]
+        members: {}
+    bikinibottom:
+        type: cuboid
+        min: {x: -647.0, y: 44.0, z: 514.0}
+        max: {x: -587.0, y: 60.0, z: 620.0}
+        priority: 0
+        flags: {}
+        owners: {}
+        members: {}
+    brueckenminee:
+        type: cuboid
+        min: {x: -772.0, y: 74.0, z: 694.0}
+        max: {x: -760.0, y: 74.0, z: 701.0}
+        priority: 0
+        flags: {}
+        owners: {}
+        members: {}
     town:
         type: cuboid
         min: {x: -805.0, y: 0.0, z: 3280.0}
         max: {x: 195.0, y: 255.0, z: 4280.0}
         priority: 0
-        flags: {build: allow, mob-spawning: deny}
+        flags:
+            deny-spawn: [ZOMBIE, CREEPER, ENDERMAN, SKELETON, SPIDER]
+            pvp: deny
+            build: allow
         owners:
-            groups: [builders, admins]
-        members: {}
-    townchurch:
-        type: cuboid
-        min: {x: -299.0, y: 40.0, z: 3865.0}
-        max: {x: -175.0, y: 150.0, z: 3989.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            players: ['']
-            groups: [builders]
-        members: {}
-        parent: town
-    townhall:
-        type: cuboid
-        min: {x: -299.0, y: 40.0, z: 3786.0}
-        max: {x: -225.0, y: 149.0, z: 3860.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builders]
-        members: {}
-        parent: town
-    townmarket:
-        type: cuboid
-        min: {x: -360.0, y: 40.0, z: 3786.0}
-        max: {x: -311.0, y: 150.0, z: 3835.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            players: ['']
-            groups: [builders]
-        members: {}
-        parent: town
-    townshop:
-        type: cuboid
-        min: {x: -361.0, y: 40.0, z: 3724.0}
-        max: {x: -311.0, y: 150.0, z: 3774.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            groups: [builders]
-        members: {}
-        parent: town
-    townwarehouse:
-        type: cuboid
-        min: {x: -299.0, y: 40.0, z: 3723.0}
-        max: {x: -249.0, y: 150.0, z: 3774.0}
-        priority: 0
-        flags: {build: allow}
-        owners:
-            players: ['']
-            groups: [builders]
-        members: {}
-        parent: town
+            groups: [admins]
+        members:
+            groups: [builder]

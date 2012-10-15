@@ -15,5 +15,5 @@ groups:
 
 players:
     # Gives Notch unlimited protections
-    Notch:
+    Player:
         default: unlimited

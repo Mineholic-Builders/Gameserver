@@ -16,14 +16,16 @@ regionstyle:
   fillOpacity: 0.35
   unownedStrokeColor: '#00FF00'
 visibleregions:
-  - town
-  - townhall
-  - townshop
-  - townwarehouse
-  - townchurch
-  - townmarket
+- town
+- townhall
+- townshop
+- townwarehouse
+- townchurch
+- townmarket
 hiddenregions: []
 custstyle:
+  customregion1:
+    strokeColor: '#00FF00'
   town:
     strokeColor: '#5987d2'
     strokeOpacity: 0.8

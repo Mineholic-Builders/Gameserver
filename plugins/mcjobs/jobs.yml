@@ -1,7 +1,7 @@
 jobs:
   graeber:
     description: Verdiene Geld indem du Bloecke mit der Schaufel abbaust.
-    basepay: 0.30
+    basepay: 0.29
     exp: 0
     break:
       pays: true
@@ -11,7 +11,7 @@ jobs:
       tier3: soul_sand mycel
   mienenarbeiter:
     description: Verdiene Geld indem du Bloecke mit der Spitzhacke abbaust.
-    basepay: 0.34
+    basepay: 0.33
     exp: 0
     break:
       pays: true
@@ -23,19 +23,19 @@ jobs:
       tier5: obsidian
   architekt:
     description: Verdiene Geld durch das Platzieren von Bloecken.
-    basepay: 0.33
+    basepay: 0.29
     exp: 0
     place:
       pays: true
       hide: false
-      tier1: wood wood_stairs sign_post wooden_door wall_sign furnace workbench trap_door chest fence bed_block ladder
+      tier1: wood wood_stairs sign_post wooden_door wall_sign furnace workbench trap_door chest fence bed_block ladder wool
       tier2: cobblestone_stairs step stone_plate glass thin_glass fence_gate stone
       tier3: brick brick_stairs sandstone smooth_brick smooth_stairs nether_brick nether_fence nether_brick_stairs
       tier4: iron_door_block dispenser bookshelf iron_fence
       tier5: brewing_stand enchantment_table
   tischler:
     description: Verdiene Geld durch das Herstellen bestimmter Items.
-    basepay: 0.43
+    basepay: 0.41
     exp: 0
     craft:
       pays: true
@@ -47,20 +47,20 @@ jobs:
       tier5: ender_chest
   kopfgeldjaeger:
     description: Verdiene Geld durch das Toeten von Monstern.
-    basepay: 0.71
+    basepay: 0.67
     show_every_time: true
     exp: 0
     defeat:
       pays: true
       hide: false
       tier1: wolf zombie skeleton slime
-      tier2: enderman creeper cave_spider spider
+      tier2: creeper cave_spider spider
       tier3: pig_zombie magma_cube
       tier4: blaze ghast
       tier5: silverfish
   elektriker:
     description: Verdiene Geld durch Bauen und Setzen von Redstone-Elementen.
-    basepay: 0.30
+    basepay: 0.32
     exp: 0
     place:
       pays: true
@@ -76,7 +76,7 @@ jobs:
       tier2: powered_rail tripwire_hook
   holzfaeller:
     description: Verdiene Geld durch Baeume Faellen und Anpflanzen.
-    basepay: 0.34
+    basepay: 0.33
     exp: 0
     break:
       pays: true
@@ -86,14 +86,14 @@ jobs:
     place:
       pays: true
       hide: false
-      tier2: sapling
+      tier1: sapling
     craft:
       pays: true
       hide: false
       tier1: stick wood_axe wood_spade wood_hoe wood_pickaxe fishing_rod bowl
   farmer:
     description: Verdiene durch Tiere schlachten und Felder anlegen.
-    basepay: 0.27
+    basepay: 0.25
     exp: 0
     break:
       pays: true
@@ -103,7 +103,7 @@ jobs:
     place:
       pays: true
       hide: false
-      tier2: soil melon_stem pumpkin_stem
+      tier1: soil melon_stem pumpkin_stem
     defeat:
       pays: true
       hide: false
@@ -172,7 +172,7 @@ jobs:
       tier1: dropped_item
   baecker:
     description: Verdiene Geld beim Verarbeiten von Nahrung.
-    basepay: 0.41
+    basepay: 0.40
     show_every_time: true
     exp: 0
     craft:
@@ -185,7 +185,7 @@ jobs:
       tier5: golden_apple
   alchemist:
     description: Verdiene Geld beim Herstellen defensiver Traenke.
-    basepay: 0.37
+    basepay: 0.33
     show_every_time: true
     exp: 0
     potions:
@@ -197,7 +197,7 @@ jobs:
       tier4: fire_res_ext_spl swift_ext_spl swift_two_spl health_two_spl regen_ext_spl regen_two_spl strength_two_spl strength_ext_spl
   braumeister:
     description: Verdiene Geld beim Herstellen offensiver Traenke.
-    basepay: 0.46
+    basepay: 0.42
     show_every_time: true
     exp: 0
     potions:

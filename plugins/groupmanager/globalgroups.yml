@@ -6,7 +6,7 @@
 # They can also be added as one of a users subgroups, but NOT as a primary group.
 # These collections are available to ALL group and user yml's.
 #
-# Add to and customize these groups to fit yoru needs.
+# Add to and customize these groups to fit your needs.
 
 groups:
 
@@ -18,81 +18,22 @@ groups:
     permissions:
     - groupmanager.notify.self
     
-  g:groupmanager_moderator:
+  g:groupmanager_admin:
     permissions:
     - groupmanager.listgroups
     - groupmanager.mandemote
-    - groupmanager.manpromote
-    - groupmanager.manselect
-    - groupmanager.manuadd
-    - groupmanager.manudel
-    - groupmanager.manwhois
-    - groupmanager.notify.other
-    
-  g:groupmanager_admin:
-    permissions:
-    - groupmanager.mantogglevalidate
-    - groupmanager.mansave
     - groupmanager.mangcheckp
     - groupmanager.manglistp
+    - groupmanager.manpromote
+    - groupmanager.mansave
+    - groupmanager.manselect
+    - groupmanager.mantogglevalidate
+    - groupmanager.manuadd
     - groupmanager.manucheckp
+    - groupmanager.manudel
     - groupmanager.manulistp
-
-# Permission nodes for Cenotaph
-# http://dev.bukkit.org/server-mods/cenotaph/
-
-  g:cenotaph_default:
-    permissions:
-    - cenotaph.cmd.*
-    - cenotaph.use
-    - cenotaph.freechest
-    - cenotaph.large
-    - cenotaph.lwc
-    - cenotaph.freesign
-    - cenotaph.sign
-    - cenotaph.quickloot
-
-  g:cenotaph_admin:
-    permissions:
-    - cenotaph.admin
-    - cenotaph.admin.list
-    - cenotaph.admin.find
-    - cenotaph.admin.time
-    - cenotaph.admin.remove
-
-# Permission nodes for Craftbook
-# http://wiki.sk89q.com/wiki/CraftBook/
-
-  g:craftbook_default:
-    permissions:
-    - craftbook.mech.area.use
-    - craftbook.mech.bookshelf.use
-    - craftbook.mech.bridge.use
-    - craftbook.mech.door.use
-    - craftbook.mech.drops
-    - craftbook.mech.elevator.use
-    - craftbook.mech.gate.use
-    - craftbook.mech.light-switch.use
-
-  g:craftbook_builder:
-    permissions:
-    - craftbook.mech.area.sign.area
-    - craftbook.mech.area.sign.savearea
-    - craftbook.mech.area.save.self
-    - craftbook.mech.area.list.self
-    - craftbook.mech.area.delete.self
-    - craftbook.mech.bookshelf
-    - craftbook.mech.bridge
-    - craftbook.mech.door
-    - craftbook.mech.cauldron
-    - craftbook.mech.elevator
-    - craftbook.mech.gate
-    - craftbook.mech.light-switch
-
-  g:craftbook_admin:
-    permissions:
-    - craftbook.mech.area.list.all
-    - craftbook.mech.area.delete.*
+    - groupmanager.manwhois
+    - groupmanager.notify.other
 
 # Permission nodes for CraftBukkit
 # by many devs and contributors
@@ -102,17 +43,6 @@ groups:
     permissions:
     - bukkit.broadcast.user
     - -bukkit.command.plugins
-    
-  g:bukkit_moderator:
-    permissions:
-    - bukkit.command.ban
-    - bukkit.command.ban.ip
-    - bukkit.command.ban.player
-    - bukkit.command.gamemode
-    - bukkit.command.kick
-    - bukkit.command.unban
-    - bukkit.command.unban.ip
-    - bukkit.command.unban.player
 
   g:bukkit_admin:
     permissions:
@@ -123,6 +53,14 @@ groups:
     - bukkit.command.kill
     - bukkit.command.list
     - bukkit.command.me
+    - bukkit.command.ban
+    - bukkit.command.ban.ip
+    - bukkit.command.ban.player
+    - bukkit.command.gamemode
+    - bukkit.command.kick
+    - bukkit.command.unban
+    - bukkit.command.unban.ip
+    - bukkit.command.unban.player
     - -bukkit.command.op
     - -bukkit.command.op.give
     - -bukkit.command.op.take
@@ -148,341 +86,82 @@ groups:
     - bukkit.command.whitelist.reload
     - bukkit.command.whitelist.remove
 
-# Permission nodes for Dynmap
-# https://github.com/webbukkit/dynmap/wiki/Permissions
-
-  g:dynmap_default:
-    permissions:
-    - dynmap.show.self
-    - dynmap.hide.self
-    - dynmap.sendtoweb
-    - dynmap.webchat
-    - dynmap.webregister
-
-  g:dynmap_admin:
-    permissions:
-    - dynmap.render
-    - dynmap.show.others
-    - dynmap.hide.others
-    - dynmap.fullrender
-    - dynmap.radiusrender
-    - dynmap.updaterender
-    - dynmap.cancelrender
-    - dynmap.reload
-    - dynmap.stats
-    - dynmap.resetstats
-    - dynmap.purgequeue
-    - dynmap.ids-for-ip
-    - dynmap.ips-for-id
-    - dynmap.add-id-for-ip
-    - dynmap.del-id-for-ip
-    - dynmap.marker.add
-    - dynmap.marker.movehere
-    - dynmap.marker.update
-    - dynmap.marker.delete
-    - dynmap.marker.list
-    - dynmap.marker.icons
-    - dynmap.marker.addset
-    - dynmap.marker.updateset
-    - dynmap.marker.deleteset
-    - dynmap.marker.listsets
-    - dynmap.marker.addicon
-    - dynmap.marker.updateicon
-    - dynmap.marker.deleteicon
-    - dynmap.marker.addarea
-    - dynmap.marker.updatearea
-    - dynmap.marker.deletearea
-    - dynmap.marker.listareas
-    - dynmap.marker.addline
-    - dynmap.marker.updateline
-    - dynmap.marker.deleteline
-    - dynmap.marker.listlines
-    - dynmap.dmap.worldlist
-    - dynmap.dmap.worldset
-    - dynmap.dmap.worldreset
-    - dynmap.dmap.mapdelete
-    - dynmap.dmap.mapset
-    - dynmap.dmap.mapadd
-    - dynmap.dmap.perspectivelist
-    - dynmap.dmap.shaderlist
-    - dynmap.dmap.lightinglist
-    - dynmap.webregister.other
-    - dynmap.playermarkers.showall
-    - dynmap.world.*
-    - dynmap.map.*
-
 # Permission nodes for Essentials
 # by ementalo, snowleo, and KHobbits
 # http://dev.bukkit.org/server-mods/essentials/
-# http://wiki.ess3.net/wiki/Command_Reference/Perm
 
   g:essentials_default:
     permissions:
     - essentials.help
     - essentials.helpop
-    - essentials.info
     - essentials.list
     - essentials.motd
-    - essentials.protect.pvp
+    - essentials.info
     - essentials.rules
     - essentials.spawn
     
   g:essentials_builder:
     permissions:
     - essentials.afk
+    - essentials.back
+    - essentials.back.ondeath
     - essentials.balance
+    - essentials.balance.others
     - essentials.balancetop
     - essentials.chat.color
     - essentials.chat.format
-    - essentials.chat.question
     - essentials.chat.shout
-    - essentials.chat.url
-    - essentials.clearinventory
+    - essentials.chat.question
     - essentials.compass
     - essentials.delhome
     - essentials.depth
+    - essentials.exp
     - essentials.getpos
+    - essentials.hat
     - essentials.home
     - essentials.ignore
     - essentials.itemdb
+    - essentials.kit
+    - essentials.kit.tools
     - essentials.mail
     - essentials.mail.send
     - essentials.me
     - essentials.msg
     - essentials.msg.color
     - essentials.msg.format
-    - essentials.msg.url
     - essentials.nick
-    - essentials.realname
+    - essentials.pay
+    - essentials.ping
+    - essentials.powertool
+    - essentials.powertooltoggle
+    - essentials.protect
     - essentials.seen
     - essentials.sethome
     - essentials.sethome.multiple
-    - essentials.signs.color
-    - essentials.signs.format
-    - essentials.signs.break.disposal
-    - essentials.signs.break.mail
-    - essentials.signs.break.trade
+    - essentials.signs.use.*
     - essentials.signs.create.disposal
     - essentials.signs.create.mail
+    - essentials.signs.create.protection
     - essentials.signs.create.trade
-    - essentials.signs.use.*
+    - essentials.signs.break.disposal
+    - essentials.signs.break.mail
+    - essentials.signs.break.protection
+    - essentials.signs.break.trade
     - essentials.suicide
     - essentials.time
     - essentials.tpa
     - essentials.tpaccept
+    - essentials.tpahere
     - essentials.tpdeny
     - essentials.warp
-    - essentials.whois
-    
-  g:essentials_moderator:
-    permissions:
-    - -essentials.spawner.enderdragon
-    - essentials.afk.kickexempt
-    - essentials.ban
-    - essentials.ban.notify
-    - essentials.banip
-    - essentials.broadcast
-    - essentials.delwarp
-    - essentials.eco.loan
-    - essentials.ext
-    - essentials.fly
-    - essentials.getpos.others
-    - essentials.helpop.recieve
-    - essentials.home.others
-    - essentials.invsee
-    - essentials.jails
-    - essentials.jump
-    - essentials.kick
-    - essentials.kick.notify
-    - essentials.kill
-    - essentials.kit.*
-    - essentials.mute
-    - essentials.nick.color
-    - essentials.nick.others
-    - essentials.protect.admin
-    - essentials.protect.alerts
-    - essentials.protect.ownerinfo
-    - essentials.ptime
-    - essentials.ptime.others
-    - essentials.seen.banreason
-    - essentials.seen.extra
-    - essentials.setwarp
-    - essentials.thunder
-    - essentials.time.set
-    - essentials.togglejail
-    - essentials.top
-    - essentials.tp
-    - essentials.tp.others
-    - essentials.tpahere
-    - essentials.tphere
-    - essentials.tppos
-    - essentials.tptoggle
-    - essentials.unban
-    - essentials.unbanip
     - essentials.warp.list
-    - essentials.weather
-    - essentials.world
-    - essentials.world.*
+    - essentials.worth
     
   g:essentials_admin:
     permissions:
     - -essentials.backup
     - -essentials.essentials
     - -essentials.reloadall
-    - -essentials.setspawn
+    - -essentials.plugin
     - essentials.*
 
-# Permission nodes for HyperConomy
-# http://dev.bukkit.org/server-mods/hyperconomy/pages/permissions/
-
-  g:hyperconomy_default:
-    permissions:
-    - hyperconomy.info
-    - hyperconomy.notify
-    - hyperconomy.shop.*
-    - hyperconomy.buysign
-    - hyperconomy.sellsign
-    - hyperconomy.top
-    - hyperconomy.xp
-
-  g:hyperconomy_admin:
-    permissions:
-    - hyperconomy.*
-
-# Permission nodes for LWC
-# https://github.com/Hidendra/LWC/wiki/Permissions
-
-  g:lwc_default:
-    permissions:
-    - lwc.create.*
-    - lwc.flag.autoclose
-    - lwc.flag.magnet
-    - lwc.flag.redstone
-    - lwc.info
-    - lwc.mode.persist
-    - lwc.modify
-    - lwc.remove
-    - lwc.shownotices
-    - lwc.unlock
-
-  g:lwc_admin:
-    permissions:
-    - lwc.admin.find
-    - lwc.admin.forceowner
-    - lwc.admin.purge
-    - lwc.admin.remove
-    - lwc.admin.view
-    - lwc.mod
-
-# Permission nodes for MC Jobs
-# http://dev.bukkit.org/server-mods/mcjobs/#w-permissions
-
-  g:mcjobs_default:
-    permissions:
-    - mcjobs.jobs.info
-    - mcjobs.jobs.join
-    - mcjobs.jobs.leave
-    - mcjobs.jobs.list
-    - mcjobs.jobsavail.alchemist
-    - mcjobs.jobsavail.architekt
-    - mcjobs.jobsavail.baecker
-    - mcjobs.jobsavail.braumeister
-    - mcjobs.jobsavail.farmer
-    - mcjobs.jobsavail.fischer
-    - mcjobs.jobsavail.holzfaeller
-    - mcjobs.jobsavail.kopfgeldjaeger
-    - mcjobs.jobsavail.mienenarbeiter
-    - mcjobs.jobsavail.ruestungsschmied
-    - mcjobs.jobsavail.waffenschmied
-    - mcjobs.jobsavail.werkzeugschmied
-    - mcjobs.jobsavail.graeber
-    - mcjobs.jobsavail.tischler
-    - mcjobs.jobsavail.elektriker
-    - mcjobs.jobsavail.ruestungsmagier
-    - mcjobs.jobsavail.waffenmagier
-    - mcjobs.jobsavail.werkzeugmagier
-    - mcjobs.jobsavail.abrisskosten
-    - mcjobs.jobsavail.steuern
-    - mcjobs.world.world2
-    - mcjobs.world.world2_nether
-
-  g:mcjobs_admin:
-    permissions:
-    - -mcjobs.admin.defaults
-    - -mcjobs.admin.leavedefault
-    - mcjobs.admin
-
-# Permission nodes for NoLagg
-# http://dev.bukkit.org/server-mods/nolagg/pages/commands-nolagg/
-
-  g:nolagg_admin:
-    permissions:
-    - nolagg.*
-
-# Permission nodes for Worldedit
-# http://wiki.sk89q.com/wiki/WorldEdit/Permissions
-
-  g:worldedit_builder:
-    permissions:
-    - worldedit.selection.contract
-    - worldedit.selection.expand
-    - worldedit.selection.hpos
-    - worldedit.selection.inset
-    - worldedit.selection.outset
-    - worldedit.selection.pos
-    - worldedit.selection.shift
-    - worldedit.selection.size
-    - worldedit.wand
-    - worldedit.wand.toggle
-
-  g:worldedit_admin:
-    permissions:
-    - worldedit.*
-
-# Permission nodes for Worldguard
-# http://wiki.sk89q.com/wiki/WorldGuard/Regions/Permissions
-
-  g:worldguard_default:
-    permissions:
-    - group.default
-
-  g:worldguard_builder:
-    permissions:
-    - group.builder
-
-  g:worldguard_moderator:
-    permissions:
-    - group.moderator
-
-  g:worldguard_admin:
-    permissions:
-    - worldguard.*
-    - group.admin
-
-# Permission nodes for xAuth
-# https://github.com/lycano/xAuth/wiki/Commands-and-Permissions
-
-  g:xauth_default:
-    permissions:
-    - xauth.register
-
-  g:xauth_admin:
-    permissions:
-    - xauth.admin.*
-
-# Permission nodes for ZavAutoMessager
-# http://dev.bukkit.org/server-mods/zavautomessager/pages/Documentation
-
-  g:zavam_default:
-    permissions:
-    - zavautomessager.see
-
-  g:zavam_admin:
-    permissions:
-    - -zavautomessager.toggle
-    - zavautomessager.view
-    - zavautomessager.list
-    - zavautomessager.broadcast
-    - zavautomessager.add
-    - zavautomessager.remove
-    - zavautomessager.reload

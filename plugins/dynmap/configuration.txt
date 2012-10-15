@@ -15,7 +15,7 @@ components:
   - class: org.dynmap.ClientConfigurationComponent
   
   - class: org.dynmap.InternalClientUpdateComponent
-    sendhealth: false
+    sendhealth: true
     sendposition: true
     allowwebchat: true
     webchat-interval: 5
@@ -123,8 +123,8 @@ components:
     # Optional - label for player marker layer (default is 'Players')
     label: "Players"
     
-  #- class: org.dynmap.ClientComponent
-  #  type: digitalclock
+  - class: org.dynmap.ClientComponent
+    type: digitalclock
   - class: org.dynmap.ClientComponent
     type: link
     
@@ -137,7 +137,7 @@ components:
     type: coord
     label: "Location"
     hidey: false
-    show-mcr: false
+    show-mcr: true
     
   # Note: more than one logo component can be defined
   #- class: org.dynmap.ClientComponent
@@ -170,7 +170,7 @@ renderacceleratethreshold: 120
 renderaccelerateinterval: 0.2
 
 # How many update tiles to work on at once (if not defined, default is 1/2 the number of cores)
-tiles-rendered-at-once: 2
+tiles-rendered-at-once: 1
 
 # If true, use normal priority threads for rendering (versus low priority) - this can keep rendering
 # from starving on busy Windows boxes (Linux JVMs pretty much ignore thread priority), but may result
@@ -193,16 +193,16 @@ hideores: true
 better-grass: false
 
 # Optional - enable smooth lighting by default on all maps supporting it (can be set per map as lighting option)
-smooth-lighting: false
+smooth-lighting: true
 
 # Default image format for HDMaps (png, jpg, jpg-q75, jpg-q80, jpg-q85, jpg-q90, jpg-q95, jpg-q100)
 # Has no effect on maps with explicit format settings
-image-format: jpg-q80
+image-format: png
 
 #  use-generated-textures: if true, use generated textures (same as client); false is static water/lava textures
 #  correct-water-lighting: if true, use corrected water lighting (same as client); false is legacy water (darker)
 use-generated-textures: true
-correct-water-lighting: false
+correct-water-lighting: true
 
 # Control loading of player faces (if set to false, skins are never fetched)
 fetchskins: true
@@ -266,7 +266,7 @@ render-triggers:
   #-blockredstone
 
 # Title for the web page - if not specified, defaults to the server's name (unless it is the default of 'Unknown Server')
-#webpage-title: "My Awesome Server Map"
+webpage-title: "Mineholic Builders Dynmap"
 
 # The path where the tile-files are placed.
 tilespath: web/tiles
@@ -275,13 +275,13 @@ tilespath: web/tiles
 webpath: web
 
 # The network-interface the webserver will bind to (0.0.0.0 for all interfaces, 127.0.0.1 for only local access).
-webserver-bindaddress: ###.###.###.###
+webserver-bindaddress: 80.82.222.68
 
 # The TCP-port the webserver will listen on.
-webserver-port: 22667
+webserver-port: 25566
 
 # Maximum concurrent session on internal web server - limits resources used in Bukkit server
-max-sessions: 30
+max-sessions: 15
 
 # Disables Webserver portion of Dynmap (Advanced users only)
 disable-webserver: false

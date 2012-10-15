@@ -13,4 +13,4 @@ doors:
     action: openAndClose
     
     # The amount of seconds after opening a door for it to close. No effect if openAndClose name is not being used.
-    interval: 3
+    interval: 2

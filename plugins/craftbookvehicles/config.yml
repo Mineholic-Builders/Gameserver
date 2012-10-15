@@ -1,33 +1,41 @@
-control-blocks: true
+port:
+  world2_dave:
+    name: world2_dave
+    world: world2
+    x: 3231.5447815391485
+    y: 64.0
+    z: 577.8157147904756
+    pitch: 80.39973
+    yaw: -1.5041504
+languages:
+- en_US
+language: en_US
+op-perms: true
+use-block-radius: false
+check-worldguard-flags: true
+experimental-repeater-support: false
 max-boost-block: 41
 25x-boost-block: 14
 50x-slow-block: 88
 20x-slow-block: 13
-station-block: 49
 reverse-block: 35
-deposit-block: 15
-eject-block: 42
-teleport-block: 89
+station-block: 49
 sort-block: 87
-minecart-remove-entities: true
-minecart-remove-entities-othercarts: true
-minecart-remove-on-exit: false
-minecart-dispensers: true
-minecart-decay-time: 0
-minecart-slow-when-empty: true
-minecart-max-speed-modifier: 1.0
-in-cart-control: true
-hinder-pressure-plate-slow: true
-minecart-enter-on-impact: true
-boat-break-return-boat: true
-boat-no-crash: true
-boat-remove-entities: false
-boat-remove-entities-otherboats: false
-language: en_US
-op-perms: true
-use-block-radius: false
+eject-block: 42
+deposit-block: 15
+teleport-block: 133
 dispenser-block: 129
 messager-block: 121
+minecart-enter-on-impact: true
+minecart-slow-when-empty: true
 minecart-decay-when-empty: false
+minecart-remove-on-exit: false
+minecart-remove-entities: false
+minecart-remove-entities-othercarts: false
+minecart-max-speed-modifier: 1.0
+boat-remove-entities: false
+boat-no-crash: false
+boat-remove-entities-otherboats: false
+boat-break-return-boat: false
 minecart-track-messages: true
-check-worldguard-flags: true
+minecart-decay-time: 20

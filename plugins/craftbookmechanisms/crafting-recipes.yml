@@ -19,6 +19,17 @@ crafting-recipes:
       - 'ba'
     results:
       '337:0': 4
+  clay_ball_multi:
+    type: shaped3x3
+    ingredients: #some dirt and waterbuckets (greater version)
+      '3': 'a'
+      '326': 'b'
+    shape:
+      - 'aaa'
+      - 'bbb'
+      - 'aaa'
+    results:
+      '337:0': 10
   sponge_reloaded: #'useless' item but can now be obtained while survival mode
     type: shaped3x3
     ingredients: #any leafes and any wool
@@ -215,3 +226,43 @@ crafting-recipes:
       - 'ccc'
     results:
       '262' : 4
+  awkward_stack:
+    type: shaped3x3
+    ingredients: #stack of 9 waterbuckets
+      '373:16': 'a'
+    shape:
+      - 'aaa'
+      - 'aaa'
+      - 'aaa'
+    results:
+      '373:16': 9
+  thick_stack:
+    type: shaped3x3
+    ingredients: #stack of 9 waterbuckets
+      '373:32': 'a'
+    shape:
+      - 'aaa'
+      - 'aaa'
+      - 'aaa'
+    results:
+      '373:32': 9
+  mundane_stack:
+    type: shaped3x3
+    ingredients: #stack of 9 waterbuckets
+      '373:64': 'a'
+    shape:
+      - 'aaa'
+      - 'aaa'
+      - 'aaa'
+    results:
+      '373:64': 9
+  spidernet:
+    type: shaped3x3
+    ingredients: #5 spider string
+      '287': 'a'
+    shape:
+      - 'aba'
+      - 'bab'
+      - 'aba'
+    results:
+      '30': 2

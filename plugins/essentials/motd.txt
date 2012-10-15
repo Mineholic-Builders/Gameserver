@@ -1,8 +1,6 @@
-&0&0&2&5&7&e&f&7Dies ist ein &4ZAP-Hosting&7-Server.
-&m                                              &r
-&bSchoen das du da bist, &1{PLAYER}&b! 
+&0&0&2&5&7&e&f&7&bSchoen das du da bist, &1{PLAYER}&b! 
 &bUhrzeit: &6{TIME}&b Im Spiel: &6{WORLDTIME24}&b (&6{WORLDDATE}&b).
-&bSpieler Online: {ONLINE}/10.
+&bSpieler Online: {ONLINE}/20.
 &bSpieler Online Liste: {PLAYERLIST}
 &bGib &e/news &bfuer Infos und Neuigkeiten oder &e/rules &bfuer die Regeln ein.
 &bBitte benutzt auch die &4Homepage &bund &4TS3 &b(&e/news hpts&b).

@@ -1,15 +1,9 @@
 Core:
-    #Print messages to terminal if true (debug)
-    logEvents: false
-
     #Place a sign on the cenotaph if true
     cenotaphSign: true
 
     #Prevent non-Op players from destroying cenotaphs if true (destroyQuickLoot overrides)
     noDestroy: true
-
-    #Show status messages to the player if true
-    playerMessage: true
 
     #Save Cenotaph listing between server reloads if true
     saveCenotaphList: true
@@ -28,7 +22,7 @@ Core:
     #If you are not locking your chests with Lockette or LWC but still want them to be
     #protected against Creeper explosions, or you want your chests to be protected even
     #after they are unlocked, enable this.
-    creeperProtection: false
+    creeperProtection: true
 
     #Each line may be one of any custom text OR:
     #{name} for player name
@@ -43,13 +37,15 @@ Core:
         Line4: "{time}"
 
         #For formatting, see http://download.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html
-        dateFormat: "MM/dd/yyyy"
-        timeFormat: "hh:mm a"
+        dateFormat: "dd/MM/yy"
+        timeFormat: "HH:mm"
 
     #Disable in the worlds below
     disableInWorlds:
         #- world
         #- world2
+
+    dynmapEnable: false
 
 Removal:
     #Destroy cenotaph on player quickloot if true
@@ -78,7 +74,7 @@ Security:
     securityTimeout: 3600
 
     #Set LWC protection to Public instead of removing it after the timeout
-    lwcPublic: true
+    lwcPublic: false
 
 #Remember, your character limit for the below message plus whatever else is on the line is 15 characters.
 DeathMessages:
@@ -117,4 +113,4 @@ DeathMessages:
         Void: "the Void"
         Other: "Unknown"
 
-configVer: 14
+configVer: 16

@@ -1,0 +1,17 @@
+port:
+  world2_dave:
+    name: world2_dave
+    world: world2
+    x: 3287.432804020728
+    y: 64.0
+    z: 576.0681249103601
+    pitch: 74.25
+    yaw: 1.7961426
+  world2r_dave:
+    name: world2r_dave
+    world: world2_resources
+    x: 57.54918334970865
+    y: 219.0
+    z: -91.82777194049086
+    pitch: 59.399715
+    yaw: -176.85089

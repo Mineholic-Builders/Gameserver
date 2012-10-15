@@ -1,15 +1,14 @@
 main:
   auto-disable: true
   check-for-updates: true
-  download-library: true
   reload-on-join: false
 mysql:
-  enabled: false
+  enabled: true
   host: localhost
-  port: 3306
-  user: user
-  password: password
-  database: xauth
+  port: ******
+  user: ******
+  password: ******
+  database: ******
   tables:
     account: accounts
     location: locations
@@ -32,19 +31,19 @@ single-session:
     immunity-length: 5
 registration:
   enabled: true
-  forced: true
+  forced: false
   require-email: false
   validate-email: false
-  account-limit: 0
+  account-limit: 3
   activation: false
   require-login: true
 password:
   min-length: 6
   allow-change: true
   complexity:
-    lowercase: false
+    lowercase: true
     uppercase: false
-    number: false
+    number: true
     symbol: false
 guest:
   timeout: 300
@@ -57,9 +56,9 @@ guest:
   - l
   restrict:
     player:
-      chat: true
-      interact: true
-      move: true
+      chat: false
+      interact: false
+      move: false
       pickup: true
     block:
       place: true
@@ -72,15 +71,15 @@ session:
   verifyip: true
   godmode-length: 5
 strikes:
-  amount: 5
+  amount: 3
   lockout-length: 3600
 account:
-  track-last-login: false
+  track-last-login: true
 filter:
   min-length: 3
   allowed: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890_
   disallowed: ''
   blank-name: true
 groups:
-  guest: ''
-  authenticated: ''
+  default: ''
+  builder: ''

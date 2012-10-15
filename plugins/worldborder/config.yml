@@ -1,9 +1,22 @@
 cfg-version: 5
-message: You have reached the edge of this world.
-round-border: true
+message: Du hast das Ende der Welt erreicht. Kehre bitte wieder um!
+round-border: false
 debug-mode: false
 whoosh-effect: false
-knock-back-dist: 3.0
+knock-back-dist: 10.0
 timer-delay-ticks: 5
 dynmap-border-enabled: true
-dynmap-border-message: The border of the world.
+dynmap-border-message: Weltgrenze
+worlds:
+  world2:
+    x: 72.5
+    z: 788.5
+    radius: 8100
+  world2_town:
+    x: 0.0
+    z: 0.0
+    radius: 650
+  world2_resources:
+    x: 0.0
+    z: 0.0
+    radius: 1000

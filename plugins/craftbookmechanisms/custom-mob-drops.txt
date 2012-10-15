@@ -6,5 +6,3 @@
 #For example, to make creepers drop 10 to 20 tnt:
 
 #creeper->46x10-20
-
-irongolem->265x3-5,37x1-2,38x1-2
